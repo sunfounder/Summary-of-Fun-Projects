@@ -119,7 +119,7 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
-    * Don't forget to select the board(Raspberry Pi Pico) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

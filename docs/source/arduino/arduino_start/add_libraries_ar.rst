@@ -1,6 +1,6 @@
  
 
-1.4 Install libraries (Important)
+1.3 Install libraries (Important)
 ======================================
 
 Many libraries are available directly through the Arduino **Library Manager**. You can access the **Library Manager** by following these steps:
