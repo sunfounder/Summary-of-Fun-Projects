@@ -1,7 +1,3 @@
-# SunFounder Pico 2 W Starter Kit
-
-This repository is for Pico 2 W Starter Kit. you can buy it on [our website](https://www.sunfounder.com/), or search sunfounder in Amazon.
-
 Quick Links:
 
  * [About this kit](#about_this_kit)
