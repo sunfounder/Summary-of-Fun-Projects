@@ -19,7 +19,7 @@ import time
 
 # -- Project information -----------------------------------------------------
 
-project = 'SunFounder Pico 2 W Starter Kit for Raspberry Pi Pico 2 W'
+project = 'SunFounder Showcase of Creative Projects'
 copyright = f'{time.localtime().tm_year}, SunFounder'
 author = 'www.sunfounder.com'
 
