@@ -30,5 +30,6 @@ We recommend that you read the chapters in order.
     dino_run
     brick_breaker
     stacker_blocks
+    color_memory
 
 
