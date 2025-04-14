@@ -87,7 +87,7 @@ In this project, we need the following components:
 
 **Wiring**
 
-.. image:: img/Dino_Run_bb.png
+.. image:: img/Brick_Breaker_bb.png
 
 **Common Cathode Connections:**
 
