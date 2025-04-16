@@ -1011,5 +1011,13 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/" target="_blank">sunfounder.com</a>
 
+.. |link_raphael_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/raphael-kit" target="_blank">BUY</a>
+
+.. |link_davinci_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/sunfounder-davinci-kit" target="_blank">BUY</a>
+
 """
 

@@ -94,7 +94,7 @@ In this project, we need the following components:
 
 .. image:: img/Dino_Run_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **I2C LCD 1602**
 
@@ -118,6 +118,7 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
+    * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
     * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino

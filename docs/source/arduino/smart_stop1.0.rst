@@ -91,7 +91,7 @@ In this project, we need the following components:
 
 .. image:: img/Smart_Stop_01_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **Ultrasonic Sensor Module**
 

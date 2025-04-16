@@ -32,7 +32,7 @@ Brick Breaker
 Course Introduction
 ------------------------
 
-In this lesson, you’ll learn how to use a OLED Display Module, a Joystick Module with the Arduino R4 UNO to create a brick breaker game. 
+In this lesson, you’ll learn how to use a OLED Display Module, a Joystick Module with the Arduino R4 UNO to create a brick breaker game. We’ll cover using the Adafruit SSD1306 and GFX libraries to display on the screen.
 
 The LCD will display the game screen, and players can use the joystick to control the gameplay in the brick breaker game.
 
@@ -89,7 +89,7 @@ In this project, we need the following components:
 
 .. image:: img/Brick_Breaker_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **Joystick Module**
 
@@ -110,6 +110,7 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
+    * To install the library, use the Arduino Library Manager and search for **Adafruit SSD1306** and **Adafruit GFX** and install it.
     * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino

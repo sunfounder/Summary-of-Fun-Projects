@@ -94,7 +94,7 @@ In this project, we need the following components:
 
 .. image:: img/Velocity_View_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **I2C LCD 1602**
 
@@ -114,11 +114,17 @@ In this project, we need the following components:
   - **B-1B:** Connect to PWM **5** on the Arduino.
   - **B-1A:** Connect to PWM **6** on the Arduino.
 
+* **Button**
+
+  - Connect to breadboard’s negative power bus.
+  - Connect to Digital PWM **11**,PWM **10** on the Arduino.
+
 **Writing the Code**
 
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
+    * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
     * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino

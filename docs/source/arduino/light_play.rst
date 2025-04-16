@@ -1,0 +1,286 @@
+.. _light_play:
+
+Light Play
+==============================================================
+.. note::
+  
+  Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+
+  👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+
+  To get all the components for this project, consider one of the kits below. 
+
+  Each includes the required parts, extra components for other projects, and beginner-friendly tutorials.
+
+  .. list-table::
+    :widths: 20 20 20
+    :header-rows: 1
+
+    *   - Name	
+        - Includes Arduino board
+        - PURCHASE LINK
+    *   - Electronic Kit	
+        - ×
+        - |link_electronic_buy|
+    *   - Elite Explorer Kit	
+        - ×
+        - |link_elite_buy|
+    *   - 3 in 1 Ultimate Starter Kit	
+        - √
+        - |link_arduinor4_buy|
+
+Course Introduction
+------------------------
+
+In this lesson, you will learn how to use Arduino along with buttons, LEDs, and resistors to create a light show. 
+
+Pressing the button will switch between different lighting modes.
+
+
+.. .. raw:: html
+
+..     <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+.. note::
+
+  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  
+  * :ref:`install_arduino`
+  * :ref:`introduce_arduino`
+
+**Required Components**
+
+In this project, we need the following components:
+
+.. list-table::
+    :widths: 5 20 5 20
+    :header-rows: 1
+
+    *   - SN
+        - COMPONENT INTRODUCTION	
+        - QUANTITY
+        - PURCHASE LINK
+
+    *   - 1
+        - Arduino UNO R4 Minima
+        - 1
+        - |link_unor4_buy|
+    *   - 2
+        - USB Type-C cable
+        - 1
+        - 
+    *   - 3
+        - Breadboard
+        - 1
+        - |link_breadboard_buy|
+    *   - 4
+        - Wires
+        - Several
+        - |link_wires_buy|
+    *   - 5
+        - 1kΩ resistor
+        - Several
+        - |link_resistor_buy|
+    *   - 6
+        - Button
+        - 3
+        - |link_button_buy|
+    *   - 7
+        - LED
+        - Several
+        - |link_led_buy|
+
+**Wiring**
+
+.. image:: img/Light_Play_bb.png
+
+**Common Connections:**
+
+* **LED**
+
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **2** to PMW **9** on the Arduino.
+
+* **Button**
+
+  - Connect to breadboard’s negative power bus.
+  - Connect to Digital PWM **10** to PMW **12** on the Arduino.
+
+**Writing the Code**
+
+.. note::
+
+    * You can copy this code into **Arduino IDE**. 
+    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+
+.. code-block:: arduino
+
+      // LED pins (blue and red alternately connected to D2 ~ D9)
+      const int ledPins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
+
+      // Button pins
+      const int redButton = 10;
+      const int blueButton = 11;
+      const int greenButton = 12;
+
+      // Variables to track previous button states
+      bool prevRedPressed = false;
+      bool prevBluePressed = false;
+      bool prevGreenPressed = false;
+
+      void setup() {
+        // Set all LED pins as outputs and turn them off
+        for (int i = 0; i < 8; i++) {
+          pinMode(ledPins[i], OUTPUT);
+          digitalWrite(ledPins[i], LOW);
+        }
+
+        // Set buttons as input with internal pull-up resistors
+        pinMode(redButton, INPUT_PULLUP);
+        pinMode(blueButton, INPUT_PULLUP);
+        pinMode(greenButton, INPUT_PULLUP);
+
+        Serial.begin(9600); // Optional: debug output
+      }
+
+      void loop() {
+        handleRedButton();    // Play red light sequence
+        handleBlueButton();   // Play blue LED flowing animation
+        handleGreenButton();  // Play full pattern sequence
+      }
+
+      // --- Red button: Runs a 6-step light show pattern ---
+      void handleRedButton() {
+        bool isPressed = digitalRead(redButton) == LOW;
+        if (isPressed && !prevRedPressed) {
+          Serial.println("Red button pressed → 6-step pattern");
+          runRedSequence();
+          delay(300); // Simple debounce
+        }
+        prevRedPressed = isPressed;
+      }
+
+      void runRedSequence() {
+        // Step 1: All LEDs on
+        setAll(HIGH);
+        delay(1000);
+
+        // Step 2: Only blue LEDs on (even indices)
+        for (int i = 0; i < 8; i++)
+          digitalWrite(ledPins[i], i % 2 == 0 ? HIGH : LOW);
+        delay(1000);
+
+        // Step 3: Only red LEDs on (odd indices)
+        for (int i = 0; i < 8; i++)
+          digitalWrite(ledPins[i], i % 2 == 1 ? HIGH : LOW);
+        delay(1000);
+
+        // Step 4: All LEDs on
+        setAll(HIGH);
+        delay(1000);
+
+        // Step 5: Only blue LEDs on again
+        for (int i = 0; i < 8; i++)
+          digitalWrite(ledPins[i], i % 2 == 0 ? HIGH : LOW);
+        delay(1000);
+
+        // Step 6: Turn all LEDs off
+        setAll(LOW);
+      }
+
+      // --- Blue button: Flowing LED animation, back and forth x2 ---
+      void handleBlueButton() {
+        bool isPressed = digitalRead(blueButton) == LOW;
+        if (isPressed && !prevBluePressed) {
+          Serial.println("Blue button pressed → flowing animation");
+
+          for (int round = 0; round < 2; round++) {
+            // Forward flow
+            for (int i = 0; i < 8; i++) {
+              lightOneOnly(i);
+              delay(100);
+            }
+            // Backward flow
+            for (int i = 6; i >= 0; i--) {
+              lightOneOnly(i);
+              delay(100);
+            }
+
+            clearAll();
+            delay(100); // Small gap between rounds
+          }
+
+          delay(300);
+        }
+        prevBluePressed = isPressed;
+      }
+
+      // Lights only one LED at the specified index
+      void lightOneOnly(int index) {
+        for (int i = 0; i < 8; i++) {
+          digitalWrite(ledPins[i], (i == index) ? HIGH : LOW);
+        }
+      }
+
+      // --- Green button: Four full LED pattern cycles ---
+      void handleGreenButton() {
+        bool isPressed = digitalRead(greenButton) == LOW;
+        if (isPressed && !prevGreenPressed) {
+          Serial.println("Green button pressed → full sequence");
+
+          // Pattern 1: Light up and off from left to right
+          for (int i = 0; i < 8; i++) {
+            digitalWrite(ledPins[i], HIGH);
+            delay(100);
+          }
+          for (int i = 0; i < 8; i++) {
+            digitalWrite(ledPins[i], LOW);
+            delay(100);
+          }
+
+          // Pattern 2: Right to left on and off
+          for (int i = 7; i >= 0; i--) {
+            digitalWrite(ledPins[i], HIGH);
+            delay(100);
+          }
+          for (int i = 7; i >= 0; i--) {
+            digitalWrite(ledPins[i], LOW);
+            delay(100);
+          }
+
+          // Pattern 3: Left to right on, right to left off
+          for (int i = 0; i < 8; i++) {
+            digitalWrite(ledPins[i], HIGH);
+            delay(100);
+          }
+          for (int i = 7; i >= 0; i--) {
+            digitalWrite(ledPins[i], LOW);
+            delay(100);
+          }
+
+          // Pattern 4: Right to left on, left to right off
+          for (int i = 7; i >= 0; i--) {
+            digitalWrite(ledPins[i], HIGH);
+            delay(100);
+          }
+          for (int i = 0; i < 8; i++) {
+            digitalWrite(ledPins[i], LOW);
+            delay(100);
+          }
+
+          clearAll(); // Make sure all LEDs are off
+          delay(300);
+        }
+        prevGreenPressed = isPressed;
+      }
+
+      // Turns all LEDs on or off
+      void setAll(int state) {
+        for (int i = 0; i < 8; i++) {
+          digitalWrite(ledPins[i], state);
+        }
+      }
+
+      // Turns off all LEDs
+      void clearAll() {
+        setAll(LOW);
+      }

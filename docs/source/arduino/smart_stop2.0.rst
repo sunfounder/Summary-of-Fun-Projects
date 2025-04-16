@@ -102,7 +102,7 @@ In this project, we need the following components:
 
 .. image:: img/Smart_Stop_02_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **Ultrasonic Sensor Module**
 
@@ -121,6 +121,13 @@ In this project, we need the following components:
   - **VCC:** Connect to breadboard’s red power bus.
   - **B-1B:** Connect to PWM **9** on the Arduino.
   - **B-1A:** Connect to PWM **10** on the Arduino.
+
+* **I2C LCD 1602**
+
+  - **SDA:** Connect to **A4** on the Arduino.
+  - **SCL:** Connect to **A5** on the Arduino.
+  - **GND:** Connect to breadboard’s negative power bus.
+  - **VCC:** Connect to breadboard’s red power bus.
 
 **Writing the Code**
 

@@ -97,7 +97,7 @@ In this project, we need the following components:
 
 .. image:: img/Color_Memory_bb.png
 
-**Common Cathode Connections:**
+**Common Connections:**
 
 * **LEDS**
 

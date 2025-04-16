@@ -31,5 +31,9 @@ We recommend that you read the chapters in order.
     brick_breaker
     stacker_blocks
     color_memory
+    light_play
+    mini_piano
+    timer
+    parking_sensor
 
 
