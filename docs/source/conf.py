@@ -842,14 +842,6 @@ rst_epilog += """
 
 rst_epilog += """
 
-.. |link_Kepler_Ultimate_Kit| raw:: html
-
-    <a href="https://www.sunfounder.com/collections/raspberry-pi-kit-for-beginner-1/products/sunfounder-raspberry-pi-pico-w-ultimate-starter-kit" target="_blank">Purchase Link for Kepler Ultimate Kit</a>
-
-.. |link_pico2w_starter_Kit| raw:: html
-
-    <a href="https://www.sunfounder.com/products/sunfounder-raspberry-pi-pico-2-w-ultimate-starter-kit-with-110-video-courses-online-tutorials-96-projects-16-iot-projects-micropython-c-compatible-with-arduino-ide?_pos=2&_sid=560affa05&_ss=r" target="_blank">Purchase Link for Pico 2 W Starter Kit</a>
-
 .. |link_kepler_kit| raw:: html
 
     <a href="https://www.sunfounder.com/collections/raspberry-pi-kit-for-beginner-1/products/sunfounder-raspberry-pi-pico-w-ultimate-starter-kit" target="_blank">Kepler Ultimate Kit</a>
@@ -864,19 +856,19 @@ rst_epilog += """
     
 .. |link_led_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/500pcs-5-colors-x-100pcs-5mm-leds-with-white-red-yellow-green-blue-colors-kit-box" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/500pcs-5-colors-x-100pcs-5mm-leds-with-white-red-yellow-green-blue-colors-kit-box?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_resistor_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/1-4w-resistor-assortment-kit-40-values-400pcs" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/1-4w-resistor-assortment-kit-40-values-400pcs?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_wires_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/560pcs-jumper-wire-kit-with-14-lengths" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/560pcs-jumper-wire-kit-with-14-lengths?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_breadboard_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/sunfounder-breadboard-kit" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/sunfounder-breadboard-kit?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_rgb_led_buy| raw:: html
 
@@ -884,7 +876,7 @@ rst_epilog += """
 
 .. |link_button_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/100pcs-6x6x5-mm-miniature-push-button" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/100pcs-6x6x5-mm-miniature-push-button?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_capacitor_buy| raw:: html
 
@@ -912,7 +904,7 @@ rst_epilog += """
 
 .. |link_passive_buzzer_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/20pcs-3-5v-2-terminals-passive-buzzer" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/20pcs-3-5v-2-terminals-passive-buzzer?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_ws2812_buy| raw:: html
 
@@ -920,7 +912,7 @@ rst_epilog += """
 
 .. |link_i2clcd1602_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/i2c-lcd1602-module" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/i2c-lcd1602-module?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_motor_buy| raw:: html
 
@@ -928,7 +920,7 @@ rst_epilog += """
 
 .. |link_servo_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/sg90-micro-digital-servo" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/servos-1/products/sf0180-servo-motor?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_keypad_buy| raw:: html
 
@@ -940,11 +932,11 @@ rst_epilog += """
 
 .. |link_7segment_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/30pcs-0-56-7-segment-led" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/accessories-tools/products/30pcs-0-56-7-segment-led?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_ultrasonic_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/5pcs-hc-sr04-ultrasonic-module-distance-sensor" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/5pcs-hc-sr04-ultrasonic-module-distance-sensor?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_dht22_buy| raw:: html
 
@@ -960,20 +952,23 @@ rst_epilog += """
 
 .. |link_joystick_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/dual-axis-button-joystick-module-ps2-game?_pos=1&_sid=38afd98e1&_ss=r" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/dual-axis-button-joystick-module-ps2-game?_pos=1&_sid=38afd98e1&_ss=r?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_oled_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/1-3-iic-i2c-serial-128x64-ssh1106-oled-display-module?_pos=6&_sid=97d8e92c1&_ss=r" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/1-3-iic-i2c-serial-128x64-ssh1106-oled-display-module?_pos=6&_sid=97d8e92c1&_ss=r?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_martix_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/max7219-dot-matrix-module-4-in-1-display-red?_pos=1&_sid=9d0aa329b&_ss=r" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/max7219-dot-matrix-module-4-in-1-display-red?_pos=1&_sid=9d0aa329b&_ss=r?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_pir_buy| raw:: html
 
     <a href="https://www.sunfounder.com/products/hcsr501-human-sensor" target="_blank">BUY</a>
 
+.. |link_power_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/for-arduino/products/sunfounder-breadvolt-breadboard-power-supply-module?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_pico2w_buy| raw:: html
 
@@ -981,15 +976,15 @@ rst_epilog += """
 
 .. |link_unor4_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-r4-minima" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-r4-minima?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_unor3_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-rev3" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-rev3?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_arduinor4_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-3-in-1-ultimate-starter-kit-with-original-arduino-uno-r4-minima" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/arduino-kits/products/sunfounder-3-in-1-ultimate-starter-kit-with-original-arduino-uno-r4-minima?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_arduinor3_buy| raw:: html
 
@@ -997,23 +992,23 @@ rst_epilog += """
 
 .. |link_umsk_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/sunfounder-universal-maker-sensor-kit?_pos=1&_sid=0cf649641&_ss=r" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/sunfounder-universal-maker-sensor-kit?ref=tiktok1&utm_source=linktree-shop" target="_blank">BUY</a>
 
 .. |link_electronic_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/electronics-fun-kit" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/electronics-fun-kit?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_elite_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-elite-explorer-kit-with-official-arduino-uno-r4-wifi" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/arduino-kits/products/sunfounder-elite-explorer-kit-with-official-arduino-uno-r4-wifi?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
 
 .. |link_sunfounder| raw:: html
 
-    <a href="https://www.sunfounder.com/" target="_blank">sunfounder.com</a>
+    <a href="https://www.sunfounder.com/?ref=tiktok1&utm_source=linktree&ltclid=4add7634-3e29-458b-8d1f-0c91c081073b" target="_blank">sunfounder.com</a>
 
 .. |link_raphael_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/raphael-kit" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/raphael-kit?ref=tiktok1&utm_source=linktree-shop" target="_blank">BUY</a>
 
 .. |link_davinci_buy| raw:: html
 
