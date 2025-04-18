@@ -35,5 +35,8 @@ We recommend that you read the chapters in order.
     mini_piano
     timer
     parking_sensor
+    radar_guard
+    barrier_gate
+    trash_can
 
 

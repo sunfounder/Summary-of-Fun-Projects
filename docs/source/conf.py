@@ -990,6 +990,10 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-3-in-1-iot-smart-car-learning-ultimate-starter-kit" target="_blank">BUY</a>
 
+.. |link_ultimate_sensor_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/arduino-starter-kit-for-beginners/products/sunfounder-ultimate-sensor-kit-with-original-arduino-uno-r4-minima?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
+
 .. |link_umsk_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/sunfounder-universal-maker-sensor-kit?ref=tiktok1&utm_source=linktree-shop" target="_blank">BUY</a>
