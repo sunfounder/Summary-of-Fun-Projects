@@ -94,7 +94,7 @@ In this project, we need the following components:
 * **Joystick Module**
 
   - **VRY:** Connect to **A1** on the Arduino.
-  - **SW:** Connect to pmw **8** on the Arduino.
+  - **SW:** Connect to **8** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

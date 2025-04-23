@@ -101,22 +101,22 @@ In this project, we need the following components:
 
 * **LEDS**
 
-  - **Blue:** Connect the LED **anode** to PWM **8** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
-  - **Green:** Connect the LED **anode** to PWM **6** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
-  - **Yellow:** Connect the LED **anode** to PWM **4**on the Arduino , and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
-  - **Red:** Connect the LED **anode** to PWM **2** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
+  - **Blue:** Connect the LED **anode** to **8** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
+  - **Green:** Connect the LED **anode** to **6** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
+  - **Yellow:** Connect the LED **anode** to **4**on the Arduino , and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
+  - **Red:** Connect the LED **anode** to **2** on the Arduino, and the **cathode** to a **220Ω resistor**, then to the negative power bus on the breadboard.
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to PWM **12** on the Arduino.
+  - **＋:** Connect to **12** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 * **Buttons**
 
-  - **Blue Button:** Connect to the **Blue LED's cathode** on the breadboard, and the other end to PWM **9** on the Arduino board.
-  - **Green Butto:** Connect to the **Green LED's cathode** on the breadboard, and the other end to PWM **7** on the Arduino board.
-  - **Yellow Butto:** Connect to the **Yellow LED's cathode** on the breadboard, and the other end to PWM **5** on the Arduino board.
-  - **Red Butto:** Connect to the **Red LED's cathode** on the breadboard, and the other end to PWM **3** on the Arduino board.
+  - **Blue Button:** Connect to the **Blue LED's cathode** on the breadboard, and the other end to **9** on the Arduino board.
+  - **Green Butto:** Connect to the **Green LED's cathode** on the breadboard, and the other end to **7** on the Arduino board.
+  - **Yellow Butto:** Connect to the **Yellow LED's cathode** on the breadboard, and the other end to **5** on the Arduino board.
+  - **Red Butto:** Connect to the **Red LED's cathode** on the breadboard, and the other end to **3** on the Arduino board.
 
 **Writing the Code**
 

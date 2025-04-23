@@ -37,9 +37,9 @@ In this lesson, you'll learn how to create a timer using LED, button, passive bu
 After setting the countdown by pressing the button, the LED will blink every second, and when the countdown ends, the buzzer will sound, and the LED will keep flashing.
 
 
-.. .. raw:: html
+ .. raw:: html
 
-..     <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/lCq9ZTEv72s?si=8sEZNWgKiy5no3nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -93,6 +93,10 @@ In this project, we need the following components:
         - I2C LCD 1602
         - 1
         - |link_i2clcd1602_buy|
+    *   - 9
+        - Passive Buzzer
+        - 1
+        - |link_passive_buzzer_buy|
 
 **Wiring**
 
@@ -107,11 +111,11 @@ In this project, we need the following components:
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **8** to PMW **11** on the Arduino.
+  - Connect to Digital **8** to **11** on the Arduino.
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to Digital PWM **2** on the Arduino.
+  - **＋:** Connect to Digital **2** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 * **I2C LCD 1602**

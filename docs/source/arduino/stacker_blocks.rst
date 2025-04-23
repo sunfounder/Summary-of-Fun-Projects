@@ -95,15 +95,15 @@ In this project, we need the following components:
 * **MAX7219 Dot Matrix Module**
 
   - **CLK:** Connect to **5** on the Arduino.
-  - **CS:** Connect to PWM **3** on the Arduino.
-  - **DIN:** Connect to PWM **6** on the Arduino.
+  - **CS:** Connect to **3** on the Arduino.
+  - **DIN:** Connect to **6** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **11** on the Arduino.
+  - Connect to Digital **11** on the Arduino.
 
 **Writing the Code**
 

@@ -38,5 +38,8 @@ We recommend that you read the chapters in order.
     radar_guard
     barrier_gate
     trash_can
+    rfid_access1.0
+    rfid_access2.0
+    rfid_Jukebox
 
 

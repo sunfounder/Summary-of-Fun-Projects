@@ -95,8 +95,8 @@ In this project, we need the following components:
 
 * **Ultrasonic Sensor Module**
 
-  - **Trig:** Connect to PWM **4** on the Arduino.
-  - **Echo:** Connect to PWM **3** on the Arduino.
+  - **Trig:** Connect to **4** on the Arduino.
+  - **Echo:** Connect to **3** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 
@@ -108,8 +108,8 @@ In this project, we need the following components:
 
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
-  - **B-1B:** Connect to PWM **9** on the Arduino.
-  - **B-1A:** Connect to PWM **10** on the Arduino.
+  - **B-1B:** Connect to **9** on the Arduino.
+  - **B-1A:** Connect to **10** on the Arduino.
 
 **Writing the Code**
 

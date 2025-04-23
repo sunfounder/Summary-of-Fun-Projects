@@ -36,9 +36,9 @@ In this lesson, you'll learn how to use an ultrasonic sensor module, a digital s
 
 When the barrier is closed, the red LED turns on. If the ultrasonic sensor module detects an approaching vehicle, the digital servo motor raises the barrier, the green LED turns on, and the vehicle is allowed to pass.
 
-..  .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/FlZ96qVv4mc?si=cBEi63uHd0QD7mHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -107,12 +107,12 @@ In this project, we need the following components:
 
   - Connect to breadboard’s positive power bus.
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PMW **2** on the Arduino.
+  - Connect to  **2** on the Arduino.
 
 * **Ultrasonic Sensor Module**
 
-  - **Trig:** Connect to PWM **11** on the Arduino.
-  - **Echo:** Connect to PWM **10** on the Arduino.
+  - **Trig:** Connect to **11** on the Arduino.
+  - **Echo:** Connect to **10** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

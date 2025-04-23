@@ -34,9 +34,9 @@ In this lesson, we will learn how to use the Ultrasonic Sensor Module, Digital S
 When the ultrasonic sensor module is running, it emits an audible alarm and flashes the red LED if it detects an obstacle within its sensing range. 
 If no obstacle is detected, indicating a safe state, the green LED stays on.
 
-..  .. raw:: html
-
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  .. raw:: html
+ 
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/IIe3DMzaRSA?si=EmbqV2plsvQtJ3yr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -94,6 +94,10 @@ In this project, we need the following components:
         - Digital Servo Motor
         - 1
         - |link_motor_buy|
+    *   - 10
+        - Passive Buzzer
+        - 1
+        - |link_passive_buzzer_buy|
 
 **Wiring**
 
@@ -103,22 +107,22 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **3**, PMW **4** on the Arduino.
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to **3**, **4** on the Arduino.
 
 * **Digital Servo Motor**
 
   - Connect to breadboard’s positive power bus.
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PMW **12** on the Arduino.
+  - Connect to Digital **12** on the Arduino.
 
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **8** to PMW **11** on the Arduino.
+  - Connect to **8** to **11** on the Arduino.
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to Digital PWM **2** on the Arduino.
+  - **＋:** Connect to **2** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 * **I2C LCD 1602**
@@ -130,8 +134,8 @@ In this project, we need the following components:
 
 * **Ultrasonic Sensor Module**
 
-  - **Trig:** Connect to PWM **11** on the Arduino.
-  - **Echo:** Connect to PWM **10** on the Arduino.
+  - **Trig:** Connect to **11** on the Arduino.
+  - **Echo:** Connect to **10** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

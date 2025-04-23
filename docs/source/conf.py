@@ -910,6 +910,14 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/2pcs-8-bit-ws2812b-rgb-led-strip-5050smd-individual-addressable-60pixels-m" target="_blank">BUY</a>
 
+.. |link_stepper_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/dc-5v-stepper-motor-28byj-48-uln2003-drive-module-5-line-4-phase?_pos=3&_sid=a4125f4d3&_ss=r" target="_blank">BUY</a>
+
+.. |link_mfrc522_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/rfid-kit-blue?_pos=1&_sid=c45f72294&_ss=r" target="_blank">BUY</a>
+
 .. |link_i2clcd1602_buy| raw:: html
 
     <a href="https://www.sunfounder.com/products/i2c-lcd1602-module?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
@@ -974,6 +982,10 @@ rst_epilog += """
 
     </a>
 
+.. |link_unor4_wifi_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-r4-wifi-2?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
+
 .. |link_unor4_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-r4-minima?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
@@ -1005,6 +1017,14 @@ rst_epilog += """
 .. |link_elite_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/arduino-kits/products/sunfounder-elite-explorer-kit-with-official-arduino-uno-r4-wifi?ref=tiktok1&utm_source=linktree" target="_blank">BUY</a>
+
+.. |link_mega_2560_starter_kit_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/mega2560-project-starter-kit" target="_blank">BUY</a>
+
+.. |link_mega_2560_kit_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/mega2560-starter-kit-for-arduino" target="_blank">BUY</a>
 
 .. |link_sunfounder| raw:: html
 

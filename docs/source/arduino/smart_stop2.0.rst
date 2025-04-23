@@ -119,8 +119,8 @@ In this project, we need the following components:
 
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
-  - **B-1B:** Connect to PWM **9** on the Arduino.
-  - **B-1A:** Connect to PWM **10** on the Arduino.
+  - **B-1B:** Connect to **9** on the Arduino.
+  - **B-1A:** Connect to **10** on the Arduino.
 
 * **I2C LCD 1602**
 
@@ -134,6 +134,7 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
+    * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
     * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino

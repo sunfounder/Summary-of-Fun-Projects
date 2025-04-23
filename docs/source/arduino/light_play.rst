@@ -39,7 +39,7 @@ Pressing the button will switch between different lighting modes.
 
  .. raw:: html
 
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/DyyozHdvh80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/DyyozHdvh80?si=MztYSVEZCeRxurx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -98,12 +98,12 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **2** to PMW **9** on the Arduino.
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to **2** to **9** on the Arduino.
 
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **10** to PMW **12** on the Arduino.
+  - Connect to Digital **10** to **12** on the Arduino.
 
 **Writing the Code**
 

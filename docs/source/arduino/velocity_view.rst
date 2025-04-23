@@ -111,13 +111,13 @@ In this project, we need the following components:
 
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
-  - **B-1B:** Connect to PWM **5** on the Arduino.
-  - **B-1A:** Connect to PWM **6** on the Arduino.
+  - **B-1B:** Connect to **5** on the Arduino.
+  - **B-1A:** Connect to **6** on the Arduino.
 
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **11**,PWM **10** on the Arduino.
+  - Connect to Digital **11**, **10** on the Arduino.
 
 **Writing the Code**
 

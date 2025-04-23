@@ -95,15 +95,15 @@ In this project, we need the following components:
 * **MAX7219 Dot Matrix Module**
 
   - **CLK:** Connect to **11** on the Arduino.
-  - **CS:** Connect to PWM **10** on the Arduino.
-  - **DIN:** Connect to PWM **12** on the Arduino.
+  - **CS:** Connect to **10** on the Arduino.
+  - **DIN:** Connect to **12** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 
 * **Ultrasonic Sensor Module**
 
-  - **Trig:** Connect to PWM **4** on the Arduino.
-  - **Echo:** Connect to PWM **3** on the Arduino.
+  - **Trig:** Connect to **4** on the Arduino.
+  - **Echo:** Connect to **3** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

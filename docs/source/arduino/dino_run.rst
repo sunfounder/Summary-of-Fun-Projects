@@ -105,13 +105,13 @@ In this project, we need the following components:
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to Digital PWM **9** on the Arduino.
+  - **＋:** Connect to **9** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital PWM **3** on the Arduino.
+  - Connect to **3** on the Arduino.
 
 **Writing the Code**
 

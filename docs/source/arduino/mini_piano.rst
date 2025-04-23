@@ -37,9 +37,9 @@ In this lesson, you'll learn how to create a mini piano using LEDs, buttons, and
 Pressing different buttons will light up the corresponding LED and play the matching pitch on the buzzer.
 
 
-.. .. raw:: html
+ .. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/NqJJK9VHCTk?si=FN0CSh9UgaYauU8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -103,16 +103,16 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **10**, PMW **8**, PMW **6**, PMW **4**, PMW **2** on the Arduino.
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to **10**, **8**, **6**, **4**, **2** on the Arduino.
 
 * **Button**
 
   - Connect to the **LED's cathode** on the breadboard, then connect a 1kΩ resistor from the LED's negative terminal to the negative power bus on the breadboard.
-  - Connect to Digital PWM **11**, PMW **9**, PMW **7**, PMW **5**, PMW **3**, PMW **1** on the Arduino.
+  - Connect to Digital **11**, **9**, **7**, **5**, **3**, **1** on the Arduino.
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to Digital PWM **12** on the Arduino.
+  - **＋:** Connect to **12** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 **Writing the Code**
