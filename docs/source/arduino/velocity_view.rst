@@ -35,7 +35,7 @@ Pressing the red button starts the servo and increases its speed in the clockwis
 
 .. raw:: html
 
-    <iframe width="700" height="394" src="https://www.youtube.com/embed/S4FqPvHB2YM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="700" height="394" src="https://www.youtube.com/embed/hAP1OC5F4Yc?si=CkE10kBji_QnqoMC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

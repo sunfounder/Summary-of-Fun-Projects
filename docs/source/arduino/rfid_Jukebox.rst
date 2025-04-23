@@ -131,6 +131,77 @@ In this project, we need the following components:
 
       #include <SPI.h>
       #include <MFRC522.h>
+
+      #define SS_PIN  10   // SDA (SS) pin for RFID module
+      #define RST_PIN 9    // RST pin for RFID module
+
+      MFRC522 rfid(SS_PIN, RST_PIN);  // Create RFID reader instance
+
+      void setup() {
+        Serial.begin(9600);   // Initialize serial communication
+        SPI.begin();          // Initialize SPI bus
+        rfid.PCD_Init();      // Initialize MFRC522 module
+        Serial.println("Place your RFID card near the reader to write a melody...");
+      }
+
+      void loop() {
+        if (!rfid.PICC_IsNewCardPresent() || !rfid.PICC_ReadCardSerial()) {
+          return;
+        }
+
+        // ==== Write data block ====
+
+        // Melody 1: Custom melody example (can be replaced)
+        // byte dataBlock[16] = {'C','D','E','F','G','A','B',' ',
+        //                       'B','A','G','F','E','D','C'};
+
+        // Melody 2: Ode to Joy (commented out)
+        byte dataBlock[16] = {'E','E','F','G','G','F','E','D',
+                              'C','C','D','E','E','D','D'};
+
+        // ==== End of melody selection ====
+
+        byte block = 4;
+
+        MFRC522::MIFARE_Key key;
+        for (byte i = 0; i < 6; i++) {
+          key.keyByte[i] = 0xFF;
+        }
+
+        MFRC522::StatusCode status = rfid.PCD_Authenticate(
+          MFRC522::PICC_CMD_MF_AUTH_KEY_A,
+          block,
+          &key,
+          &(rfid.uid)
+        );
+
+        if (status != MFRC522::STATUS_OK) {
+          Serial.print("Authentication failed: ");
+          Serial.println(rfid.GetStatusCodeName(status));
+          return;
+        }
+
+        status = rfid.MIFARE_Write(block, dataBlock, 16);
+
+        if (status != MFRC522::STATUS_OK) {
+          Serial.print("Write failed: ");
+          Serial.println(rfid.GetStatusCodeName(status));
+        } else {
+          Serial.println("✅ Melody successfully written to RFID card!");
+        }
+
+        rfid.PICC_HaltA();
+        rfid.PCD_StopCrypto1();
+        delay(1500);
+      }
+
+
+2. Information reading
+
+.. code-block:: arduino
+
+      #include <SPI.h>
+      #include <MFRC522.h>
       #include <FastLED.h>
 
       #define SS_PIN        10    // MFRC522 SDA/SS
@@ -243,75 +314,4 @@ In this project, we need the following components:
         rfid.PICC_HaltA();
         rfid.PCD_StopCrypto1();
         delay(1000);
-      }
-
-
-2. Information reading
-
-.. code-block:: arduino
-
-      #include <SPI.h>
-      #include <MFRC522.h>
-
-      #define SS_PIN  10   // SDA (SS) pin for RFID module
-      #define RST_PIN 9    // RST pin for RFID module
-
-      MFRC522 rfid(SS_PIN, RST_PIN);  // Create RFID reader instance
-
-      void setup() {
-        Serial.begin(9600);   // Initialize serial communication
-        SPI.begin();          // Initialize SPI bus
-        rfid.PCD_Init();      // Initialize MFRC522 module
-        Serial.println("Place your RFID card near the reader to write a melody...");
-      }
-
-      void loop() {
-        if (!rfid.PICC_IsNewCardPresent() || !rfid.PICC_ReadCardSerial()) {
-          return;
-        }
-
-        // ==== Write data block ====
-
-        // Melody 1: Custom melody example (can be replaced)
-        // byte dataBlock[16] = {'C','D','E','F','G','A','B',' ',
-        //                       'B','A','G','F','E','D','C'};
-
-        // Melody 2: Ode to Joy (commented out)
-        byte dataBlock[16] = {'E','E','F','G','G','F','E','D',
-                              'C','C','D','E','E','D','D'};
-
-        // ==== End of melody selection ====
-
-        byte block = 4;
-
-        MFRC522::MIFARE_Key key;
-        for (byte i = 0; i < 6; i++) {
-          key.keyByte[i] = 0xFF;
-        }
-
-        MFRC522::StatusCode status = rfid.PCD_Authenticate(
-          MFRC522::PICC_CMD_MF_AUTH_KEY_A,
-          block,
-          &key,
-          &(rfid.uid)
-        );
-
-        if (status != MFRC522::STATUS_OK) {
-          Serial.print("Authentication failed: ");
-          Serial.println(rfid.GetStatusCodeName(status));
-          return;
-        }
-
-        status = rfid.MIFARE_Write(block, dataBlock, 16);
-
-        if (status != MFRC522::STATUS_OK) {
-          Serial.print("Write failed: ");
-          Serial.println(rfid.GetStatusCodeName(status));
-        } else {
-          Serial.println("✅ Melody successfully written to RFID card!");
-        }
-
-        rfid.PICC_HaltA();
-        rfid.PCD_StopCrypto1();
-        delay(1500);
       }

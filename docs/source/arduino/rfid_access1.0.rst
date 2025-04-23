@@ -33,9 +33,10 @@ In this lesson, we’ll build a 1.0 access-control system using the MFRC522 modu
 
 When a valid card is presented, the motor unlocks the door and plays an “access granted” tone; an invalid card triggers a warning alarm.
 
-..  .. raw:: html
+  .. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="700" height="394" src="https://www.youtube.com/embed/MRM3VxnGLxY?si=3k0mtbbSTRhLoyLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 .. note::
 
