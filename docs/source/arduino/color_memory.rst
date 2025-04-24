@@ -23,10 +23,10 @@ Color Memory
         - ×
         - |link_electronic_buy|
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction

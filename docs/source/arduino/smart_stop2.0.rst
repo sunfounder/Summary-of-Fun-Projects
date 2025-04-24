@@ -19,11 +19,14 @@ Smart Stop 2.0
     *   - Name	
         - Includes Arduino board
         - PURCHASE LINK
+    *   - Elite Explorer Kit
+        - Arduino Uno R4 WiFi
+        - |link_elite_buy|
     *   - Universal Maker Sensor Kit
         - ×
         - |link_umsk_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R3
         - |link_arduinor3_buy|
 
 Course Introduction
@@ -106,8 +109,8 @@ In this project, we need the following components:
 
 * **Ultrasonic Sensor Module**
 
-  - **Trig:** Connect to PWM **5** on the Arduino.
-  - **Echo:** Connect to PWM **4** on the Arduino.
+  - **Trig:** Connect to **5** on the Arduino.
+  - **Echo:** Connect to **4** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

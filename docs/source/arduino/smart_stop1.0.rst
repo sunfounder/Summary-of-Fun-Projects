@@ -19,11 +19,14 @@ Smart Stop 1.0
     *   - Name	
         - Includes Arduino board
         - PURCHASE LINK
+    *   - Elite Explorer Kit
+        - Arduino Uno R4 WiFi
+        - |link_elite_buy|
     *   - Universal Maker Sensor Kit
         - ×
         - |link_umsk_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R3
         - |link_arduinor3_buy|
 
 Course Introduction

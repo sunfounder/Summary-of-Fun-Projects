@@ -20,13 +20,13 @@ Barrier Gate
         - Includes Arduino board
         - PURCHASE LINK
     *   - Ultimate Sensor Kit
-        - √
+        - Arduino Uno R4 Minima
         - |link_ultimate_sensor_buy|
     *   - Elite Explorer Kit
-        - √
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction
@@ -101,7 +101,7 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **3**, PMW **4** on the Arduino.
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to **3**, **4** on the Arduino.
 
 * **Digital Servo Motor**
 

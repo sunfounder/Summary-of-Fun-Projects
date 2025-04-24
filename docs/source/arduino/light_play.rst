@@ -23,10 +23,10 @@ Light Play
         - ×
         - |link_electronic_buy|
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction
@@ -37,7 +37,7 @@ In this lesson, you will learn how to use Arduino along with buttons, LEDs, and 
 Pressing the button will switch between different lighting modes.
 
 
- .. raw:: html
+.. raw:: html
 
   <iframe width="700" height="394" src="https://www.youtube.com/embed/DyyozHdvh80?si=MztYSVEZCeRxurx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

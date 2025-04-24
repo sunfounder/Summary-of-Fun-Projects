@@ -41,5 +41,8 @@ We recommend that you read the chapters in order.
     rfid_access1.0
     rfid_access2.0
     rfid_Jukebox
+    water_level
+    pong_game
+    lamb_run
 
 

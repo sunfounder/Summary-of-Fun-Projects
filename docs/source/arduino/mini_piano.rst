@@ -23,10 +23,10 @@ Mini Piano
         - ×
         - |link_electronic_buy|
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction
@@ -37,7 +37,7 @@ In this lesson, you'll learn how to create a mini piano using LEDs, buttons, and
 Pressing different buttons will light up the corresponding LED and play the matching pitch on the buzzer.
 
 
- .. raw:: html
+.. raw:: html
 
    <iframe width="700" height="394" src="https://www.youtube.com/embed/NqJJK9VHCTk?si=FN0CSh9UgaYauU8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -108,7 +108,7 @@ In this project, we need the following components:
 * **Button**
 
   - Connect to the **LED's cathode** on the breadboard, then connect a 1kΩ resistor from the LED's negative terminal to the negative power bus on the breadboard.
-  - Connect to Digital **11**, **9**, **7**, **5**, **3**, **1** on the Arduino.
+  - Connect to **11**, **9**, **7**, **5**, **3**, **1** on the Arduino.
 
 * **Passive Buzzer**
 

@@ -21,10 +21,10 @@ Parking Sensor
         - ×
         - |link_electronic_buy|
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
     *   - Universal Maker Sensor Kit
         - ×
@@ -37,7 +37,7 @@ In this lesson, you'll learn how to create a parking sensor system using the Ult
 
 As an obstacle gets closer to the sensor, the distance will be displayed on the dot matrix module.
 
- .. raw:: html
+.. raw:: html
 
      <iframe width="700" height="394" src="https://www.youtube.com/embed/8icjpMEK3Sw?si=vs_wwppY6e1Bj1zH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

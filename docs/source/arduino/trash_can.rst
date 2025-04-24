@@ -20,13 +20,13 @@ Trash Can
         - Includes Arduino board
         - PURCHASE LINK
     *   - Ultimate Sensor Kit
-        - √
+        - Arduino Uno R4 Minima
         - |link_ultimate_sensor_buy|
     *   - Elite Explorer Kit
-        - √
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction
@@ -36,9 +36,9 @@ In this lesson, you'll learn how to use an ultrasonic sensor module, a digital s
 
 When the ultrasonic sensor module detects trash being thrown in, the digital servo motor opens the lid of the trash can.
 
-  .. raw:: html
+.. raw:: html
 
-    <iframe width="700" height="394" src="https://www.youtube.com/embed/ca2vRwRQJkk?si=Nzmhr1BEuKKSN9NK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/ca2vRwRQJkk?si=Nzmhr1BEuKKSN9NK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -23,10 +23,10 @@ Timer
         - ×
         - |link_electronic_buy|
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
 
 Course Introduction
@@ -37,9 +37,9 @@ In this lesson, you'll learn how to create a timer using LED, button, passive bu
 After setting the countdown by pressing the button, the LED will blink every second, and when the countdown ends, the buzzer will sound, and the LED will keep flashing.
 
 
- .. raw:: html
+.. raw:: html
 
-   <iframe width="700" height="394" src="https://www.youtube.com/embed/lCq9ZTEv72s?si=8sEZNWgKiy5no3nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/lCq9ZTEv72s?si=8sEZNWgKiy5no3nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -106,7 +106,7 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to PMW **4**, PMW **5** on the Arduino.
+  - Connect the LEDs **anode** to a **1kΩ resistor** then to the negative power bus on the breadboard, and the LEDs **cathode** to **4**, **5** on the Arduino.
 
 * **Button**
 

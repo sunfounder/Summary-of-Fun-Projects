@@ -18,10 +18,10 @@ Stacker Blocks
         - Includes Arduino board
         - PURCHASE LINK
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - Ultimate Sensor Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
     *   - Electronic Kit	
         - ×

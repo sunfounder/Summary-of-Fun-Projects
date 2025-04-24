@@ -20,10 +20,10 @@ Brick Breaker
         - Includes Arduino board
         - PURCHASE LINK
     *   - Elite Explorer Kit	
-        - ×
+        - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - Ultimate Sensor Kit	
-        - √
+        - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
     *   - Universal Maker Sensor Kit
         - ×
@@ -34,7 +34,7 @@ Course Introduction
 
 In this lesson, you’ll learn how to use a OLED Display Module, a Joystick Module with the Arduino R4 UNO to create a brick breaker game. We’ll cover using the Adafruit SSD1306 and GFX libraries to display on the screen.
 
-The LCD will display the game screen, and players can use the joystick to control the gameplay in the brick breaker game.
+The OLED Screen will display the game screen, and players can use the joystick to control the game.
 
 .. raw:: html
 
