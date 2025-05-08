@@ -13,11 +13,11 @@ This document highlights SunFounder's projects on platforms like Raspberry Pi, A
 It features videos, circuit diagrams, code, and kit purchase links for you to explore and use.
 
 
- 🔥🔥🔥 **Top Viewed Videos** 🔥🔥🔥
+ 🔥🔥🔥 **Latest video** 🔥🔥🔥
 
 .. raw:: html
 
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/FlZ96qVv4mc?si=cBEi63uHd0QD7mHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/dR2yjj93IMI?si=dJ7DFbPt91WtvRsh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Content**
 

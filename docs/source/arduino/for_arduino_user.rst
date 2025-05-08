@@ -30,7 +30,6 @@ We recommend that you read the chapters in order.
     dino_run
     brick_breaker
     stacker_blocks
-    color_memory
     light_play
     mini_piano
     timer
@@ -44,5 +43,8 @@ We recommend that you read the chapters in order.
     water_level
     pong_game
     lamb_run
+    light_show
+    Joystick_led
+    color_memory
 
 
