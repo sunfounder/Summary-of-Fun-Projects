@@ -118,11 +118,11 @@ In this project, we need the following components:
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital **8** to **11** on the Arduino.
+  - Connect to **8** to **11** on the Arduino.
 
 * **Passive Buzzer**
 
-  - **＋:** Connect to Digital **2** on the Arduino.
+  - **＋:** Connect to **2** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
 * **I2C LCD 1602**

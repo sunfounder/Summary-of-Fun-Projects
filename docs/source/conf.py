@@ -838,7 +838,10 @@ rst_epilog += """
 .. |link_adafruit_io| raw:: html
 
     <a href="https://io.adafruit.com/" target="_blank">Adafruit IO</a>
-    
+
+.. |link_processing_ide| raw:: html
+
+    <a href="https://processing.org/" target="_blank">Processing IDE</a>    
     
 """
 
@@ -933,6 +936,10 @@ rst_epilog += """
 .. |link_servo_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/servos-1/products/sf0180-servo-motor?ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_mpu6050_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/3pcs-gy-521-mpu-6050-mpu6050-3-axis-accelerometer-gyroscope-module-6-dof-6-axis-accelerometer-gyroscope-sensor-module-16-bit-ad-converter-data-output-iic-i2c-for-arduino?_pos=1&_sid=2a570d41f&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
 .. |link_keypad_buy| raw:: html
 

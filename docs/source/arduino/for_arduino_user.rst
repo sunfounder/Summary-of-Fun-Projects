@@ -37,6 +37,7 @@ We recommend that you read the chapters in order.
     radar_guard1.0
     radar_guard2.0
     radar_guard3.0
+    radar_guard4.0
     barrier_gate1.0
     barrier_gate2.0
     trash_can
@@ -49,5 +50,7 @@ We recommend that you read the chapters in order.
     light_show
     Joystick_led
     color_memory
+    tilt_led1.0
+    tilt_led2.0
 
 

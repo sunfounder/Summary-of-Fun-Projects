@@ -110,7 +110,7 @@ In this project, we need the following components:
 * **Button**
 
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital **10** to **12** on the Arduino.
+  - Connect to **10** to **12** on the Arduino.
 
 **Writing the Code**
 

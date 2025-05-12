@@ -103,7 +103,7 @@ In this project, we need the following components:
 
   - Connect to breadboard’s positive power bus.
   - Connect to breadboard’s negative power bus.
-  - Connect to Digital **2** on the Arduino.
+  - Connect to **2** on the Arduino.
 
 * **Ultrasonic Sensor Module**
 
