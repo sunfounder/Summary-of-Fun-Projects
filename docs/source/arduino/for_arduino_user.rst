@@ -34,8 +34,11 @@ We recommend that you read the chapters in order.
     mini_piano
     timer
     parking_sensor
-    radar_guard
-    barrier_gate
+    radar_guard1.0
+    radar_guard2.0
+    radar_guard3.0
+    barrier_gate1.0
+    barrier_gate2.0
     trash_can
     rfid_access1.0
     rfid_access2.0

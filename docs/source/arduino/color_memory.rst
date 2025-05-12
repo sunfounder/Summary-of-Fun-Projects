@@ -2,16 +2,23 @@
 
 Color Memory
 ==============================================================
+
 .. note::
   
-  Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+  🌟 Welcome to the SunFounder Facebook Community! Whether you're into Raspberry Pi, Arduino, or ESP32, you'll find inspiration, help ideas here.
+   
+  - ✅ Be the first to get free learning resources. 
+   
+  - ✅ Stay updated on new products & exclusive giveaways. 
+   
+  - ✅ Share your creations and get real feedback
+   
+  * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
-  👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
-
-  To get all the components for this project, consider one of the kits below. 
-
-  Each includes the required parts, extra components for other projects, and beginner-friendly tutorials.
-
+  * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
+   
+  * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
+  
   .. list-table::
     :widths: 20 20 20
     :header-rows: 1
@@ -38,7 +45,7 @@ At the start of the game, an LED lights up at random. The player must press the 
 
 .. raw:: html
 
-    <iframe width="700" height="394" src="https://www.youtube.com/embed/Q4IQQDiqGEA?si=7FB24oI0t0SGbJW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/frHJHmXgnK4?si=iCaX_KMK4dy8d3KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
