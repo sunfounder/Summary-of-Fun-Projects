@@ -70,7 +70,7 @@ In this project, we need the following components:
     *   - 1
         - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
         - 1
-        - |link_unor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -128,7 +128,7 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 Minima/WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

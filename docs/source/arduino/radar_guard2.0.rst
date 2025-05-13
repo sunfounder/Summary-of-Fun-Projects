@@ -41,9 +41,9 @@ In this lesson, we will learn how to use the Ultrasonic Sensor Module, Digital S
 When the ultrasonic sensor module is running, it emits an audible alarm and flashes the red LED if it detects an obstacle within its sensing range. 
 If no obstacle is detected, indicating a safe state, the green LED stays on.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/IIe3DMzaRSA?si=EmbqV2plsvQtJ3yr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/enMBMfVlbpY?si=LOntoW4GBtHXT783" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -68,7 +68,7 @@ In this project, we need the following components:
     *   - 1
         - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
         - 1
-        - |link_unor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -147,7 +147,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 Minima/WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

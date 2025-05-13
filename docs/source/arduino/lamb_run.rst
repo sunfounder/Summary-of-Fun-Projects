@@ -68,9 +68,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - Arduino UNO R4 Wifi
+        - Arduino UNO R4 Minima
         - 1
-        - |link_unor4_wifi_buy|
+        - |link_unor4_buy|
     *   - 2
         - USB Type-C cable
         - 1

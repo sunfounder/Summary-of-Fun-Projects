@@ -1,8 +1,16 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+  🌟 Welcome to the SunFounder Facebook Community! Whether you're into Raspberry Pi, Arduino, or ESP32, you'll find inspiration, help ideas here.
+   
+  - ✅ Be the first to get free learning resources. 
+   
+  - ✅ Stay updated on new products & exclusive giveaways. 
+   
+  - ✅ Share your creations and get real feedback
+   
+  * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+  * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
 
 SunFounder Showcase of Creative Projects
 ======================================================================

@@ -113,7 +113,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **MPU6050** and install it.
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

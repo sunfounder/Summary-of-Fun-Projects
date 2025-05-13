@@ -144,7 +144,7 @@ In this project, we need the following components:
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
     * To install the library, use the Arduino Library Manager and search for **MFRC522** and install it.
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

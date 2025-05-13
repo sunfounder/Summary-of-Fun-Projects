@@ -68,7 +68,7 @@ In this project, we need the following components:
     *   - 1
         - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
         - 1
-        - |link_unor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -152,7 +152,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **LiquidCrystal I2C** and install it.
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

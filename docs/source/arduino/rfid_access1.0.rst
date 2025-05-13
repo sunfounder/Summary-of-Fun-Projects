@@ -133,7 +133,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * The ``RFID1`` library is used here. You can click here :download:`RFID1.zip </_static/RFID1.zip>` to download it.
-    * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
