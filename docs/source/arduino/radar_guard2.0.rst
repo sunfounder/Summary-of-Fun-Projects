@@ -11,7 +11,7 @@ Radar Guard 2.0
    
   - ✅ Stay updated on new products & exclusive giveaways. 
    
-  - ✅ Share your creations and get real feedback
+  - ✅ Share your creations and get real feedback.
    
   * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 

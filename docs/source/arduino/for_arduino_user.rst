@@ -52,5 +52,8 @@ We recommend that you read the chapters in order.
     color_memory
     tilt_led1.0
     tilt_led2.0
+    parking_sensor1.0
+    parking_sensor2.0
+    snake_game
 
 

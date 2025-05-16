@@ -11,7 +11,7 @@ Tilt LED 2.0
    
   - ✅ Stay updated on new products & exclusive giveaways. 
    
-  - ✅ Share your creations and get real feedback
+  - ✅ Share your creations and get real feedback.
    
   * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
@@ -39,9 +39,10 @@ The LEDs illuminate in response to X-axis tilt, visually indicating the board's 
 
 Tilt angles are continuously calculated from acceleration data provided by the MPU6050, and corresponding LEDs activate according to predefined angle thresholds.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/yu5bHYTUZGM?si=vAyT6zkDEDQUF-wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/OXlBMpb3I4w?si=rRUzFHYCo-mWYsns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 .. note::
 

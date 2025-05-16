@@ -11,7 +11,7 @@ Tilt LED 1.0
    
   - ✅ Stay updated on new products & exclusive giveaways. 
    
-  - ✅ Share your creations and get real feedback
+  - ✅ Share your creations and get real feedback.
    
   * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
@@ -37,9 +37,9 @@ In this lesson, you’ll learn how to use MPU6050 Module with the Arduino R3 to 
 
 In this setup, the number of lit LEDs will increase as the tilt angle of the MPU6050 increases.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/yu5bHYTUZGM?si=vAyT6zkDEDQUF-wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/begRxqybzGA?si=fvQztEa8NYXPeAe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

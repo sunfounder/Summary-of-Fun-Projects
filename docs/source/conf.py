@@ -981,6 +981,10 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/max7219-dot-matrix-module-4-in-1-display-red?ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_martix1_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/aceirmc-4pcs-max7219-dot-matrix-display-module-single-chip-control-led-module-diy-kit-for-arduino-with-5pin-line?_pos=2&_sid=05cd61096&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 .. |link_pir_buy| raw:: html
 
     <a href="https://www.sunfounder.com/products/hcsr501-human-sensor?ref=jbzmncle" target="_blank">BUY</a>
@@ -1052,6 +1056,10 @@ rst_epilog += """
 .. |link_trafficlinght_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/raspberrypi-kits/products/sunfounder-davinci-kit?ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_buzzer_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/3-3-5v-passive-low-level-trigger-buzzer-alarm-sound-module?_pos=4&_sid=e3e5d1051&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
 """
 

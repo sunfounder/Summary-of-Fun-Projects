@@ -11,7 +11,7 @@ Barrier Gate 2.0
    
   - ✅ Stay updated on new products & exclusive giveaways. 
    
-  - ✅ Share your creations and get real feedback
+  - ✅ Share your creations and get real feedback.
    
   * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
@@ -43,9 +43,9 @@ In this lesson, you'll learn how to use an ultrasonic sensor module, a digital s
 
 When the ultrasonic sensor module detects a vehicle, the traffic light will change from red to green, and the gate will rise, allowing the car to pass.
 
-.. .. raw:: html
+.. raw:: html
 
-..   <iframe width="700" height="394" src="https://www.youtube.com/embed/FlZ96qVv4mc?si=cBEi63uHd0QD7mHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/iHSgDp1uMHI?si=xqwuJeHBcI4jQSob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
