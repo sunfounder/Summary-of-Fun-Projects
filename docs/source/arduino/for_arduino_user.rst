@@ -34,6 +34,8 @@ We recommend that you read the chapters in order.
     mini_piano
     timer
     parking_sensor
+    parking_sensor1.0
+    parking_sensor2.0
     radar_guard1.0
     radar_guard2.0
     radar_guard3.0
@@ -52,8 +54,9 @@ We recommend that you read the chapters in order.
     color_memory
     tilt_led1.0
     tilt_led2.0
-    parking_sensor1.0
-    parking_sensor2.0
     snake_game
+    finger_count1.0
+    finger_count2.0
+    finger_count3.0
 
 

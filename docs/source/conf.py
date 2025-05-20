@@ -843,6 +843,10 @@ rst_epilog += """
 
     <a href="https://processing.org/" target="_blank">Processing IDE</a>    
     
+.. |link_python_down| raw:: html
+
+    <a href="https://wiki.python.org/moin/BeginnersGuide/Download" target="_blank">Python Installation Guide</a>    
+    
 """
 
 # Purchase links of components

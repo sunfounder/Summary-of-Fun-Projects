@@ -98,7 +98,7 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode** to negative power bus on the breadboard, and the LEDs **cathode** a **1kΩ resistor** then to the **2** to **13** on the Arduino.
+  - Connect the LEDs **cathode** to negative power bus on the breadboard, and the LEDs **anode** to a **1kΩ resistor** then to the **2** to **13** on the Arduino.
 
 **Writing the Code**
 

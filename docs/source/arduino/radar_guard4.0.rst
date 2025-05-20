@@ -42,9 +42,9 @@ The system scans the environment by rotating the ultrasonic sensor between 15 an
 
 If an object is detected within 15 cm, an LED lights up, and a buzzer sounds. The angle and distance data are sent to the serial port, allowing for real-time visualization using the Processing IDE.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/IIe3DMzaRSA?si=EmbqV2plsvQtJ3yr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/mwL0SaofQKU?si=6uADSqKKAXQwueh_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -111,7 +111,7 @@ In this project, we need the following components:
 
 * **LED**
 
-  - Connect the LEDs **anode**  tot the negative power bus on the breadboard, and the LEDs **cathode** to a **1kΩ resistor** then to **4** on the Arduino.
+  - Connect the LEDs **cathode**  tot the negative power bus on the breadboard, and the LEDs **anode** to a **1kΩ resistor** then to **4** on the Arduino.
 
 * **transistor**
 
