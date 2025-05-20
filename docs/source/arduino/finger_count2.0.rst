@@ -110,12 +110,12 @@ In this project, we need the following components:
 
 .. note::
 
-    1. You can copy the following code into **Arduino IDE**. 
-    2. Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
-    3. The python code ``FingerCountSender (3)`` is used here. You can click here :download:`FingerCountSender (3).zip </_static/FingerCountSender (3).zip>` to download it. 
+    1. Copy the following code into **Arduino IDE**. 
+    2. Select the board(Arduino UNO R4 Minima) and then clicking the **Upload** button.
+    3. Then use the Python code ``FingerCountSender (3)`` . You can click here :download:`FingerCountSender (3).zip </_static/FingerCountSender (3).zip>` to download it. 
     4. Update the Python script to use the correct serial port(COMx), ensuring it matches the one identified during Arduino setup(COMx).
         .. image:: img/port1.png
-
+    5. Then run the python code to open the camera window.
 .. code-block:: arduino
 
 

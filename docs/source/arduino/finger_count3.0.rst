@@ -122,13 +122,13 @@ In this project, we need the following components:
 
 .. note::
 
-    1. You can copy the following code into **Arduino IDE**. 
-    2. To install the library, use the Arduino Library Manager and search for **Servo.h** install it.
-    3. Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
-    4. The python code ``FingerCountSender(2)`` is used here. You can click here :download:`FingerCountSender(2).zip </_static/FingerCountSender(2).zip>` to download it. 
+    1. Copy the following code into **Arduino IDE**. 
+    2. Use the Arduino Library Manager and search for **Servo.h** install library.
+    3. Select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
+    4. Then use the Python code ``FingerCountSender(2)`` . You can click here :download:`FingerCountSender(2).zip </_static/FingerCountSender(2).zip>` to download it. 
     5. Update the Python script to use the correct serial port(COMx), ensuring it matches the one identified during Arduino setup(COMx).      
         .. image:: img/port1.png
-
+    6. Then run the python code to open the camera window.
 
 .. code-block:: arduino
 
