@@ -46,9 +46,9 @@ This code controls a series of LEDs on an Arduino Uno based on finger count data
 
 The LEDs are connected to digital pins 2 through 6, with the number of lit LEDs corresponding to the finger count detected by the Python script.
 
-.. .. raw:: html
+.. raw:: html
 
-..     <iframe width="700" height="394" src="https://www.youtube.com/embed/8icjpMEK3Sw?si=vs_wwppY6e1Bj1zH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/2rbsWhSfNDA?si=iHuHrFySY0r3VzWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

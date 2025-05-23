@@ -46,9 +46,9 @@ This project controls the LED matrix on an Arduino Uno R4 WiFi board based on fi
 The script detects the number of fingers shown to a camera and sends this data to the Arduino via serial communication(USB). 
 The Arduino then displays the corresponding number on the LED matrix.
 
-.. .. raw:: html
+.. raw:: html
 
-..     <iframe width="700" height="394" src="https://www.youtube.com/embed/8icjpMEK3Sw?si=vs_wwppY6e1Bj1zH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/DweLO80QhhU?si=t3BNiADJxvUzZU9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -58,5 +58,8 @@ We recommend that you read the chapters in order.
     finger_count1.0
     finger_count2.0
     finger_count3.0
+    distance_display
+    distance_display1.0
+    distance_display2.0
 
 
