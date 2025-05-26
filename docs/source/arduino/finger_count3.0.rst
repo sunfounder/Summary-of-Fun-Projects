@@ -48,9 +48,9 @@ Red and green LEDs indicate the gate status: by default, the gate is closed with
 
 This code controls the servo and LEDs on an Arduino Uno by receiving finger count data from a Python script, which detects the number of fingers shown to a camera and sends the data to the Arduino via serial communication.
 
-.. .. raw:: html
+.. raw:: html
 
-..     <iframe width="700" height="394" src="https://www.youtube.com/embed/8icjpMEK3Sw?si=vs_wwppY6e1Bj1zH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/bOnwkVaoTEU?si=6VFENS_TBymXktsi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

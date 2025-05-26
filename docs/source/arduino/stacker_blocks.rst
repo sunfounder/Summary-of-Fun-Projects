@@ -119,221 +119,355 @@ In this project, we need the following components:
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
-    * To install the library, use the Arduino Library Manager and search for **Adafruit SSD1306** and **Adafruit GFX** and install it.
+    * To install the library, use the Arduino Library Manager and search for **LedControl** and install it.
     * Don't forget to select the board(Arduino UNO R4 Minima) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
-      #include <Wire.h>
-      #include <Adafruit_GFX.h>
-      #include <Adafruit_SSD1306.h>
+      #include "LedControl.h"
 
-      #define SCREEN_WIDTH 128  // OLED screen width
-      #define SCREEN_HEIGHT 64  // OLED screen height
+      // Declare a LedControl object to control 4 LED matrices
+      // (dataPin = 6, clkPin = 5, csPin = 3, number of modules = 4)
+      LedControl lc = LedControl(6, 5, 3, 4);
 
-      #define OLED_RESET -1  // Reset pin for OLED (not used)
-      #define SCREEN_ADDRESS 0x3C  // OLED screen I2C address
-      Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+      // Function prototypes
+      void updateDisplay();
+      void updatePlacedBlockDisplay(int layerIndex);
+      bool checkButton();
+      void clearMovingBlock();
+      void displayMovingBlock();
+      void playSuccessSound();
+      void playGameOverSound();
+      void updateMaxPosition();
+      void placeBlock();
+      void displayLayer(int level);
 
-      // Pins for joystick and button
-      const int yPin = A1;  // Y-axis for joystick (up and down movement)
-      const int swPin = 8;   // Button for reset
+      // Constants: each block occupies 2 columns on the display
+      const int buttonPin = 11;    // Button pin for user input
+      const int buzzerPin = 9;     // Buzzer pin for sound effects (optional)
+      const int blockColumns = 2;  // Each block uses 2 columns
 
-      // Paddle properties
-      int paddleX;  // Paddle X position
-      const int paddleWidth = 30, paddleHeight = 3;  // Paddle size
-      const int brickRows = 3, brickCols = 6;  // Number of rows and columns of bricks
-      const int brickWidth = SCREEN_WIDTH / brickCols;  // Brick width
-      const int brickHeight = 5;  // Brick height
-      bool bricks[brickRows][brickCols];  // 2D array to track brick status
+      // Global variables
+      // The moving range is determined by the block's effective height (H).
+      // Allowed top positions are in the range [-H, 7+H].
+      int currentWidth = 4;      
+      int currentPos = -4;       // Initial top position for the moving block (starts at -currentWidth)
+      int direction = 1;         // Movement direction: 1 = moving down, -1 = moving up
+      int moveDelay = 150;       // Speed of block movement (in milliseconds)
+      bool gameOver = false;     
+      unsigned long lastMoveTime = 0; 
+      int maxPosition = 0;       // Maximum allowed top position (calculated as 7 + currentWidth)
+      int buttonPressCount = 0;  // Counts how many times the button has been pressed
+      int currentLayerCount = 0; // Number of layers (blocks) successfully placed
 
-      // Game settings
-      const int deadZone = 100;  // Joystick dead zone
-      const int speed = 8;  // Paddle speed
-      float ballSpeed = 3.0;  // Initial ball speed
-      bool gameOver = false;  // Game over flag
-      bool gameWin = false;  // Game win flag
+      // Structure for each block layer:
+      // Records the block's top position, height (number of lit rows),
+      // starting column on the LED matrix, and the number of columns it occupies.
+      struct BlockLayer {
+        int position;    // Top row index of this layer
+        int width;       // Height (number of rows lit) of this layer
+        int startCol;    // Starting column on the LED display
+        int colWidth;    // Number of columns occupied (always equal to blockColumns, i.e., 2)
+      };
 
-      // Ball properties
-      float ballX, ballY;  // Ball position
-      float ballDX, ballDY;  // Ball movement speed in X and Y
-      int hitCount = 0;  // Hit count (how many times the ball hits the paddle)
+      BlockLayer layers[32];  // Array to store up to 32 layers
 
-      void setup() {
-        pinMode(swPin, INPUT_PULLUP);  // Set button pin as input with pull-up resistor
-        Serial.begin(9600);  // Start serial communication for debugging
-        randomSeed(analogRead(A2));  // Initialize random seed using unconnected analog pin
-
-        // Initialize OLED display
-        if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-          Serial.println(F("SSD1306 allocation failed"));
-          for (;;);  // Stay here if the display initialization fails
+      // Global refresh: redraw the entire display (used when resetting or on game over)
+      void updateDisplay() {
+        // Clear all 4 LED modules
+        for (int i = 0; i < 4; i++) {
+          lc.clearDisplay(i);
         }
-
-        resetGame();  // Reset game state when setup is done
-      }
-
-      void loop() {
-        if (gameOver || gameWin) {  // Show game over or win screen if the game is over
-          showGameOverScreen();
-          return;
-        }
-
-        int yValue = analogRead(yPin);  // Read joystick Y-axis value
-        
-        // Move paddle based on joystick value
-        if (abs(yValue - 512) > deadZone) {  
-          if (yValue < 400) paddleX -= speed;  // Move paddle left
-          else if (yValue > 600) paddleX += speed;  // Move paddle right
-        }
-        
-        paddleX = constrain(paddleX, 0, SCREEN_WIDTH - paddleWidth);  // Prevent paddle from going off-screen
-
-        // Update ball position
-        int oldBallX = ballX;
-        int oldBallY = ballY;
-        ballX += ballDX;
-        ballY += ballDY;
-
-        // Ball boundary checks
-        if (ballX <= 0 || ballX >= SCREEN_WIDTH - 2) ballDX = -ballDX;  // Reflect ball if it hits left or right
-        if (ballY <= 0) ballDY = -ballDY;  // Reflect ball if it hits top
-
-        // Paddle collision check
-        if (ballY >= SCREEN_HEIGHT - paddleHeight - 1 && ballX >= paddleX && ballX <= paddleX + paddleWidth) {
-          ballDY = -ballDY;  // Reflect ball vertically
-          hitCount++;  // Increment hit count
-          
-          // Increase ball speed based on hit count
-          if (hitCount == 2) ballSpeed = 4.0;
-          if (hitCount == 4) ballSpeed = 5.0;
-          if (hitCount == 6) ballSpeed = 6.0;  // Max speed at hit 6
-
-          ballSpeed = min(ballSpeed, 6.0);  // Ensure ball speed doesn't exceed max value
-          normalizeBallSpeed();  // Normalize ball speed
-        }
-
-        // Check for brick collision
-        int remainingBricks = 0;
-        for (int i = 0; i < brickRows; i++) {
-          for (int j = 0; j < brickCols; j++) {
-            if (bricks[i][j]) {
-              remainingBricks++;
-              int brickX = j * brickWidth;
-              int brickY = i * brickHeight;
-
-              // Check if ball hits the brick
-              bool hitX = (ballX + 2 >= brickX && ballX - 2 <= brickX + brickWidth);
-              bool hitY = (ballY + 2 >= brickY && ballY - 2 <= brickY + brickHeight);
-
-              if (hitX && hitY) {
-                bricks[i][j] = false;  // Remove brick if hit
-                
-                // Reflect ball direction based on collision side
-                if (oldBallX < brickX || oldBallX > brickX + brickWidth) {
-                  ballDX = -ballDX;  // Reflect ball horizontally
-                }
-                if (oldBallY < brickY || oldBallY > brickY + brickHeight) {
-                  ballDY = -ballDY;  // Reflect ball vertically
-                }
-
-                normalizeBallSpeed();  // Normalize ball speed after collision
-                break;
+        // Draw all placed layers (the fixed blocks)
+        for (int i = 0; i < currentLayerCount; i++) {
+          int startCol = layers[i].startCol;
+          int colWidth = layers[i].colWidth;
+          for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+            int currentCol = startCol + colOffset;
+            // Calculate which LED module and column within that module
+            int module = currentCol / 8;
+            int col = 7 - (currentCol % 8);  // Note: columns are reversed within each module
+            if (module >= 4) continue;  // Skip if out of bounds
+            // Draw the block (each layer's height)
+            for (int j = 0; j < layers[i].width; j++) {
+              int row = layers[i].position + j;
+              if (row >= 0 && row < 8) {
+                lc.setLed(module, row, col, true);
               }
             }
           }
         }
-
-        if (remainingBricks == 0) {  // If all bricks are cleared, the player wins
-          gameWin = true;
-        }
-
-        if (ballY > SCREEN_HEIGHT) {  // If ball falls below screen, the game is over
-          gameOver = true;
-        }
-
-        drawGame();  // Draw updated game state on screen
-        delay(10);  // Delay to control game speed
-      }
-
-      // Reset game state
-      void resetGame() {
-        gameOver = false;
-        gameWin = false;
-        
-        // Reset paddle position
-        paddleX = SCREEN_WIDTH / 2 - paddleWidth / 2;
-
-        // Reset ball position
-        ballX = SCREEN_WIDTH / 2;
-        ballY = SCREEN_HEIGHT / 2;
-
-        // Reset speed and hit count
-        ballSpeed = 3.0;
-        hitCount = 0;
-
-        // Random ball direction
-        float angle;
-        if (random(0, 2) == 0) {
-          angle = random(30, 60);  // Angle between 30° and 60°
-        } else {
-          angle = random(120, 150); // Angle between 120° and 150°
-        }
-
-        // Calculate ball velocity based on random angle
-        ballDX = ballSpeed * cos(radians(angle));
-        ballDY = -ballSpeed * sin(radians(angle));  // Ball moves upwards initially
-
-        // Initialize all bricks as present
-        for (int i = 0; i < brickRows; i++) {
-          for (int j = 0; j < brickCols; j++) {
-            bricks[i][j] = true;
-          }
-        }
-        drawGame();  // Draw initial game state
-      }
-
-      // Normalize ball speed to maintain consistent speed after reflections
-      void normalizeBallSpeed() {
-        float magnitude = sqrt(ballDX * ballDX + ballDY * ballDY);  // Calculate the ball's current speed
-        ballDX = (ballDX / magnitude) * ballSpeed;  // Adjust X speed
-        ballDY = (ballDY / magnitude) * ballSpeed;  // Adjust Y speed
-      }
-
-      // Draw the current game state to the OLED screen
-      void drawGame() {
-        display.clearDisplay();  // Clear previous frame
-        display.fillRect(paddleX, SCREEN_HEIGHT - paddleHeight, paddleWidth, paddleHeight, WHITE);  // Draw paddle
-        display.fillCircle(ballX, ballY, 2, WHITE);  // Draw ball
-
-        // Draw remaining bricks
-        for (int i = 0; i < brickRows; i++) {
-          for (int j = 0; j < brickCols; j++) {
-            if (bricks[i][j]) {
-              display.fillRect(j * brickWidth, i * brickHeight, brickWidth - 1, brickHeight - 1, WHITE);
+        // If the game is not over, draw the currently moving block
+        if (!gameOver) {
+          int startCol = currentLayerCount * blockColumns; // New block's starting column
+          int colWidth = blockColumns;
+          for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+            int currentCol = startCol + colOffset;
+            int module = currentCol / 8;
+            int col = 7 - (currentCol % 8);
+            if (module >= 4) continue;
+            for (int j = 0; j < currentWidth; j++) {
+              int row = currentPos + j;
+              if (row >= 0 && row < 8) {
+                lc.setLed(module, row, col, true);
+              }
             }
           }
         }
-
-        display.display();  // Update display
       }
 
-      // Display game over or win screen
-      void showGameOverScreen() {
-        display.clearDisplay();
-        display.setTextSize(2);  // Larger text for game over message
-        display.setTextColor(WHITE);
-        display.setCursor(20, 30);  // Position message on screen
-        if (gameWin) {
-          display.println("You Win!");  // Display "You Win!" if player won
-        } else {
-          display.println("Game Over");  // Display "Game Over" if player lost
+      // Local refresh: update the display for a specific placed layer
+      // It clears the designated columns first and then redraws the block for that layer.
+      void updatePlacedBlockDisplay(int layerIndex) {
+        int startCol = layers[layerIndex].startCol;
+        int colWidth = layers[layerIndex].colWidth;
+        for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+          int currentCol = startCol + colOffset;
+          int module = currentCol / 8;
+          int col = 7 - (currentCol % 8);
+          if (module >= 4) continue;
+          // Clear the entire column
+          for (int row = 0; row < 8; row++) {
+            lc.setLed(module, row, col, false);
+          }
+          // Redraw only the rows corresponding to this block layer
+          for (int j = 0; j < layers[layerIndex].width; j++) {
+            int row = layers[layerIndex].position + j;
+            if (row >= 0 && row < 8) {
+              lc.setLed(module, row, col, true);
+            }
+          }
         }
-        display.display();
-
-        while (digitalRead(swPin) == HIGH);  // Wait for button press to reset game
-        delay(500);  // Debounce delay
-        resetGame();  // Reset game
       }
 
+      // Debounce and check if the button is pressed
+      bool checkButton() {
+        if (digitalRead(buttonPin) == LOW) {
+          delay(20);  // Short delay to debounce
+          if (digitalRead(buttonPin) == LOW) {
+            while (digitalRead(buttonPin) == LOW) { }  // Wait until button is released
+            return true;
+          }
+        }
+        return false;
+      }
 
+      // Display a specific placed layer (by level index) on the LED matrix
+      void displayLayer(int level) {
+        int startCol = layers[level].startCol;
+        int colWidth = layers[level].colWidth;
+        for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+          int currentCol = startCol + colOffset;
+          int module = currentCol / 8;
+          int col = 7 - (currentCol % 8);
+          if (module >= 4) continue;
+          for (int j = 0; j < layers[level].width; j++) {
+            int row = layers[level].position + j;
+            if (row >= 0 && row < 8) {
+              lc.setLed(module, row, col, true);
+            }
+          }
+        }
+      }
+
+      // Draw the moving block on the LED matrix
+      void displayMovingBlock() {
+        int startCol = currentLayerCount * blockColumns;
+        int colWidth = blockColumns;
+        for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+          int currentCol = startCol + colOffset;
+          int module = currentCol / 8;
+          int col = 7 - (currentCol % 8);
+          if (module >= 4) continue;
+          for (int j = 0; j < currentWidth; j++) {
+            int row = currentPos + j;
+            if (row >= 0 && row < 8) {
+              lc.setLed(module, row, col, true);
+            }
+          }
+        }
+      }
+
+      // Clear the moving block from the display (turn off its LEDs)
+      void clearMovingBlock() {
+        int startCol = currentLayerCount * blockColumns;
+        int colWidth = blockColumns;
+        for (int colOffset = 0; colOffset < colWidth; colOffset++) {
+          int currentCol = startCol + colOffset;
+          int module = currentCol / 8;
+          int col = 7 - (currentCol % 8);
+          if (module >= 4) continue;
+          for (int j = 0; j < currentWidth; j++) {
+            int row = currentPos + j;
+            if (row >= 0 && row < 8) {
+              lc.setLed(module, row, col, false);
+            }
+          }
+        }
+      }
+
+      // Play a sound effect for a successful block placement
+      void playSuccessSound() {
+        tone(buzzerPin, 523, 100);
+      }
+
+      // Play a sound effect to indicate game over
+      void playGameOverSound() {
+        tone(buzzerPin, 392, 200);
+        delay(200);
+        tone(buzzerPin, 349, 400);
+        delay(400);
+      }
+
+      // Update the maximum allowed top position based on the current block height
+      // Allowed range for the top is [-currentWidth, 7+currentWidth]
+      void updateMaxPosition() {
+        maxPosition = 7 + currentWidth;
+      }
+
+      // Place the current moving block onto the stack and calculate its overlap with the previous block
+      void placeBlock() {
+        buttonPressCount++;
+        // Speed up movement as more blocks are placed
+        if (buttonPressCount == 4) {
+          moveDelay = 120;
+        } else if (buttonPressCount == 8) {
+          moveDelay = 90;
+        } else if (buttonPressCount == 12) {
+          moveDelay = 60;
+        }
+        
+        // Special handling for the first block: no previous block exists
+        if (currentLayerCount == 0) {
+          layers[0].position = currentPos;
+          layers[0].width = currentWidth;
+          layers[0].startCol = 0;
+          layers[0].colWidth = blockColumns;
+          currentLayerCount = 1;
+          
+          updateMaxPosition();
+          // Generate a new random top position within allowed range for the next block
+          currentPos = random(-currentWidth, maxPosition + 1);
+          
+          playSuccessSound();
+          updatePlacedBlockDisplay(0);
+          return;
+        }
+        
+        // For subsequent blocks, calculate the overlapping region with the last placed block
+        int prevPos = layers[currentLayerCount - 1].position;
+        int prevWidth = layers[currentLayerCount - 1].width;
+        int overlapTop = max(prevPos, currentPos);
+        int overlapBottom = min(prevPos + prevWidth - 1, currentPos + currentWidth - 1);
+        
+        // If there is no overlap, the game is over
+        if (overlapBottom < overlapTop) {
+          clearMovingBlock();
+          gameOver = true;
+          playGameOverSound();
+          return;
+        }
+        
+        // Save the overlapping region as the new block layer
+        layers[currentLayerCount].position = overlapTop;
+        layers[currentLayerCount].width = overlapBottom - overlapTop + 1;
+        layers[currentLayerCount].startCol = currentLayerCount * blockColumns;
+        layers[currentLayerCount].colWidth = blockColumns;
+        
+        // Update the moving block's effective height and increase layer count
+        currentWidth = overlapBottom - overlapTop + 1;
+        currentLayerCount++;
+        
+        playSuccessSound();
+        
+        int totalUsedCols = currentLayerCount * blockColumns;
+        // If the display is full (using 32 or more columns), end the game
+        if (totalUsedCols >= 32) { 
+          gameOver = true;
+          return;
+        }
+        
+        updateMaxPosition();
+        // Set a new random top position for the next moving block
+        currentPos = random(-currentWidth, maxPosition + 1);
+        
+        updatePlacedBlockDisplay(currentLayerCount - 1);
+      }
+
+      void setup() {
+        // Initialize button and buzzer pins
+        pinMode(buttonPin, INPUT_PULLUP);
+        pinMode(buzzerPin, OUTPUT);
+        
+        // Initialize each LED matrix module
+        for (int i = 0; i < 4; i++) {
+          lc.shutdown(i, false);
+          lc.setIntensity(i, 8);
+          lc.clearDisplay(i);
+        }
+        
+        currentLayerCount = 0;
+        currentPos = -currentWidth;
+        randomSeed(analogRead(0));  // Seed random number generator
+        updateMaxPosition();
+        updateDisplay();
+      }
+
+      void loop() {
+        // Handle game over state with blinking display
+        if (gameOver) {
+          static bool blinkState = false;
+          static unsigned long lastBlinkTime = 0;
+          if (millis() - lastBlinkTime > 500) {
+            lastBlinkTime = millis();
+            blinkState = !blinkState;
+            if (blinkState) {
+              updateDisplay();
+            } else {
+              // Clear display to create blink effect
+              for (int i = 0; i < 4; i++) {
+                lc.clearDisplay(i);
+              }
+            }
+          }
+          // If the button is pressed during game over, reset the game
+          if (checkButton()) {
+            gameOver = false;
+            currentLayerCount = 0;
+            currentWidth = 4;
+            currentPos = -currentWidth;
+            moveDelay = 150;
+            direction = 1;
+            buttonPressCount = 0;
+            updateMaxPosition();
+            updateDisplay();
+          }
+          return;
+        }
+        
+        // Main game loop: update moving block position based on timing
+        unsigned long currentTime = millis();
+        if (currentTime - lastMoveTime > moveDelay) {
+          lastMoveTime = currentTime;
+          clearMovingBlock();
+          currentPos += direction;
+          // Edge detection using a reflection method:
+          // When reaching the top or bottom boundary, reverse the moving direction.
+          if (currentPos < -currentWidth) {
+            int overshoot = (-currentWidth) - currentPos;
+            currentPos = -currentWidth + overshoot;
+            direction = -direction;
+          } else if (currentPos > maxPosition) {
+            int overshoot = currentPos - maxPosition;
+            // For the bottom boundary, adjust by subtracting an extra (currentWidth - 1)
+            currentPos = maxPosition - overshoot - (currentWidth - 1);
+            direction = -direction;
+          }
+          displayMovingBlock();
+        }
+        
+        // Check if the button is pressed to place the block
+        if (checkButton()) {
+          placeBlock();
+        }
+      }
