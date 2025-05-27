@@ -1065,5 +1065,13 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/3-3-5v-passive-low-level-trigger-buzzer-alarm-sound-module?_pos=4&_sid=e3e5d1051&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_photoresistor_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/photoresistor-sensor-module-1?_pos=4&_sid=bf447767a&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_IR_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/ir-obstacle-avoidance-sensor-module?_pos=1&_sid=d2a369c83&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 

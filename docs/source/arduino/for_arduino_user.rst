@@ -61,5 +61,8 @@ We recommend that you read the chapters in order.
     distance_display
     distance_display1.0
     distance_display2.0
+    controll_eyes
+    light_tracing
+    speed_detection
 
 
