@@ -64,5 +64,8 @@ We recommend that you read the chapters in order.
     controll_eyes
     light_tracing
     speed_detection
+    servo_control
+    object_detection
+    tempmumid_monitor
 
 

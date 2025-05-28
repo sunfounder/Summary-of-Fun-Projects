@@ -897,6 +897,10 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/10pcs-10k-ohm-trim-potentiometer-breadboard?ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_potentiometer_sensor_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/potentiometer-sensor-module?_pos=14&_sid=abe6d8d26&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 .. |link_photoresistor_buy| raw:: html
 
     <a href="https://www.sunfounder.com/products/100pcs-photoresistor-photo-light-sensitive-resistor-5516?ref=jbzmncle" target="_blank">BUY</a>
@@ -1072,6 +1076,10 @@ rst_epilog += """
 .. |link_IR_module_buy| raw:: html
 
     <a href="https://www.sunfounder.com/products/ir-obstacle-avoidance-sensor-module?_pos=1&_sid=d2a369c83&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_dht11m_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/dht11-temperature-and-humidity-sensor-module?_pos=3&_sid=e431bea69&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
 """
 
