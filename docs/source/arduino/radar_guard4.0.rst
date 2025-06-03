@@ -102,6 +102,10 @@ In this project, we need the following components:
         - Transistor
         - 1(S8050)
         - |link_transistor_buy|
+    *   - 10
+        - 1kΩ resistor
+        - 2
+        - |link_resistor_buy|
 
 **Wiring**
 

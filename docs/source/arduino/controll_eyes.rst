@@ -45,9 +45,9 @@ The eyes track the joystick's movement, simulating the effect of following an ob
 
 Pressing the joystick button triggers a blinking animation that mimics a natural blink by covering the upper part of the eyes.
 
-.. .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/HheaU9hlbW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/FmRoRYiCy1s?si=Pk_Sj_Jo5-23X_Lv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -1081,5 +1081,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/dht11-temperature-and-humidity-sensor-module?_pos=3&_sid=e431bea69&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_laser_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/vl53l0x-time-of-flight-distance-sensor-laser-ranging-module?_pos=1&_sid=ff37b4eb5&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 

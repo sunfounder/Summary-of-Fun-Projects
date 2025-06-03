@@ -40,6 +40,7 @@ We recommend that you read the chapters in order.
     radar_guard2.0
     radar_guard3.0
     radar_guard4.0
+    radar_guard5.0
     barrier_gate1.0
     barrier_gate2.0
     trash_can
@@ -67,5 +68,6 @@ We recommend that you read the chapters in order.
     servo_control
     object_detection
     tempmumid_monitor
+    lidar_guard
 
 
