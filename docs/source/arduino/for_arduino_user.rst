@@ -28,6 +28,7 @@ We recommend that you read the chapters in order.
     smart_stop2.0
     velocity_view
     dino_run
+    dino_run2.0
     brick_breaker
     stacker_blocks
     light_play
@@ -64,10 +65,13 @@ We recommend that you read the chapters in order.
     distance_display2.0
     controll_eyes
     light_tracing
+    light_tracker2.0
     speed_detection
     servo_control
     object_detection
     tempmumid_monitor
     lidar_guard
+    heart_rate_monitor
+    angle_controller
 
 

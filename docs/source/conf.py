@@ -1085,5 +1085,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/vl53l0x-time-of-flight-distance-sensor-laser-ranging-module?_pos=1&_sid=ff37b4eb5&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_heart_rate_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/max30102-heart-rate-sensor-module-pulse-detection-blood-oxygen-concentration-module?_pos=5&_sid=c1ba89228&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
