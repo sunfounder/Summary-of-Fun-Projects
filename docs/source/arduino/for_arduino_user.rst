@@ -73,5 +73,8 @@ We recommend that you read the chapters in order.
     lidar_guard
     heart_rate_monitor
     angle_controller
+    tetris1.0
+    parking_lot
+    night_light
 
 
