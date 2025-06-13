@@ -1089,5 +1089,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/max30102-heart-rate-sensor-module-pulse-detection-blood-oxygen-concentration-module?_pos=5&_sid=c1ba89228&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_rotary_encoder_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/rotary-encoder-module?_pos=1&_sid=7d0029461&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 

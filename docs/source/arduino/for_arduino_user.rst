@@ -76,5 +76,8 @@ We recommend that you read the chapters in order.
     tetris1.0
     parking_lot
     night_light
+    servo_tuner
+    bird_dash
+    disarm_timer
 
 

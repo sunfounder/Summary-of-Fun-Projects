@@ -46,9 +46,9 @@ This Arduino project uses two photoresistors (LDRs) to detect light direction an
 
 The servo turns smoothly toward the side with brighter light, allowing the system to follow changes in lighting. By adjusting the target angle gradually, the code ensures stable and jitter-free movement. This setup is great for building light-seeking robots or automatic sun trackers.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/A4v7QJxjU-4?si=s6P6bt19Kos_pYKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/_zZuwgufLBg?si=rKH3jqE-_4YTWAet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
