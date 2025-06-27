@@ -1093,5 +1093,13 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/rotary-encoder-module?_pos=1&_sid=7d0029461&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_gas_leak_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/mq-2-gas-sensor-module?_pos=2&_sid=a51b3ea43&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_vibration_switch_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/sw-420-vibration-switch-sensor-module?_pos=3&_sid=2fbcbcfcb&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 

@@ -45,9 +45,9 @@ The game displays obstacles and a bird character on the LCD. Press the button to
 
 Each successful dodge increases your score, while collisions reduce your lives. The buzzer sounds for each collision, and your final score is shown when the game ends.
 
-.. .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/tXVDkziwIbU?si=KxsVHx-1tClx8HN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/wFdMX5EsAMI?si=IHS4aKM4SlghFS5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -67,11 +67,13 @@ We recommend that you read the chapters in order.
     light_tracing
     light_tracker2.0
     speed_detection
+    speed_detection2.0
     servo_control
     object_detection
     tempmumid_monitor
     lidar_guard
     heart_rate_monitor
+    heart_rate_monitor2.0
     angle_controller
     tetris1.0
     parking_lot
@@ -79,5 +81,9 @@ We recommend that you read the chapters in order.
     servo_tuner
     bird_dash
     disarm_timer
+    gas_leak_monitor
+    digital_dice
+    digital_dice2.0
+
 
 
