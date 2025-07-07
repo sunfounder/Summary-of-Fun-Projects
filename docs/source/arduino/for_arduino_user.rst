@@ -49,6 +49,7 @@ We recommend that you read the chapters in order.
     rfid_access2.0
     rfid_Jukebox
     water_level
+    water_level2.0
     pong_game
     lamb_run
     light_show
@@ -84,6 +85,8 @@ We recommend that you read the chapters in order.
     gas_leak_monitor
     digital_dice
     digital_dice2.0
+    traffic_light
+    rgb_controll
 
 
 

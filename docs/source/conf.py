@@ -1101,5 +1101,13 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/sw-420-vibration-switch-sensor-module?_pos=3&_sid=2fbcbcfcb&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_4segment_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/0-36-4-digit-segment-display-module-red-common-anode-tm1637-drive-chip-clock-display?_pos=4&_sid=42484686d&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_rgbled_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/100pcs-5mm-4-pin-rgb-common-cathode-led?_pos=3&_sid=844ae96f0&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
