@@ -78,6 +78,7 @@ We recommend that you read the chapters in order.
     angle_controller
     tetris1.0
     parking_lot
+    parking_lot2.0
     night_light
     servo_tuner
     bird_dash
