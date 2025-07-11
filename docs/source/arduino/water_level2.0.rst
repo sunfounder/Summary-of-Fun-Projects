@@ -121,50 +121,38 @@ In this project, we need the following components:
 
 .. code-block:: arduino
 
-      // RGB LED pins
-      const int redPin = 9;
-      const int greenPin = 10;
-      const int bluePin = 11;
+      // LED pin array
+      const int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};
+      const int numLEDs = 8;
 
-      // Potentiometer pin
-      const int potPin = A0;
+      // Water level sensor analog input pin
+      const int sensorPin = A0;
 
       void setup() {
-        pinMode(redPin, OUTPUT);
-        pinMode(greenPin, OUTPUT);
-        pinMode(bluePin, OUTPUT);
         Serial.begin(9600);
+        // Set all LED pins as output
+        for (int i = 0; i < numLEDs; i++) {
+          pinMode(ledPins[i], OUTPUT);
+        }
       }
 
       void loop() {
-        // Read potentiometer value (0–1023)
-        int potValue = analogRead(potPin);
-        Serial.println(potValue);
+        // Read the water level sensor value (0~1023)
+        int sensorValue = analogRead(sensorPin);
+        Serial.print("Water level analog value: ");
+        Serial.println(sensorValue);
 
-        // Map the potentiometer value to 0–765 range for color blending
-        int range = map(potValue, 0, 1023, 0, 765);
+        // Map the analog value to number of LEDs (0~8)
+        int level = map(sensorValue, 0, 450, 0, numLEDs);
 
-        int r = 0, g = 0, b = 0;
-
-        // Blend RGB colors based on range
-        if (range <= 255) {
-          r = 255;
-          g = range;
-          b = 0;
-        } else if (range <= 510) {
-          r = 510 - range;
-          g = 255;
-          b = range - 255;
-        } else {
-          r = 0;
-          g = 765 - range;
-          b = 255;
+        // Turn on LEDs according to the water level
+        for (int i = 0; i < numLEDs; i++) {
+          if (i < level) {
+            digitalWrite(ledPins[i], HIGH);
+          } else {
+            digitalWrite(ledPins[i], LOW);
+          }
         }
 
-        // Set RGB LED color
-        analogWrite(redPin, 255 - r);   // Inverted for common cathode
-        analogWrite(greenPin, 255 - g);
-        analogWrite(bluePin, 255 - b);
-
-        delay(20);
+        delay(500);  // Delay before next update
       }
