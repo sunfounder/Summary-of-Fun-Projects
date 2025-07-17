@@ -25,7 +25,7 @@ It features videos, circuit diagrams, code, and kit purchase links for you to ex
 
 .. raw:: html
 
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/dR2yjj93IMI?si=dJ7DFbPt91WtvRsh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/KhykWpreP3g?si=VdRY76-3Ayv7cCx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Content**
 

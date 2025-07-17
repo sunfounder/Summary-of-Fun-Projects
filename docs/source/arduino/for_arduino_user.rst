@@ -44,9 +44,11 @@ We recommend that you read the chapters in order.
     radar_guard5.0
     barrier_gate1.0
     barrier_gate2.0
+    barrier_gate3.0
     trash_can
     rfid_access1.0
     rfid_access2.0
+    rfid_access3.0
     rfid_Jukebox
     water_level
     water_level2.0
@@ -88,6 +90,6 @@ We recommend that you read the chapters in order.
     digital_dice2.0
     traffic_light
     rgb_controll
-
+    calculator
 
 

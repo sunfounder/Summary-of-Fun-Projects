@@ -41,9 +41,9 @@ Course Introduction
 
 This program simulates a dice roll using an OLED display. The simulation is triggered by shaking the vibration switch, causing the display to cycle through numbers 1 to 6, akin to rolling a dice. The display halts after a short duration, revealing a randomly selected number that represents the dice roll outcome.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/KkPsawETYfg?si=4nMpy4ZNZjKVSooc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/Bvw7VVmUPvQ?si=EGGC9uoyRcbL6nZ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

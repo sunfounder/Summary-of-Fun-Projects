@@ -43,9 +43,9 @@ In this project, you'll use an Arduino board, an ultrasonic sensor, a servo moto
 
 The system automatically opens the gate for incoming vehicles, tracks the number of cars, and uses LEDs and a buzzer to indicate when the lot is full. A reset button allows manual system control for testing or restarting.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/R3Zpc3-IgRw?si=1kxl8c-d22eUEGFj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/vqSj8SmrrQA?si=yGg-yv0ou2zxbBvL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
