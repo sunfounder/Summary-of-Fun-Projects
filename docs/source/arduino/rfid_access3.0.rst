@@ -38,9 +38,9 @@ Course Introduction
 
 In this lesson, we’ll build a 3.0 access-control system using the MFRC522 module, a 1602 LCD, a digital servo motor, and an active buzzer. 
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/XP2OF9M9UCs?si=iL6X316rgUh9h8B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/NTM_WniSmV4?si=Nauil7ME5hYNHTgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

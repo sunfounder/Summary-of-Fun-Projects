@@ -91,5 +91,8 @@ We recommend that you read the chapters in order.
     traffic_light
     rgb_controll
     calculator
+    dodge_game
+    catch_game
+    auto_pump
 
 
