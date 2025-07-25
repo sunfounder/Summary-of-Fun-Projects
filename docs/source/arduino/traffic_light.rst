@@ -92,6 +92,10 @@ In this project, we need the following components:
         - 1
         - |link_trafficlinght_buy|
 
+**Wiring**
+
+.. image:: img/traffic_light_bb.png
+
 **Common Connections:**
 
 * **Traffic light LED**

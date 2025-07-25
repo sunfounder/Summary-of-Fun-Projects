@@ -89,10 +89,14 @@ We recommend that you read the chapters in order.
     digital_dice
     digital_dice2.0
     traffic_light
+    traffic_light2.0
     rgb_controll
     calculator
     dodge_game
     catch_game
     auto_pump
+    detect_fall
+    speed_meter
+    
 
 
