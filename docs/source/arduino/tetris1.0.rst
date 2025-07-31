@@ -207,18 +207,16 @@ In this project, we need the following components:
         if (checkCollision(current.x, current.y)) gameOver();
       }
 
-      // === 修改后的控制逻辑 ===
       void handleInput() {
         int x = analogRead(VRx);
         int y = analogRead(VRy);
 
-        // 控制左右反转
         if (x < 400) { 
-          moveBlock(1, 0);   // 拨动左，向右移动
+          moveBlock(1, 0);   
           delay(150);
         }
         else if (x > 600) {
-          moveBlock(-1, 0);  // 拨动右，向左移动
+          moveBlock(-1, 0);  
           delay(150);
         }
 
@@ -229,7 +227,6 @@ In this project, we need the following components:
           delay(200);
         }
       }
-      // === 修改结束 ===
 
       bool moveBlock(int dx, int dy) {
         if (!checkCollision(current.x + dx, current.y + dy)) {

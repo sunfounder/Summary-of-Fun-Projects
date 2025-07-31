@@ -93,10 +93,13 @@ We recommend that you read the chapters in order.
     rgb_controll
     calculator
     dodge_game
+    dodge_ball2.0
     catch_game
     auto_pump
     detect_fall
     speed_meter
-    
-
-
+    morse_code
+    speed_dial
+    speed_test    
+    stair_light
+    tetris2.0

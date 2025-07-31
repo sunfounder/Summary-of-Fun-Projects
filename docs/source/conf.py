@@ -1109,5 +1109,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/100pcs-5mm-4-pin-rgb-common-cathode-led?_pos=3&_sid=844ae96f0&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_potentiometer_module_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/potentiometer-sensor-module?_pos=1&_sid=0d5511a23&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
