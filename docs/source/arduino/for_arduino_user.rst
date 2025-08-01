@@ -42,6 +42,7 @@ We recommend that you read the chapters in order.
     radar_guard3.0
     radar_guard4.0
     radar_guard5.0
+    radar_guard6.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -103,3 +104,4 @@ We recommend that you read the chapters in order.
     speed_test    
     stair_light
     tetris2.0
+    height_measure

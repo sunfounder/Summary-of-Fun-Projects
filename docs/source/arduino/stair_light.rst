@@ -42,6 +42,7 @@ Course Introduction
 In this lesson, you'll use a PIR motion sensor, an LED, and a button with the Arduino R4 UNO to build a smart lighting system with three operating modes.
 
 The system can automatically turn on the LED when motion is detected, keep it always on, or keep it always off. A single button toggles between these modes, and the LED behavior updates accordingly.
+
 .. .. raw:: html
 
 .. <iframe width="700" height="394" src="https://www.youtube.com/embed/frHJHmXgnK4?si=iCaX_KMK4dy8d3KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
