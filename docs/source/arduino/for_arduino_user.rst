@@ -105,3 +105,7 @@ We recommend that you read the chapters in order.
     stair_light
     tetris2.0
     height_measure
+    rotary_sprinkler
+    bitfriend
+    accel3d
+    pocket_arcade
