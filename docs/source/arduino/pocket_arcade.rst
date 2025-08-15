@@ -43,9 +43,9 @@ In this lesson, you'll use an OLED display, input controls, and a game manager s
 
 Players interact through button inputs to control on-screen actions, while the game manager updates the gameplay at ~60 FPS. The system includes an intro screen, high-score tracking, and smooth frame rendering for an engaging experience.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/KkPsawETYfg?si=4nMpy4ZNZjKVSooc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/5Ffx7GOlzAQ?si=zqjBCQe5VAswgRL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

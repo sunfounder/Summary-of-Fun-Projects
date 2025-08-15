@@ -30,7 +30,9 @@ We recommend that you read the chapters in order.
     dino_run
     dino_run2.0
     brick_breaker
+    brick_breaker2.0
     stacker_blocks
+    stacker_blocks2.0
     light_play
     mini_piano
     timer
@@ -61,6 +63,7 @@ We recommend that you read the chapters in order.
     tilt_led1.0
     tilt_led2.0
     snake_game
+    snake_game2.0
     finger_count1.0
     finger_count2.0
     finger_count3.0
@@ -80,6 +83,8 @@ We recommend that you read the chapters in order.
     heart_rate_monitor2.0
     angle_controller
     tetris1.0
+    tetris2.0
+    tetris3.0
     parking_lot
     parking_lot2.0
     night_light
@@ -103,9 +108,10 @@ We recommend that you read the chapters in order.
     speed_dial
     speed_test    
     stair_light
-    tetris2.0
     height_measure
     rotary_sprinkler
     bitfriend
     accel3d
     pocket_arcade
+    tug_of_war
+    whac_a_mole

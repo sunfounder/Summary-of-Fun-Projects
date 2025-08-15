@@ -43,9 +43,9 @@ In this lesson, you'll use an MPU6050 motion sensor, an OLED display, and a butt
 
 By tilting the device, you can monitor live accelerometer data and watch a cube or pyramid rotate on the screen. Pressing the button switches between the two shapes, while real-time plots display X and Y acceleration values for visual feedback.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/KkPsawETYfg?si=4nMpy4ZNZjKVSooc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/Aib8NaxOv9k?si=q3EPr0uSZNWJCsaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

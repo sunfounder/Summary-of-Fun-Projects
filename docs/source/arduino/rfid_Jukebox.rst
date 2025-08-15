@@ -33,7 +33,7 @@ RFID Jukebox
 Course Introduction
 ------------------------
 
-n this lesson, we’ll build a Jukebox using an MFRC522 module, an LED strip, and a passive buzzer. 
+In this lesson, we’ll build a Jukebox using an MFRC522 module, an LED strip, and a passive buzzer. 
 
 First we’ll write track data to an RFID card, then scanning it will trigger music playback and lighting effects.
 

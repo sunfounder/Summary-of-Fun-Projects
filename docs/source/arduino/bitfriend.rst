@@ -43,9 +43,9 @@ In this project, you'll use an Arduino R4 UNO, an OLED display, buttons, a buzze
 
 Navigate menus to feed, play, dress, or put your pet to sleep, with animations displayed on the OLED. Button inputs control actions, while the buzzer provides audio feedback. The pet’s stats (hunger, happiness, sleep) are saved in EEPROM for persistence between sessions.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/KkPsawETYfg?si=4nMpy4ZNZjKVSooc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/hnBL75vK2vY?si=qihUnb2krkwOqwBV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
