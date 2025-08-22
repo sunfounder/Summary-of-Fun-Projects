@@ -45,6 +45,7 @@ We recommend that you read the chapters in order.
     radar_guard4.0
     radar_guard5.0
     radar_guard6.0
+    radar_guard7.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -115,3 +116,5 @@ We recommend that you read the chapters in order.
     pocket_arcade
     tug_of_war
     whac_a_mole
+    breath_led
+    slot_machine
