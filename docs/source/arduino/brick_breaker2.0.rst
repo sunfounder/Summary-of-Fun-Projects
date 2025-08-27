@@ -41,9 +41,9 @@ Course Introduction
 
 In this lesson, we’ll build a Breakout-style game on an SSD1306 OLED using a joystick, LEDs, and an active buzzer, where you control a paddle to bounce a ball, break bricks, and win before the ball falls.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/Atxp0ih1vsg?si=6rRc4i0J_O-g6Zp1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/7pZ717-XMPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -35,7 +35,7 @@ It features videos, circuit diagrams, code, and kit purchase links for you to ex
     About This Documation <self>
     raspberrypi/for_micropython_user
     arduino/for_arduino_user
-    esp32/esp32_project
+    esp32/for_esp32_user
     robot/robot_project
     faq
 

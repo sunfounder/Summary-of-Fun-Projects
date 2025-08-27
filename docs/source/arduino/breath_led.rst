@@ -37,9 +37,9 @@ In this project, we use a DHT11 sensor, an LCD, and a WS2812 LED strip.
 
 The LCD shows temperature and humidity, while the LED strip breathes in blue, yellow, or red depending on the temperature.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/pw7hejDfDT0?si=bQJpRAnpSjgfgt8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/JlDGw2FcAio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

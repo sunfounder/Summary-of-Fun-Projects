@@ -40,9 +40,9 @@ In this lesson, we’ll build a Radar Bomb Simulator using an ultrasonic sensor,
 
 The servo sweeps the ultrasonic sensor to detect objects. If something enters within 15 cm, a countdown appears on the display with beeping sounds that speed up as the target gets closer. At just 2 cm, the system simulates an explosion with flashing and a continuous alarm.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/IIe3DMzaRSA?si=EmbqV2plsvQtJ3yr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/3-j4CZyHikc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

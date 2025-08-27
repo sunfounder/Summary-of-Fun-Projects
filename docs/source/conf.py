@@ -1117,5 +1117,13 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/potentiometer-sensor-module?_pos=1&_sid=0d5511a23&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_esp32_kit_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/sunfounder-esp32-ultimate-starter-kit-with-esp32-camera-extension-board-battery?_pos=1&_sid=7dcb30fb6&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
+.. |link_esp32_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/esp-wroom-32-esp32-esp-32s-development-board?_pos=8&_sid=7dcb30fb6&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
