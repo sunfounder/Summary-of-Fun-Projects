@@ -28,3 +28,6 @@ We recommend that you read the chapters in order.
     radar_guard1.0
     heart_rate_monitor
     smart_stop1.0
+    barrier_gate1.0
+    water level
+    mini_piano
