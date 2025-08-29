@@ -104,7 +104,7 @@ In this project, we need the following components:
 
 **Wiring**
 
-.. image:: img/Mini_Piano_bb.png
+.. image:: img/mini_piano_bb.png
 
 **Common Connections:**
 
