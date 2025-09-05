@@ -118,3 +118,6 @@ We recommend that you read the chapters in order.
     whac_a_mole
     breath_led
     slot_machine
+    radar_guard8.0
+    radar_guard9.0
+    auto_pump1.0

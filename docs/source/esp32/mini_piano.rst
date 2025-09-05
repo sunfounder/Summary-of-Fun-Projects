@@ -44,9 +44,9 @@ In this lesson, you'll learn how to create a mini piano using LEDs, buttons, and
 Pressing different buttons will light up the corresponding LED and play the matching pitch on the buzzer.
 
 
-.. .. raw:: html
+.. raw:: html
 
-..   <iframe width="700" height="394" src="https://www.youtube.com/embed/NqJJK9VHCTk?si=FN0CSh9UgaYauU8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/jo4OQp245PE?si=gLSq-rtYwBIDtEy5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

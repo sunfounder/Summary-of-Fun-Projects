@@ -41,9 +41,9 @@ In this lesson, you'll learn how to use an ultrasonic sensor module, a digital s
 When the barrier is closed, the red LED turns on. If the ultrasonic sensor module detects an approaching vehicle, the digital servo motor raises the barrier, the green LED turns on, and the vehicle is allowed to pass.
 
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/IIe3DMzaRSA?si=EmbqV2plsvQtJ3yr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/OOJ-JKohtdA?si=WcHJe9lA5_uB_5kR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -113,7 +113,7 @@ In this project, we need the following components:
 
 * **Digital Servo Motor**
 
-  - Connect to breadboard’s positive power bus.
+  - Connect to breadboard’s **5V** positive power bus.
   - Connect to breadboard’s negative power bus.
   - Connect to **GPIO16** on the ESP32.
 
@@ -122,7 +122,7 @@ In this project, we need the following components:
   - **Trig:** Connect to **GPIO19** on the ESP32.
   - **Echo:** Connect to **GPIO18** on the ESP32.
   - **GND:** Connect to breadboard’s negative power bus.
-  - **VCC:** Connect to breadboard’s red power bus.
+  - **VCC:** Connect to breadboard’s **3.3V** red power bus.
 
 **Writing the Code**
 

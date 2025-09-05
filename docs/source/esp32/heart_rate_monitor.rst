@@ -38,9 +38,9 @@ Course Introduction
 
 This project aims to build a simple Heart Rate Monitor using a MAX30102 pulse oximeter sensor and an SSD1306 OLED Display. The code takes measurements of the heart rate by determining the time between heartbeats. By taking four measurements, it computes their average and presents the resultant average heart rate on an OLED screen. If the sensor doesn’t detect a finger, it sends a prompt to the user to position their finger correctly on the sensor.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/sO1tf1UgKJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/KiaRa18CN0Q?si=vRm7X8Die5KdJ_3X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -100,14 +100,14 @@ In this project, we need the following components:
   - **SDA:** Connect to **GPIO21** on the ESP32.
   - **SCL:** Connect to **GPIO22** on the ESP32.
   - **GND:** Connect to breadboard’s negative power bus.
-  - **VIN:** Connect to breadboard’s red power bus.
+  - **VIN:** Connect to breadboard’s **3.3V** red power bus.
 
 * **OLED Display Module**
 
   - **SDA:** Connect to **GPIO21** on the ESP32.
   - **SCK:** Connect to **GPIO22** on the ESP32.
   - **GND:** Connect to breadboard’s negative power bus.
-  - **VCC:** Connect to breadboard’s red power bus.
+  - **VCC:** Connect to breadboard’s **3.3V** red power bus.
 
 **Writing the Code**
 

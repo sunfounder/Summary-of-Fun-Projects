@@ -40,9 +40,9 @@ In this lesson, you’ll learn how to use an L9110 Motor Driver Module, an Ultra
 
 As the obstacle gets closer to the Ultrasonic Sensor Module, the TT motor gradually slows down until it comes to a stop.
 
-.. .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/ULGXiwr5h58?si=2j6lcoW5o2k6OTwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/bhixXz3299A?si=7XPRHgXTFmnrQfIz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -105,7 +105,7 @@ In this project, we need the following components:
   - **Trig:** Connect to **GPIO17** on the ESP32.
   - **Echo:** Connect to **GPIO16** on the ESP32.
   - **GND:** Connect to breadboard’s negative power bus.
-  - **VCC:** Connect to breadboard’s red power bus.
+  - **VCC:** Connect to breadboard’s **5V** red power bus.
 
 * **TT Motor**
 
@@ -114,7 +114,7 @@ In this project, we need the following components:
 * **L9110 Motor Driver Module**
 
   - **GND:** Connect to breadboard’s negative power bus.
-  - **VCC:** Connect to breadboard’s red power bus.
+  - **VCC:** Connect to breadboard’s **5V** red power bus.
   - **B-1B:** Connect to **GPIO26** on the ESP32.
   - **B-1A:** Connect to **GPIO25** on the ESP32.
 

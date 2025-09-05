@@ -31,3 +31,7 @@ We recommend that you read the chapters in order.
     barrier_gate1.0
     water level
     mini_piano
+    speed_detection
+    tilt_led1.0
+    light_tracing
+    
