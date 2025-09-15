@@ -24,7 +24,7 @@ Heart rate monitor
     :header-rows: 1
 
     *   - Name	
-        - Includes Arduino board
+        - Includes ESP32 board
         - PURCHASE LINK
     *   - ESP32 Ultimate Starter Kit	
         - ESP32 WROOM 32E +

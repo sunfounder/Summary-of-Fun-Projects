@@ -34,4 +34,9 @@ We recommend that you read the chapters in order.
     speed_detection
     tilt_led1.0
     light_tracing
+    morse_code
+    parking_sensor1.0
+    snake_game
+    tempmumid_monitor
+    trash_can
     

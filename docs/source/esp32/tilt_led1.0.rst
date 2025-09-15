@@ -24,7 +24,7 @@ Tilt LED 1.0
     :header-rows: 1
 
     *   - Name	
-        - Includes Arduino board
+        - Includes ESP32 board
         - PURCHASE LINK
     *   - ESP32 Ultimate Starter Kit	
         - ESP32 WROOM 32E +
@@ -50,6 +50,7 @@ In this setup, the number of lit LEDs will increase as the tilt angle of the MPU
 
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
+  * :ref:`install_esp32`
 
 **Required Components**
 
@@ -116,7 +117,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **MPU6050** and install it.
-    * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(ESP32 Dev module) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

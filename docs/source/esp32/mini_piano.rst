@@ -24,7 +24,7 @@ Mini Piano
     :header-rows: 1
 
     *   - Name	
-        - Includes Arduino board
+        - Includes ESP32 board
         - PURCHASE LINK
     *   - Electronic Kit	
         - ×
@@ -54,6 +54,7 @@ Pressing different buttons will light up the corresponding LED and play the matc
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
+  * :ref:`install_esp32`
 
 **Required Components**
 

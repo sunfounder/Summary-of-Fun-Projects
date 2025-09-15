@@ -24,7 +24,7 @@ Light tracing
     :header-rows: 1
 
     *   - Name	
-        - Includes Arduino board
+        - Includes ESP32 board
         - PURCHASE LINK
     *   - ESP32 Ultimate Starter Kit	
         - ESP32 WROOM 32E +
@@ -50,6 +50,7 @@ The servo adjusts its angle based on light intensity, simulating responsive move
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
+  * :ref:`install_esp32`
 
 **Required Components**
 
