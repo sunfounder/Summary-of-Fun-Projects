@@ -121,3 +121,6 @@ We recommend that you read the chapters in order.
     radar_guard8.0
     radar_guard9.0
     auto_pump1.0
+    gas_leak_monitor_iot
+    servo_control_iot
+    trafficlight_iot
