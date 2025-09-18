@@ -17,6 +17,7 @@ We recommend that you read the chapters in order.
     arduino_start/install_arduino_ide
     arduino_start/introduce_ide
     arduino_start/add_libraries_ar 
+    arduino_start/iot_arduino_iot_cloud
 
 2. Projects
 ------------------------
@@ -50,6 +51,7 @@ We recommend that you read the chapters in order.
     barrier_gate2.0
     barrier_gate3.0
     trash_can
+    trash_can2.0
     rfid_access1.0
     rfid_access2.0
     rfid_access3.0
@@ -61,6 +63,7 @@ We recommend that you read the chapters in order.
     light_show
     Joystick_led
     color_memory
+    color_memory2.0
     tilt_led1.0
     tilt_led2.0
     snake_game
@@ -71,6 +74,7 @@ We recommend that you read the chapters in order.
     distance_display
     distance_display1.0
     distance_display2.0
+    distance_display3.0
     controll_eyes
     light_tracing
     light_tracker2.0

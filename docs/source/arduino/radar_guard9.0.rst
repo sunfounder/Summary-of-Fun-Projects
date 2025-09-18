@@ -40,9 +40,9 @@ In this lesson, we’ll build a Radar Warning System using an ultrasonic sensor,
 
 The servo sweeps the ultrasonic sensor across the area, measuring distances in real time. When an object comes within 50 cm, the system enters ALERT mode: the LCD shows a warning, the green LED turns off while the red LED turns on, and the buzzer beeps with a frequency that increases as the target gets closer. Once the object moves away, the system resets to normal mode, showing “Area is Empty” and restoring the green LED.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/3-j4CZyHikc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/TtjAzlOizvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

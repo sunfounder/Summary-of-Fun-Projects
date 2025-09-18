@@ -40,9 +40,9 @@ In this project, we’ll build a Radar Warning System using an ultrasonic sensor
 
 The servo scans the area, and when an object comes within 20 cm, the system enters ALERT mode: the LCD shows a warning, the red LED and buzzer blink, and the stepper motor sweeps back and forth. Once the object leaves, the system resets to normal with the green LED on and “Area is Empty” displayed.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/3-j4CZyHikc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/pfsElbENa08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

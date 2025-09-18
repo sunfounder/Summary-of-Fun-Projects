@@ -39,4 +39,7 @@ We recommend that you read the chapters in order.
     snake_game
     tempmumid_monitor
     trash_can
+    color_memory
+    Joystick_led
+    timer
     
