@@ -47,6 +47,8 @@ We recommend that you read the chapters in order.
     radar_guard5.0
     radar_guard6.0
     radar_guard7.0
+    radar_guard8.0
+    radar_guard9.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -66,6 +68,7 @@ We recommend that you read the chapters in order.
     color_memory2.0
     tilt_led1.0
     tilt_led2.0
+    tilt_led3.0
     snake_game
     snake_game2.0
     finger_count1.0
@@ -81,7 +84,9 @@ We recommend that you read the chapters in order.
     speed_detection
     speed_detection2.0
     servo_control
+    servo_control2.0
     object_detection
+    object_detection2.0
     tempmumid_monitor
     lidar_guard
     heart_rate_monitor
@@ -122,8 +127,6 @@ We recommend that you read the chapters in order.
     whac_a_mole
     breath_led
     slot_machine
-    radar_guard8.0
-    radar_guard9.0
     auto_pump1.0
     gas_leak_monitor_iot
     servo_control_iot

@@ -65,9 +65,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - Arduino UNO R3
+        - Arduino UNO R4
         - 1
-        - |link_arduinor3_buy|
+        - |link_unor4_buy|
     *   - 2
         - USB Type-C cable
         - 1

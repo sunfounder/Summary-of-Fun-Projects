@@ -40,6 +40,7 @@ We recommend that you read the chapters in order.
     tempmumid_monitor
     trash_can
     color_memory
+    digital_dice
     Joystick_led
     timer
     
