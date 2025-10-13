@@ -85,6 +85,7 @@ We recommend that you read the chapters in order.
     speed_detection2.0
     servo_control
     servo_control2.0
+    servo_control3.0
     object_detection
     object_detection2.0
     tempmumid_monitor
@@ -131,3 +132,5 @@ We recommend that you read the chapters in order.
     gas_leak_monitor_iot
     servo_control_iot
     trafficlight_iot
+    pin_lock1.0
+    pin_lock2.0

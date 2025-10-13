@@ -39,9 +39,9 @@ Red LEDs light up as the board tilts left, while blue LEDs light up as it tilts 
 
 This creates a clear visual indicator of orientation, with live angle values also printed to the serial monitor.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/OXlBMpb3I4w?si=rRUzFHYCo-mWYsns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/JGH49NYUBis?si=ckGvbNd14p3jd2uO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 .. note::
