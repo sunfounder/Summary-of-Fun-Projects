@@ -137,3 +137,7 @@ We recommend that you read the chapters in order.
     trafficlight_iot
     pin_lock1.0
     pin_lock2.0
+    ardu_bird
+    mini_fan1.0
+    mini_fan2.0
+    mini_fan3.0

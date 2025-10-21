@@ -26,6 +26,7 @@ We recommend that you read the chapters in order.
     :maxdepth: 1
 
     radar_guard1.0
+    radar_guard2.0
     heart_rate_monitor
     smart_stop1.0
     barrier_gate1.0
@@ -43,4 +44,5 @@ We recommend that you read the chapters in order.
     digital_dice
     Joystick_led
     timer
+    parking_lot
     
