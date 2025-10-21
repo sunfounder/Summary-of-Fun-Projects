@@ -86,9 +86,11 @@ We recommend that you read the chapters in order.
     servo_control
     servo_control2.0
     servo_control3.0
+    servo_control4.0
     object_detection
     object_detection2.0
     tempmumid_monitor
+    tempmumid_monitor2.0
     lidar_guard
     heart_rate_monitor
     heart_rate_monitor2.0
@@ -103,6 +105,7 @@ We recommend that you read the chapters in order.
     bird_dash
     disarm_timer
     gas_leak_monitor
+    gas_leak_monitor2.0
     digital_dice
     digital_dice2.0
     traffic_light

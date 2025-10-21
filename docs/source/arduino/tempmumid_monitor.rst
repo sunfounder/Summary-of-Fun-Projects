@@ -100,7 +100,7 @@ In this project, we need the following components:
 * **DHT-11 Module**
 
   - **OUT:** Connect to **2** on the Arduino.
-  - **-**:** Connect to breadboard’s negative power bus.
+  - **-:** Connect to breadboard’s negative power bus.
   - **+:** Connect to breadboard’s red power bus.
 
 * **OLED Display Module**

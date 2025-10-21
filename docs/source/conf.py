@@ -1125,5 +1125,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/esp-wroom-32-esp32-esp-32s-development-board?_pos=8&_sid=7dcb30fb6&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_touch_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/ttp223-touch-sensor-module?_pos=20&_sid=2461e4938&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
