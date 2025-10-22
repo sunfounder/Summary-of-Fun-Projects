@@ -41,9 +41,9 @@ This project creates a PIN lock system using an Arduino, a 4×4 keypad, an I2C L
 Users press * to enter PIN mode, input digits, and confirm with #.
 A correct PIN smoothly opens and closes the servo lock, with status shown on the LCD and audio feedback from the buzzer.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/ycnotjYgYik?si=O7JOw9KEJYwVpxTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/rQRycTPHb-A?si=oi95BPxHyXxwmhxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

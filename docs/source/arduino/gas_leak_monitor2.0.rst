@@ -39,9 +39,9 @@ Course Introduction
 This Arduino project uses an MQ-2 gas sensor, a 16×2 I2C LCD, LEDs, and a buzzer to detect gas concentration in real time. 
 It displays the sensor value on the LCD and indicates the current level with LED and buzzer alerts, switching between safe (green), warning (yellow blink with short beep), and alert (red fast blink with alarm) based on the gas level.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/wDVh-0BptOI?si=F7Yddwn72Qfo1eqi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/XuMtpgR5RH8?si=T8QwBhy8RWQ-1GcO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
