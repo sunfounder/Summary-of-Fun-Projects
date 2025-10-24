@@ -141,3 +141,5 @@ We recommend that you read the chapters in order.
     mini_fan1.0
     mini_fan2.0
     mini_fan3.0
+    light_sensing
+    motor_controll

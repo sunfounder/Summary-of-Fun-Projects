@@ -123,9 +123,9 @@ In this project, we need the following components:
 
 * **Traffic light LED**
 
-  - **R:** Connect to **4** on the Arduino.
-  - **Y:** Connect to **3** on the Arduino.
-  - **G:** Connect to **2** on the Arduino.
+  - **R:** Connect to **5** on the Arduino.
+  - **Y:** Connect to **4** on the Arduino.
+  - **G:** Connect to **3** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
 
 **Writing the Code**

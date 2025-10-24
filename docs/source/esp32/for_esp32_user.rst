@@ -30,7 +30,7 @@ We recommend that you read the chapters in order.
     heart_rate_monitor
     smart_stop1.0
     barrier_gate1.0
-    water level
+    water_level
     mini_piano
     speed_detection
     tilt_led1.0

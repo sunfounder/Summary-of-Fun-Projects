@@ -126,8 +126,8 @@ In this project, we need the following components:
 
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
-  - **B-1B:** Connect to **6** on the Arduino.
-  - **B-1A:** Connect to **5** on the Arduino.
+  - **A-1B:** Connect to **6** on the Arduino.
+  - **A-1A:** Connect to **5** on the Arduino.
 
 **Writing the Code**
 
@@ -135,7 +135,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **Adafruit SSD1306** and **Adafruit GFX** and install it.
-    * Don't forget to select the board(Arduino UNO R3) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
