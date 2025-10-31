@@ -2,6 +2,7 @@
 
 ESP32 Projects
 ======================
+
 This chapter includes installing Arduino IDE, 
 uploading code to ESP32 with Arduino IDE and a dozen interesting and practical projects to help you learn ESP32 quickly.
 
@@ -46,4 +47,9 @@ We recommend that you read the chapters in order.
     timer
     parking_lot
     traffic_light
-    
+    dino_run
+    height_measure
+    angle_controller
+    auto_pump
+    brick_breaker
+    object_detection

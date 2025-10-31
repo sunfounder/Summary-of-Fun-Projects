@@ -45,7 +45,7 @@ The snake’s movement will be controlled using the joystick.
 
 .. note::
 
-  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
@@ -118,7 +118,7 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **LedControl** and install it.
-    * Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(ESP32 Dev module) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 

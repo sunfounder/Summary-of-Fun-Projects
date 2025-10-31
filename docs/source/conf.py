@@ -1133,5 +1133,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/5pcs-1-5v-6v-type-miniature-dc-motors?_pos=13&_sid=39102ef64&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_flame_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/flame-sensor-module-1?_pos=1&_sid=4298df423&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 

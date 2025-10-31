@@ -90,7 +90,7 @@ In this project, we need the following components:
     *   - 6
         - Photoresistor
         - 1
-        - |link_photoresistor__buy|
+        - |link_photoresistor_buy|
     *   - 7
         - 10kΩ resistor
         - 1

@@ -46,7 +46,7 @@ As the obstacle gets closer to the Ultrasonic Sensor Module, the TT motor gradua
 
 .. note::
 
-  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`

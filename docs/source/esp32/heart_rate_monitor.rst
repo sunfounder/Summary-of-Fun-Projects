@@ -44,7 +44,7 @@ This project aims to build a simple Heart Rate Monitor using a MAX30102 pulse ox
 
 .. note::
 
-  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`

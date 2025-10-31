@@ -46,7 +46,7 @@ At the start of the game, an LED lights up at random. The player must press the 
 
 .. note::
 
-  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`

@@ -46,7 +46,7 @@ By pressing the button for short or long durations, you can input dots and dashe
 
 .. note::
 
-  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`

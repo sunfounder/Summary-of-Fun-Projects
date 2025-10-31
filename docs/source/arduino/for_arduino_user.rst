@@ -63,6 +63,7 @@ We recommend that you read the chapters in order.
     pong_game
     lamb_run
     light_show
+    light_show2.0
     Joystick_led
     color_memory
     color_memory2.0
@@ -143,3 +144,5 @@ We recommend that you read the chapters in order.
     mini_fan3.0
     light_sensing
     motor_controll
+    flame_monitor1.0
+    flame_monitor2.0
