@@ -40,9 +40,9 @@ In this lesson, you’ll learn how to use the MPU6050 module with the ESP32 to c
 
 In this setup, the servo’s angle changes according to the tilt of the MPU6050 sensor. As you tilt the module, the Arduino reads the pitch angle and smoothly adjusts the servo position based on the sensor’s orientation.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/7ZoSPbuH78U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/j97xZ4QkHw0?si=J6AOBfkUOaE_tdey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

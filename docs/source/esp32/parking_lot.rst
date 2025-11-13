@@ -40,9 +40,9 @@ In this project, you will use ESP32 board, a servo motor, IR sensors, and a traf
 
 The system detects vehicles with IR sensors, automatically controls the barrier gate, updates the car count on the LCD, and manages the traffic light for safe entry and exit.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/R3Zpc3-IgRw?si=1kxl8c-d22eUEGFj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/RfSdhl4-UVo?si=_yOs_GiEbk-0NndU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

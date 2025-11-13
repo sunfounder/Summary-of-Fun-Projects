@@ -1,6 +1,6 @@
-.. _traffic_light:
+.. _ir_obstacle:
 
-Traffic light
+IR Obstacle Sensor
 ==============================================================
 
 .. note::
@@ -18,7 +18,7 @@ Traffic light
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
   * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
-
+  
   .. list-table::
     :widths: 20 20 20
     :header-rows: 1
@@ -26,24 +26,24 @@ Traffic light
     *   - Name	
         - Includes Arduino board
         - PURCHASE LINK
-    *   - Ultimate Sensor Kit
-        - Arduino Uno R4 Minima
-        - |link_ultimate_sensor_buy|
-    *   - Elite Explorer Kit
+    *   - Elite Explorer Kit	
         - Arduino Uno R4 WiFi
         - |link_elite_buy|
     *   - 3 in 1 Ultimate Starter Kit
         - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
+    *   - Universal Maker Sensor Kit
+        - ×
+        - |link_umsk_buy|
 
 Course Introduction
 ------------------------
 
-In this lesson, we will learn how to use the traffic light with Arduino.
+In this lesson, we will learn how to use the IR Obstacle Sensor with Arduino.
 
 .. .. raw:: html
-
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/U99URknlMXM?si=u0b4J97iM9mtTUK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+..  <iframe width="700" height="394" src="https://www.youtube.com/embed/m6IWfwi86zo?si=vTmoHKBtbDE7Vwzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -66,9 +66,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
+        - Arduino UNO R4 WIFI
         - 1
-        - |link_arduinor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -82,22 +82,23 @@ In this project, we need the following components:
         - Several
         - |link_wires_buy|
     *   - 5
-        - Traffic Light LED
+        - IR Obstacle Avoidance Sensor Module
         - 1
-        - |link_trafficlinght_buy|
+        - |link_IR_module_buy|
+
 
 **Wiring**
 
-.. image:: img/03_Traffic_Light_Module_bb.png
+.. image:: img/05_IR_Obstacle_Sensor_Module_bb.png
+
 
 **Common Connections:**
 
-* **Traffic light LED**
+* **IR Obstacle Avoidance Sensor Module**
 
-  - **R:** Connect to **9** on the Arduino.
-  - **Y:** Connect to **8** on the Arduino.
-  - **G:** Connect to **7** on the Arduino.
+  - **OUT:** Connect to **2** on the Arduino.
   - **GND:** Connect to **GND** on the Arduino.
+  - **VCC:** Connect to **5V** on the Arduino.
 
 **Writing the Code**
 
@@ -108,35 +109,17 @@ In this project, we need the following components:
 
 .. code-block:: arduino
 
-      // Pin numbers for each LED
-      const int rledPin = 9;  // Pin connected to the red LED
-      const int yledPin = 8;  // Pin connected to the yellow LED
-      const int gledPin = 7;  // Pin connected to the green LED
+      // Define the pin used for the infrared sensor
+      const int sensorPin = 2;
 
       void setup() {
-        // Set all LED pins as output
-        pinMode(rledPin, OUTPUT);
-        pinMode(yledPin, OUTPUT);
-        pinMode(gledPin, OUTPUT);
+        pinMode(sensorPin, INPUT);  // Set the sensor pin as input
+        Serial.begin(9600);         // Initialize serial communication
       }
 
       void loop() {
-        // Red LED on for 3 seconds
-        digitalWrite(rledPin, HIGH);
-        delay(3000);
-        digitalWrite(rledPin, LOW);
-
-        // Yellow LED blinks three times
-        for (int i = 0; i < 3; i++) {
-          digitalWrite(yledPin, HIGH);
-          delay(500);
-          digitalWrite(yledPin, LOW);
-          delay(500);
-        }
-
-        // Green LED on for 3 seconds
-        digitalWrite(gledPin, HIGH);
-        delay(3000);
-        digitalWrite(gledPin, LOW);
+        // Read and print sensor value
+        Serial.println(digitalRead(sensorPin));
+        delay(50);
       }
 

@@ -29,7 +29,7 @@ Flame Monitor 2.0
     *   - Elite Explorer Kit	
         - Arduino Uno R4 WiFi
         - |link_elite_buy|
-    *   - Ultimate Sensor Kit	
+    *   - Ultimate Sensor Kit
         - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
     *   - Universal Maker Sensor Kit

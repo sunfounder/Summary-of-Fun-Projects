@@ -1,6 +1,6 @@
-.. _traffic_light:
+.. _potentiometer_module:
 
-Traffic light
+Potentiometer Module
 ==============================================================
 
 .. note::
@@ -35,15 +35,18 @@ Traffic light
     *   - 3 in 1 Ultimate Starter Kit
         - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
+    *   - Universal Maker Sensor Kit
+        - ×
+        - |link_umsk_buy|
 
 Course Introduction
 ------------------------
 
-In this lesson, we will learn how to use the traffic light with Arduino.
+In this lesson, we will learn how to use the potentiometer module with Arduino.
 
 .. .. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/U99URknlMXM?si=u0b4J97iM9mtTUK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+..  <iframe width="700" height="394" src="https://www.youtube.com/embed/TlZUs-bDu_E?si=LV2dt49xzpg_M-NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -66,9 +69,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
+        - Arduino UNO R4 WIFI
         - 1
-        - |link_arduinor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -82,22 +85,21 @@ In this project, we need the following components:
         - Several
         - |link_wires_buy|
     *   - 5
-        - Traffic Light LED
+        - Potentiometer Sensor Module
         - 1
-        - |link_trafficlinght_buy|
+        - |link_potentiometer_sensor_buy|
 
 **Wiring**
 
-.. image:: img/03_Traffic_Light_Module_bb.png
+.. image:: img/06_Potentiometer_Module_bb.png
 
 **Common Connections:**
 
-* **Traffic light LED**
+* **Potentiometer Sensor Module**
 
-  - **R:** Connect to **9** on the Arduino.
-  - **Y:** Connect to **8** on the Arduino.
-  - **G:** Connect to **7** on the Arduino.
+  - **OUT:** Connect to **A0** on the Arduino.
   - **GND:** Connect to **GND** on the Arduino.
+  - **VCC:** Connect to **5V** on the Arduino.
 
 **Writing the Code**
 
@@ -108,35 +110,16 @@ In this project, we need the following components:
 
 .. code-block:: arduino
 
-      // Pin numbers for each LED
-      const int rledPin = 9;  // Pin connected to the red LED
-      const int yledPin = 8;  // Pin connected to the yellow LED
-      const int gledPin = 7;  // Pin connected to the green LED
+        // Define the pin used for the potentiometer
+        const int sensorPin = A0;
 
-      void setup() {
-        // Set all LED pins as output
-        pinMode(rledPin, OUTPUT);
-        pinMode(yledPin, OUTPUT);
-        pinMode(gledPin, OUTPUT);
-      }
-
-      void loop() {
-        // Red LED on for 3 seconds
-        digitalWrite(rledPin, HIGH);
-        delay(3000);
-        digitalWrite(rledPin, LOW);
-
-        // Yellow LED blinks three times
-        for (int i = 0; i < 3; i++) {
-          digitalWrite(yledPin, HIGH);
-          delay(500);
-          digitalWrite(yledPin, LOW);
-          delay(500);
+        void setup() {
+          Serial.begin(9600);  // Initialize serial communication
         }
 
-        // Green LED on for 3 seconds
-        digitalWrite(gledPin, HIGH);
-        delay(3000);
-        digitalWrite(gledPin, LOW);
-      }
+        void loop() {
+          // Read and print analog value
+          Serial.println(analogRead(sensorPin));
+          delay(50);
+        }
 

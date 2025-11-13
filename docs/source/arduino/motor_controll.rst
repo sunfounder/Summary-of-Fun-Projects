@@ -43,9 +43,9 @@ In this lesson, you’ll learn how to build a simple tilt-controlled motor syste
 
 Tilting the MPU6050 forward makes the motor spin forward, and tilting it backward makes the motor spin in reverse. The greater the tilt, the faster the motor rotates, and when the board is level, the motor stops.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/-Mj8XJaiYu8?si=r1ppBlGEcnBetN3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/mK7CH4wBins?si=75t7PxjZ9xhB3P3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

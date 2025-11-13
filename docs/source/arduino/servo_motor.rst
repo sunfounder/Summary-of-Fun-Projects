@@ -1,6 +1,6 @@
-.. _traffic_light:
+.. _servo_motor:
 
-Traffic light
+Servo Motor
 ==============================================================
 
 .. note::
@@ -18,7 +18,7 @@ Traffic light
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
   * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
-
+  
   .. list-table::
     :widths: 20 20 20
     :header-rows: 1
@@ -29,26 +29,29 @@ Traffic light
     *   - Ultimate Sensor Kit
         - Arduino Uno R4 Minima
         - |link_ultimate_sensor_buy|
-    *   - Elite Explorer Kit
+    *   - Elite Explorer Kit	
         - Arduino Uno R4 WiFi
         - |link_elite_buy|
-    *   - 3 in 1 Ultimate Starter Kit
+    *   - 3 in 1 Ultimate Starter Kit	
         - Arduino Uno R4 Minima
         - |link_arduinor4_buy|
+    *   - Universal Maker Sensor Kit
+        - ×
+        - |link_umsk_buy|
 
 Course Introduction
 ------------------------
 
-In this lesson, we will learn how to use the traffic light with Arduino.
+In this lesson, we will learn how to use the servo motor with Arduino.
 
 .. .. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/U99URknlMXM?si=u0b4J97iM9mtTUK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+..  <iframe width="700" height="394" src="https://www.youtube.com/embed/7ZoSPbuH78U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
   If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
-  
+
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
 
@@ -66,9 +69,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
+        - Arduino UNO R4 WIFI
         - 1
-        - |link_arduinor4_buy|
+        - |link_unor4_wifi_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -82,61 +85,53 @@ In this project, we need the following components:
         - Several
         - |link_wires_buy|
     *   - 5
-        - Traffic Light LED
+        - Digital Servo Motor
         - 1
-        - |link_trafficlinght_buy|
+        - |link_motor_buy|
 
 **Wiring**
 
-.. image:: img/03_Traffic_Light_Module_bb.png
+.. image:: img/02_Servo_Motor_bb.png
 
 **Common Connections:**
 
-* **Traffic light LED**
+* **Digital Servo Motor**
 
-  - **R:** Connect to **9** on the Arduino.
-  - **Y:** Connect to **8** on the Arduino.
-  - **G:** Connect to **7** on the Arduino.
   - **GND:** Connect to **GND** on the Arduino.
+  - **VCC:** Connect to **5V** on the Arduino.
+  - **I/O:** Connect to **9** on the Arduino.
 
 **Writing the Code**
 
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
-    * Don't forget to select the board(Arduino UNO R4 Minima/WIFI) and the correct port before clicking the **Upload** button.
+    * To install the library, use the Arduino Library Manager and search for **Servo** and install it.
+    * Don't forget to select the board(Arduino UNO R4 WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
-      // Pin numbers for each LED
-      const int rledPin = 9;  // Pin connected to the red LED
-      const int yledPin = 8;  // Pin connected to the yellow LED
-      const int gledPin = 7;  // Pin connected to the green LED
+      #include <Servo.h>
+
+      const int servoPin = 9;  // Define the servo pin
+      int angle = 0;           // Initialize the angle variable to 0 degrees
+      Servo servo;             // Create a servo object
 
       void setup() {
-        // Set all LED pins as output
-        pinMode(rledPin, OUTPUT);
-        pinMode(yledPin, OUTPUT);
-        pinMode(gledPin, OUTPUT);
+        servo.attach(servoPin);
       }
 
       void loop() {
-        // Red LED on for 3 seconds
-        digitalWrite(rledPin, HIGH);
-        delay(3000);
-        digitalWrite(rledPin, LOW);
-
-        // Yellow LED blinks three times
-        for (int i = 0; i < 3; i++) {
-          digitalWrite(yledPin, HIGH);
-          delay(500);
-          digitalWrite(yledPin, LOW);
-          delay(500);
+        // scan from 0 to 180 degrees
+        for (angle = 0; angle < 180; angle++) {
+          servo.write(angle);
+          delay(15);
         }
-
-        // Green LED on for 3 seconds
-        digitalWrite(gledPin, HIGH);
-        delay(3000);
-        digitalWrite(gledPin, LOW);
+        delay(1000);
+        // now scan back from 180 to 0 degrees
+        for (angle = 180; angle > 0; angle--) {
+          servo.write(angle);
+          delay(15);
+        }
+        delay(1000);
       }
-

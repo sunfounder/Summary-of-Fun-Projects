@@ -24,33 +24,35 @@ Traffic light
     :header-rows: 1
 
     *   - Name	
-        - Includes ESP32 board
+        - Includes Arduino board
         - PURCHASE LINK
-    *   - ESP32 Ultimate Starter Kit	
-        - ESP32 WROOM 32E +
-        - |link_esp32_kit_buy|
-    *   - Universal Maker Sensor Kit
-        - 
-        - |link_umsk_buy|
+    *   - Ultimate Sensor Kit
+        - Arduino Uno R4 Minima
+        - |link_ultimate_sensor_buy|
+    *   - Elite Explorer Kit
+        - Arduino Uno R4 WiFi
+        - |link_elite_buy|
+    *   - 3 in 1 Ultimate Starter Kit
+        - Arduino Uno R4 Minima
+        - |link_arduinor4_buy|
 
 Course Introduction
 ------------------------
 
-In this lesson, you’ll learn how to build a simple traffic light system using the ESP32, a TM1637 4-digit display, and LED. 
+In this lesson, you’ll learn how to build a simple traffic light system using the Arduino UNO R4, a TM1637 4-digit display, and LED. 
 
 The display counts down each light phase—red, yellow, and green—just like a real traffic signal.
 
 .. raw:: html
 
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/GgWWtrf1RW8?si=HdzEE-nb0Gm5OYWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/U99URknlMXM?si=u0b4J97iM9mtTUK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
-  If this is your first time working with an ESP32 project, we recommend downloading and reviewing the basic materials first.
+  If this is your first time working with an Arduino project, we recommend downloading and reviewing the basic materials first.
   
   * :ref:`install_arduino`
   * :ref:`introduce_arduino`
-  * :ref:`install_esp32`
 
 **Required Components**
 
@@ -66,9 +68,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - ESP-WROOM-32 ESP32 ESP-32S Development Board
+        - Arduino UNO R4 Minima/Arduino UNO R4 WIFI
         - 1
-        - |link_esp32_buy|
+        - |link_arduinor4_buy|
     *   - 2
         - USB Type-C cable
         - 1
@@ -98,15 +100,15 @@ In this project, we need the following components:
 
 * **Traffic light LED**
 
-  - **R:** Connect to **GPIO25** on the ESP32.
-  - **Y:** Connect to **GPIO26** on the ESP32.
-  - **G:** Connect to **GPIO27** on the ESP32.
+  - **R:** Connect to **10** on the Arduino.
+  - **Y:** Connect to **11** on the Arduino.
+  - **G:** Connect to **12** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
 
 * **4-Digit Segment Display Module**
 
-  - **CLK:** Connect to **GPIO23** on the ESP32.
-  - **DIO:** Connect to **GPIO22** on the ESP32.
+  - **CLK:** Connect to **3** on the Arduino.
+  - **DIO:** Connect to **2** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 
@@ -116,23 +118,23 @@ In this project, we need the following components:
 
     * You can copy this code into **Arduino IDE**. 
     * To install the library, use the Arduino Library Manager and search for **TM1637Display** and install it.
-    * Don't forget to select the board(ESP32 Dev module) and the correct port before clicking the **Upload** button.
+    * Don't forget to select the board(Arduino UNO R4 Minima/WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
       #include <TM1637Display.h>
 
-      // ------- TM1637 pins (ESP32 GPIOs) -------
-      #define CLK_PIN 23   // TM1637 CLK -> GPIO23
-      #define DIO_PIN 22   // TM1637 DIO -> GPIO22
+      // TM1637 pin definitions
+      #define CLK 3
+      #define DIO 2
 
-      // ------- Traffic light pins (ESP32 GPIOs) -------
-      const int redPin    = 25;  // Red LED
-      const int yellowPin = 26;  // Yellow LED
-      const int greenPin  = 27;  // Green LED
+      // Traffic light pins
+      const int redPin = 10;
+      const int yellowPin = 11;
+      const int greenPin = 12;
 
       // Create display object
-      TM1637Display display(CLK_PIN, DIO_PIN);
+      TM1637Display display(CLK, DIO);
 
       void setup() {
         // Setup traffic light pins
@@ -141,8 +143,7 @@ In this project, we need the following components:
         pinMode(greenPin, OUTPUT);
 
         // Initialize display
-        display.setBrightness(7);  // 0 (dim) to 7 (bright)
-        display.clear();
+        display.setBrightness(7);  // Brightness: 0 (dim) to 7 (bright)
       }
 
       void loop() {
@@ -168,8 +169,7 @@ In this project, we need the following components:
       // Countdown function using TM1637 display
       void countdown(int seconds) {
         for (int i = seconds; i > 0; i--) {
-          // Show in rightmost 2 digits (positions 2 & 3)
-          display.showNumberDec(i, true, 2, 2);
+          display.showNumberDec(i, true, 2, 2); // Display in rightmost 2 digits
           delay(1000);
         }
         display.clear();

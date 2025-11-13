@@ -19,7 +19,7 @@ We recommend that you read the chapters in order.
     arduino_start/add_libraries_ar 
     arduino_start/iot_arduino_iot_cloud
 
-2. Projects
+2. Fun Projects
 ------------------------
 
 .. toctree::
@@ -105,11 +105,11 @@ We recommend that you read the chapters in order.
     servo_tuner
     bird_dash
     disarm_timer
-    gas_leak_monitor
+    gas_leak_monitor1.0
     gas_leak_monitor2.0
     digital_dice
     digital_dice2.0
-    traffic_light
+    traffic_light1.0
     traffic_light2.0
     rgb_controll
     calculator
@@ -146,3 +146,19 @@ We recommend that you read the chapters in order.
     motor_controll
     flame_monitor1.0
     flame_monitor2.0
+
+
+3. Basic Projects
+------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    i2c_lcd
+    servo_motor
+    traffic_light
+    flame_monitor
+    ir_obstacle
+    potentiometer
+
+
