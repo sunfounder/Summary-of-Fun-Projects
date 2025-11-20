@@ -41,9 +41,9 @@ Course Introduction
 
 In this lesson, you’ll learn how to use a Flame Sensor, an I2C LCD Display, and the Arduino UNO R4 to monitor fire intensity. The LCD shows real-time readings, while LEDs and a buzzer provide visual and sound alerts for different flame levels.
 
-.. .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/HheaU9hlbW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/PqDevA-9ROE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

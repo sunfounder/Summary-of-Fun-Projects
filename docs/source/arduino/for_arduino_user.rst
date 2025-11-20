@@ -49,6 +49,7 @@ We recommend that you read the chapters in order.
     radar_guard7.0
     radar_guard8.0
     radar_guard9.0
+    radar_guard10.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -142,6 +143,8 @@ We recommend that you read the chapters in order.
     mini_fan1.0
     mini_fan2.0
     mini_fan3.0
+    mini_fan4.0
+    mini_fan5.0
     light_sensing
     motor_controll
     flame_monitor1.0

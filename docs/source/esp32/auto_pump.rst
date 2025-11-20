@@ -42,9 +42,9 @@ The sensor is used to detect the presence of an object.
 
 When an object is detected, the water pump is activated to dispense liquid (liquid hand soap).
 
-.. .. raw:: html
+.. raw:: html
 
-..   <iframe width="700" height="394" src="https://www.youtube.com/embed/m6IWfwi86zo?si=vTmoHKBtbDE7Vwzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/RBC909mW4yA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
