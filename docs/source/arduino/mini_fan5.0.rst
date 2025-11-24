@@ -41,9 +41,9 @@ Course Introduction
 
 In this lesson, you’ll build a smart fan controller using a rotary encoder, a servo, an LCD, and PWM motor control. Turning the encoder adjusts the servo angle, pressing the button switches between fan speed levels, and the LCD displays real-time angle and gear information.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/bZO4OpmED8Q?si=6ALka2jfbTiNw24M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/B3P5YzXdDV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

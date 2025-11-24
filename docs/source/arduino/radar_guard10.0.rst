@@ -38,9 +38,9 @@ Course Introduction
 
 In this lesson, you’ll build an ultrasonic safety scanner using a servo, LEDs, and a buzzer. The servo sweeps the ultrasonic sensor to detect distance, while the LEDs change from green to yellow to red based on how close an object is. In danger zones, the buzzer sounds an alert with different beeping patterns.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/TtjAzlOizvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/u0FCjszUpQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

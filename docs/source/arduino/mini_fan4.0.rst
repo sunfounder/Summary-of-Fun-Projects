@@ -41,9 +41,9 @@ Course Introduction
 
 In this lesson, you’ll create a simple control system using a rotary encoder to steer a servo and adjust fan speed. Turning the encoder changes the servo angle, while pressing the button cycles through multiple fan speed levels.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/bZO4OpmED8Q?si=6ALka2jfbTiNw24M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/bLl84Oqkltg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
