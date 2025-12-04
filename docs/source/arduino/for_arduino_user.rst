@@ -53,6 +53,7 @@ We recommend that you read the chapters in order.
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
+    barrier_gate4.0
     trash_can
     trash_can2.0
     rfid_access1.0
@@ -83,6 +84,7 @@ We recommend that you read the chapters in order.
     distance_display1.0
     distance_display2.0
     distance_display3.0
+    distance_display4.0
     controll_eyes
     light_tracing
     light_tracker2.0
@@ -152,7 +154,7 @@ We recommend that you read the chapters in order.
     motor_controll
     flame_monitor1.0
     flame_monitor2.0
-
+    led_control1.0
 
 3. Basic Projects
 ------------------------
