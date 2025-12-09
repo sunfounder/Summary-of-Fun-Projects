@@ -53,3 +53,6 @@ We recommend that you read the chapters in order.
     auto_pump
     brick_breaker
     object_detection
+    distance_display1.0
+    gas_leak_monitor1.0
+    speed_dial
