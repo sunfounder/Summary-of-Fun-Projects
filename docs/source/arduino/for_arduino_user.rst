@@ -62,6 +62,8 @@ We recommend that you read the chapters in order.
     rfid_access4.0
     rfid_access5.0
     rfid_access6.0
+    rfid_access7.0
+    rfid_access8.0
     rfid_Jukebox
     water_level
     water_level2.0
@@ -155,6 +157,7 @@ We recommend that you read the chapters in order.
     flame_monitor1.0
     flame_monitor2.0
     led_control1.0
+    led_control2.0
 
 3. Basic Projects
 ------------------------

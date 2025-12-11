@@ -125,7 +125,7 @@ In this project, we need the following components:
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 
-* **IR Obstacle Avoidance Sensor Module 1**
+* **IR Obstacle Avoidance Sensor Module 2**
 
   - **OUT:** Connect to **3** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
