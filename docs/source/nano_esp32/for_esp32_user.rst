@@ -29,5 +29,8 @@ We recommend that you read the chapters in order.
     tetris1.0
     xmas_gadget
     xmas_matrix
+    stacker_blocks
+    speed_meter
+    slot_machine
 
 

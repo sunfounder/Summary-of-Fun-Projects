@@ -66,9 +66,9 @@ In this project, we need the following components:
         - PURCHASE LINK
 
     *   - 1
-        - ESP-WROOM-32 ESP32 ESP-32S Development Board
+        - Arduino Nano ESP32
         - 1
-        - |link_esp32_buy|
+        - 
     *   - 2
         - USB Type-C cable
         - 1
@@ -91,9 +91,9 @@ In this project, we need the following components:
         - |link_martix1_buy|
 
 
-.. **Wiring**
+**Wiring**
 
-.. .. image:: img/Tetris_Game_bb.png
+.. image:: img/Tetris_Game_bb.png
 
 **Common Connections:**
 
