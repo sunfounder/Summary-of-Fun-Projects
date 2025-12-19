@@ -45,9 +45,9 @@ Pressing the green button makes the LEDs light up in a forward flowing pattern, 
 
 Each button controls the direction of the LED animation, allowing you to switch between the two lighting modes at any time.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/DyyozHdvh80?si=MztYSVEZCeRxurx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/s4v0oj7J0Jg?si=MLBRo7iijkCocl53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

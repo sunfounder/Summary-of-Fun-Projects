@@ -44,9 +44,9 @@ Course Introduction
 
 In this lesson, we will learn how to use the servo motor with Arduino.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/7ZoSPbuH78U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/lpI65LK7i1g?si=jMADG0gSsNueQZXS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -43,9 +43,9 @@ This project uses an ultrasonic sensor, traffic lights, a servo, and a buzzer to
 
 When a car is detected, the lights change, the gate opens, and the buzzer signals. After the car passes, the gate closes and the red light turns back on.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/ymNq-aF15WE?si=m8vsPg4sytFQgrNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/6tNxSz5Q9aM?si=UmyFr0Xp0Oky8hMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

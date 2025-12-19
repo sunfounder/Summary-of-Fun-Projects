@@ -38,9 +38,9 @@ Course Introduction
 
 In this lesson, we’ll build a 5.0 access-control system using the MFRC522 module, active buzzer, a digital servo motor, and flame sensor module. 
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/NTM_WniSmV4?si=Nauil7ME5hYNHTgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/IAZ5AWQtw0o?si=nu02KSJUirUPWpX9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

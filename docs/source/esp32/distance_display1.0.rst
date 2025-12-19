@@ -40,9 +40,9 @@ In this project, we use an ultrasonic sensor and three groups of LEDs (green, ye
 
 The system measures the distance to an object and activates different LED groups based on how close the object is: green LEDs indicate a safe distance (≤15 cm), yellow LEDs warn that the object is getting closer (≤10 cm), and red LEDs signal a critical proximity alert (≤5 cm). The LEDs turn on from left to right and turn off from right to left to enhance the visual effect.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/zgxBlPbx5Dw?si=VVic5yUzM2WCicIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/tjNP2JItu-c?si=9rvu3Kv7wiGxFKT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

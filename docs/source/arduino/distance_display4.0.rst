@@ -42,9 +42,9 @@ The sensor continuously measures distance and switches between three states: saf
 
 The system updates smoothly by completing each LED–buzzer cycle before changing to the next state.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/14wtt1neV1I?si=XGVi_7mqG_FxeguJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/QNXRqbYMjao?si=Cq_Bs4-gH6DlXpHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
