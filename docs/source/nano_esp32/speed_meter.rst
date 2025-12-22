@@ -141,35 +141,63 @@ In this project, we need the following components:
       #include <Adafruit_GFX.h>
       #include <Adafruit_SSD1306.h>
 
+      // -------------------- OLED Settings --------------------
       #define SCREEN_WIDTH 128
       #define SCREEN_HEIGHT 64
       #define OLED_RESET    -1
+      #define OLED_ADDR     0x3C
+
       Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-      // Motor pins (L9110)
+      // -------------------- Motor Pins (L9110) --------------------
       #define MOTOR_PIN1 5
       #define MOTOR_PIN2 6
 
-      // Button pin
+      // -------------------- Button Pin --------------------
       #define BUTTON_PIN 2
 
-      // Motor speed levels (PWM values)
-      int speedLevels[5] = {0, 100, 150, 200, 255};
+      // -------------------- Motor Speed Levels --------------------
+      // PWM duty values (0..255)
+      int speedLevels[5] = {0, 190, 200, 230, 255};
       int currentLevel = 0;
 
-      // Button debounce
+      // -------------------- Button Debounce --------------------
       bool lastButtonState = HIGH;
       unsigned long lastDebounceTime = 0;
       const unsigned long debounceDelay = 200;
 
+      // -------------------- ESP32 PWM (LEDC) Settings --------------------
+      // New ESP32 core supports ledcAttach(pin, freq, resolutionBits)
+      const uint32_t PWM_FREQ = 20000;   // 20kHz
+      const uint8_t  PWM_RES  = 8;       // 8-bit => duty 0..255
+
+      // -------------------- Helper: set motor duty --------------------
+      void setMotorPWM(int duty1, int duty2) {
+        // Clamp to 0..255
+        if (duty1 < 0) duty1 = 0;
+        if (duty1 > 255) duty1 = 255;
+        if (duty2 < 0) duty2 = 0;
+        if (duty2 > 255) duty2 = 255;
+
+        // Write PWM duty by pin (ESP32 new API)
+        ledcWrite(MOTOR_PIN1, duty1);
+        ledcWrite(MOTOR_PIN2, duty2);
+      }
+
       void setup() {
-        pinMode(MOTOR_PIN1, OUTPUT);
-        pinMode(MOTOR_PIN2, OUTPUT);
         pinMode(BUTTON_PIN, INPUT_PULLUP);
 
-        // Initialize OLED
-        if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-          for (;;) ; // Stop if OLED not found
+        // -------------------- Setup ESP32 PWM --------------------
+        // Attach PWM to both motor pins
+        ledcAttach(MOTOR_PIN1, PWM_FREQ, PWM_RES);
+        ledcAttach(MOTOR_PIN2, PWM_FREQ, PWM_RES);
+
+        // Motor stop at boot
+        setMotorPWM(0, 0);
+
+        // -------------------- Initialize OLED --------------------
+        if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
+          while (true) { delay(1000); } // Stop if OLED not found
         }
         display.clearDisplay();
         display.display();
@@ -184,45 +212,54 @@ In this project, we need the following components:
 
       void handleButton() {
         bool buttonState = digitalRead(BUTTON_PIN);
-        if (buttonState == LOW && lastButtonState == HIGH && (millis() - lastDebounceTime) > debounceDelay) {
+
+        // Detect falling edge with debounce
+        if (buttonState == LOW && lastButtonState == HIGH &&
+            (millis() - lastDebounceTime) > debounceDelay) {
+
           currentLevel++;
           if (currentLevel > 4) currentLevel = 0; // Loop back to stop
           lastDebounceTime = millis();
         }
+
         lastButtonState = buttonState;
       }
 
       void updateMotor() {
         int speed = speedLevels[currentLevel];
+
+        // Forward: IN1 = PWM, IN2 = 0
+        // Stop: both 0
         if (speed == 0) {
-          analogWrite(MOTOR_PIN1, 0);
-          analogWrite(MOTOR_PIN2, 0);
+          setMotorPWM(0, 0);
         } else {
-          analogWrite(MOTOR_PIN1, speed);
-          analogWrite(MOTOR_PIN2, 0);
+          setMotorPWM(speed, 0);
         }
       }
 
       void drawSpeed() {
         int pwm = speedLevels[currentLevel];
-        float rpm = (pwm / 255.0) * 200.0;  // Approximate RPM (TT motor max ~200RPM)
 
-        // Calculate bar length (max 100px)
+        // Approximate RPM display (just a rough mapping)
+        float rpm = (pwm / 255.0f) * 200.0f;
+
+        // Bar length (max 100px)
         int barLength = map(pwm, 0, 255, 0, 100);
 
         display.clearDisplay();
 
         // --- Display numeric speed (big font) ---
-        display.setTextSize(2);        // Large font
+        display.setTextSize(2);
         display.setTextColor(SSD1306_WHITE);
-        display.setCursor(0, 0);       // Position at top-left
+        display.setCursor(0, 0);
         display.print("RPM");
-        display.setCursor(0, 20);      // Second line
+
+        display.setCursor(0, 20);
         display.print((int)rpm);
 
         // --- Draw bar graph ---
-        display.drawRect(10, 50, 100, 10, SSD1306_WHITE);       // Outline
-        display.fillRect(10, 50, barLength, 10, SSD1306_WHITE); // Filled part
+        display.drawRect(10, 50, 100, 10, SSD1306_WHITE);
+        display.fillRect(10, 50, barLength, 10, SSD1306_WHITE);
 
         display.display();
       }
