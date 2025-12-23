@@ -97,7 +97,7 @@ In this project, we need the following components:
 
 **Wiring**
 
-.. image:: img/speed_detection3.0_bb.png
+.. image:: img/Speed_Detection3.0_bb.png
 
 **Common Connections:**
 
