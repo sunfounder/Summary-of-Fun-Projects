@@ -27,6 +27,7 @@ We recommend that you read the chapters in order.
 
     smart_stop1.0
     smart_stop2.0
+    smart_stop3.0
     velocity_view
     dino_run
     dino_run2.0
@@ -57,6 +58,7 @@ We recommend that you read the chapters in order.
     barrier_gate5.0
     trash_can
     trash_can2.0
+    trash_can3.0
     rfid_access1.0
     rfid_access2.0
     rfid_access3.0
@@ -161,6 +163,7 @@ We recommend that you read the chapters in order.
     flame_monitor2.0
     led_control1.0
     led_control2.0
+    led_control3.0
 
 3. Basic Projects
 ------------------------

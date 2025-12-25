@@ -38,9 +38,9 @@ Course Introduction
 
 This project uses an Arduino Nano ESP32 and a MAX7219 8×8 LED matrix to display animated Christmas patterns with a smooth breathing-light effect.
 
-.. .. raw:: html
+.. raw:: html
  
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/_zZuwgufLBg?si=f7chyOB_esjepr0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/DTmtV8rApo0?si=wAFG2pkrC3vER7Q-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

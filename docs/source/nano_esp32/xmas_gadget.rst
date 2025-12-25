@@ -38,9 +38,9 @@ Course Introduction
 
 In this project, we use an Arduino Nano ESP32 drives a MAX7219 LED matrix and buzzer to display animated Christmas patterns with synchronized music, triggered by an obstacle sensor.
 
-.. .. raw:: html
+.. raw:: html
  
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/_zZuwgufLBg?si=f7chyOB_esjepr0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/xAZSOtPlNj8?si=UhgEku1lag_Agqx3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

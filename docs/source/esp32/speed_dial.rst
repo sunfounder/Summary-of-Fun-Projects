@@ -40,9 +40,9 @@ In this lesson, you'll use a potentiometer and a DC motor with the ESP32 to crea
 
 By rotating the potentiometer, you can adjust the motor speed from stop to full speed. The ESP32 reads the potentiometer value, maps it to PWM output, and drives the motor in one direction with variable speed.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/dJjgRm4Qjh0?si=7lZ-xXccWiOGLNSJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/4Poj-7nh6OQ?si=a453mqSETV96tWv1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
