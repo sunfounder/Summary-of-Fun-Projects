@@ -103,7 +103,7 @@ In this project, we need the following components:
 
 **Wiring**
 
-.. image:: img/trash_can3.0_bb.png
+.. image:: img/Trash_Can3.0_bb.png
 
 **Common Connections:**
 
