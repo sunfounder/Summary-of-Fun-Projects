@@ -32,5 +32,12 @@ We recommend that you read the chapters in order.
     stacker_blocks
     speed_meter
     slot_machine
+    distance_display
+    light_play1.0
+    water_level2.0
+    controll_eyes
+    rgb_controll
+    flame_monitor1.0
+
 
 
