@@ -67,6 +67,7 @@ We recommend that you read the chapters in order.
     rfid_access6.0
     rfid_access7.0
     rfid_access8.0
+    rfid_access9.0
     rfid_Jukebox
     water_level
     water_level2.0
@@ -120,6 +121,8 @@ We recommend that you read the chapters in order.
     disarm_timer
     gas_leak_monitor1.0
     gas_leak_monitor2.0
+    gas_leak_monitor3.0
+    gas_leak_monitor4.0
     digital_dice
     digital_dice2.0
     traffic_light1.0
