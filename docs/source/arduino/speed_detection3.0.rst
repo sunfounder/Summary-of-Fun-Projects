@@ -41,9 +41,9 @@ Course Introduction
 
 This Arduino project functions as a basic speed detection system using two Ultrasonic Sensor Modules and an LCD display and buzzer moudle.  When an object passes the first sensor, a timer starts; it stops at the second sensor. 
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/xxojafspny4?si=Ufz2U3-J4G4nvo_Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/DjaRAb95ZrM?si=-6J8eeDYRfVzx9Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

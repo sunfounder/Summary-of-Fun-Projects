@@ -45,9 +45,9 @@ When the left sensor detects an object, the LEDs light up in a forward flowing p
 
 Each sensor controls one direction of the animation, allowing the LEDs to respond dynamically based on which side an obstacle is detected.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/c8yfP9T3jB4?si=6c1veswFYB8SczuB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/NFj_RJYLQJw?si=XEEU-fi1eiNxXTmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

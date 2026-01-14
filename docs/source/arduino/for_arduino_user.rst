@@ -28,6 +28,7 @@ We recommend that you read the chapters in order.
     smart_stop1.0
     smart_stop2.0
     smart_stop3.0
+    smart_stop4.0
     velocity_view
     dino_run
     dino_run2.0
@@ -51,6 +52,7 @@ We recommend that you read the chapters in order.
     radar_guard8.0
     radar_guard9.0
     radar_guard10.0
+    radar_guard11.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -68,6 +70,7 @@ We recommend that you read the chapters in order.
     rfid_access7.0
     rfid_access8.0
     rfid_access9.0
+    rfid_access10.0
     rfid_Jukebox
     water_level
     water_level2.0
