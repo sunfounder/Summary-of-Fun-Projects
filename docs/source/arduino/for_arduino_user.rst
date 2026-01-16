@@ -170,6 +170,11 @@ We recommend that you read the chapters in order.
     led_control1.0
     led_control2.0
     led_control3.0
+    smart_fan1.0
+    smart_fan2.0
+    smart_fan3.0
+    raindrop_alarm1.0
+
 
 3. Basic Projects
 ------------------------

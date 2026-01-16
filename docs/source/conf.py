@@ -1137,5 +1137,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/flame-sensor-module-1?_pos=1&_sid=4298df423&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_raindrop_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/raindrop-detection-sensor-module?_pos=1&_sid=84f554d64&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
