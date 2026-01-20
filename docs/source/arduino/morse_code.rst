@@ -84,9 +84,9 @@ In this project, we need the following components:
         - Several
         - |link_wires_buy|
     *   - 5
-        - Active Buzzer
+        - Passive Buzzer
         - 1
-        - 
+        - |link_passive_buzzer_buy|
     *   - 6
         - Button
         - 1

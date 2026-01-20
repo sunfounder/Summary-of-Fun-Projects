@@ -174,6 +174,8 @@ We recommend that you read the chapters in order.
     smart_fan2.0
     smart_fan3.0
     raindrop_alarm1.0
+    raindrop2.0
+    potentiometer_value
 
 
 3. Basic Projects
@@ -188,5 +190,8 @@ We recommend that you read the chapters in order.
     flame_monitor
     ir_obstacle
     potentiometer
+    oled
+    passive_buzzer_module
+    rgb_module
 
 
