@@ -193,5 +193,8 @@ We recommend that you read the chapters in order.
     oled
     passive_buzzer_module
     rgb_module
+    gas_sensor
+    Joystick
+    touch
 
 

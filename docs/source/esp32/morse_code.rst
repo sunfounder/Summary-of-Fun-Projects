@@ -17,21 +17,33 @@ Morse Code
 
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
-  * 🎁 Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
+🎁 Kit purchase
+------------------------
   
-  .. list-table::
-    :widths: 20 20 20
-    :header-rows: 1
+Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
 
-    *   - Name	
-        - Includes ESP32 board
-        - PURCHASE LINK
-    *   - ESP32 Ultimate Starter Kit	
-        - ESP32 WROOM 32E +
-        - |link_esp32_kit_buy|
-    *   - Universal Maker Sensor Kit
-        - 
-        - |link_umsk_buy|
+.. image:: img/esp32_kit.png
+   :width: 100%
+   :align: center
+   :target: https://www.sunfounder.com/products/sunfounder-esp32-ultimate-starter-kit-with-esp32-camera-extension-board-battery?_pos=1&_sid=7dcb30fb6&_ss=r&ref=jbzmncle
+
+.. raw:: html
+
+   <br><br>
+
+.. list-table::
+   :widths: 20 20 20
+   :header-rows: 1
+
+   * - Name
+     - Includes ESP32 board
+     - PURCHASE LINK
+   * - ESP32 Ultimate Starter Kit
+     - ESP32 WROOM 32E +
+     - |link_esp32_kit_buy|
+   * - Universal Maker Sensor Kit
+     -
+     - |link_umsk_buy|
 
 Course Introduction
 ------------------------

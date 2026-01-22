@@ -126,8 +126,8 @@ In this project, we need the following components:
 
 * **Centrifugal Pump**
 
-  - **GND:** Connect to **L9110 Motor Driver Module** MOTOR A.
-  - **VCC:** Connect to **L9110 Motor Driver Module** MOTOR A.
+  -  Connect to **L9110 Motor Driver Module** MOTOR A.
+  -  Connect to **L9110 Motor Driver Module** MOTOR A.
 
 
 **Writing the Code**

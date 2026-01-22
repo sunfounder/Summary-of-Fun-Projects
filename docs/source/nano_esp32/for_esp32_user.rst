@@ -38,6 +38,9 @@ We recommend that you read the chapters in order.
     controll_eyes
     rgb_controll
     flame_monitor1.0
+    tilt_led2.0
+    stair_light
+    auto_pump1.0
 
 
 

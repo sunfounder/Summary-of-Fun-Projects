@@ -125,8 +125,8 @@ In this project, we need the following components:
 
 * **Centrifugal Pump**
 
-  - **GND:** Connect to **TA6586** B0.
-  - **VCC:** Connect to **TA6586** F0.
+  -  Connect to **TA6586** B0.
+  -  Connect to **TA6586** F0.
 
 * **Button**
 

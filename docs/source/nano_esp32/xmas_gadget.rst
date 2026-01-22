@@ -3,35 +3,49 @@
 Xmas Gadget
 ==============================================================
 
-.. note::
-  
-  🌟 Welcome to the SunFounder Facebook Community! Whether you're into Raspberry Pi, Arduino, or ESP32, you'll find inspiration, help ideas here.
-   
-  - ✅ Be the first to get free learning resources. 
-   
-  - ✅ Stay updated on new products & exclusive giveaways. 
-   
-  - ✅ Share your creations and get real feedback.
-   
-  * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
+  .. note::
+    
+    🌟 Welcome to the SunFounder Facebook Community! Whether you're into Raspberry Pi, Arduino, or ESP32, you'll find inspiration, help ideas here.
+    
+    - ✅ Be the first to get free learning resources. 
+    
+    - ✅ Stay updated on new products & exclusive giveaways. 
+    
+    - ✅ Share your creations and get real feedback.
+    
+    * 👉 Need faster updates or support? Click [|link_sf_facebook|] join our Facebook community 
 
-  * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
+    * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
+    
+ 
+🎁 Kit purchase
+------------------------
   
-  * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
-  
-  .. list-table::
-    :widths: 20 20 20
-    :header-rows: 1
+Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
 
-    *   - Name	
-        - Includes ESP32 board
-        - PURCHASE LINK
-    *   - ESP32 Ultimate Starter Kit	
-        - ESP32 WROOM 32E +
-        - |link_esp32_kit_buy|
-    *   - Universal Maker Sensor Kit
-        - 
-        - |link_umsk_buy|
+.. image:: img/esp32_kit.png
+   :width: 100%
+   :align: center
+   :target: https://www.sunfounder.com/products/sunfounder-esp32-ultimate-starter-kit-with-esp32-camera-extension-board-battery?_pos=1&_sid=7dcb30fb6&_ss=r&ref=jbzmncle
+
+.. raw:: html
+
+   <br><br>
+
+.. list-table::
+   :widths: 20 20 20
+   :header-rows: 1
+
+   * - Name
+     - Includes ESP32 board
+     - PURCHASE LINK
+   * - ESP32 Ultimate Starter Kit
+     - ESP32 WROOM 32E +
+     - |link_esp32_kit_buy|
+   * - Universal Maker Sensor Kit
+     -
+     - |link_umsk_buy|
+
 
 Course Introduction
 ------------------------
