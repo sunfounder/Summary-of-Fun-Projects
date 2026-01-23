@@ -17,7 +17,7 @@ Slot Machine
 
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
-🎁 Kit purchase
+Kit purchase
 ------------------------
   
 Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.

@@ -19,7 +19,7 @@ Snake Game
   
   * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
   
-🎁 Kit purchase
+Kit purchase
 ------------------------
   
 Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.

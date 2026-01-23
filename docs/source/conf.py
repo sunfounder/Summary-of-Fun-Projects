@@ -1145,5 +1145,9 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/products/rgb-led-module?_pos=4&_sid=927c9dd50&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
+.. |link_inventorkit_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-beginners-lab-starter-kit-with-original-arduino-uno-r3?ref=jbzmncle" target="_blank">BUY</a>
+
 """
 
