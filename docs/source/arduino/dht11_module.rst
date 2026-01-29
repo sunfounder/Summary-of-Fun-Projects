@@ -1,6 +1,6 @@
-.. _heart_rate_module:
+.. _dht11:
 
-Heart Rate Sensor Module
+DHT-11 Module
 ==============================================================
 
 .. note::
@@ -48,7 +48,7 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this lesson, we will learn how to use the Heart Rate Sensor Module with Arduino.
+In this lesson, we will learn how to use the DHT-11 Module with Arduino.
 
 .. .. raw:: html
 
