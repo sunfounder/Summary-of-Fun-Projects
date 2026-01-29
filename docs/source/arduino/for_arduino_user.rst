@@ -176,6 +176,9 @@ We recommend that you read the chapters in order.
     raindrop_alarm1.0
     raindrop2.0
     potentiometer_value
+    tof_distance
+    heart_rate_light1.0
+    touch_toggle
 
 
 3. Basic Projects
@@ -196,5 +199,12 @@ We recommend that you read the chapters in order.
     gas_sensor
     Joystick
     touch
+    mpu6050_module
+    heart_rate
+    dht11_module
+    photoresistor
+    raindrop
+    vibration
+
 
 
