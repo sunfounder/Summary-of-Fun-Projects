@@ -17,24 +17,33 @@ Water Level
 
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
-  * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
-  
-  .. list-table::
-    :widths: 20 20 20
-    :header-rows: 1
+Kit purchase
+------------------------
 
-    *   - Name	
-        - Includes Arduino board
-        - PURCHASE LINK
-    *   - Elite Explorer Kit
-        - Arduino Uno R4 WiFi
-        - |link_elite_buy|
-    *   - Universal Maker Sensor Kit
-        - ×
-        - |link_umsk_buy|
-    *   - 3 in 1 Ultimate Starter Kit	
-        - Arduino Uno R4 Minima
-        - |link_arduinor4_buy|
+Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
+
+.. image:: img/ultimate_sensor_kit.png
+   :width: 100%
+   :align: center
+   :target: https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-ultimate-sensor-kit-with-original-arduino-uno-r4-minima?ref=jbzmncle
+
+.. raw:: html
+
+   <br><br>
+
+.. list-table::
+   :widths: 20 20 20
+   :header-rows: 1
+
+   * - Name
+     - Includes Arduino board
+     - PURCHASE LINK
+   * - Elite Explorer Kit
+     - Arduino Uno R4 WiFi
+     - |link_elite_buy|
+   * - 3 in 1 Ultimate Starter Kit
+     - Arduino Uno R4 Minima
+     - |link_arduinor4_buy|
 
 Course Introduction
 ------------------------

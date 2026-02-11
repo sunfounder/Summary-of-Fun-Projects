@@ -17,18 +17,33 @@ Breath LED
 
   * 👉 Or join our WhatsApp group: Click [|link_sf_whatsapp|]
    
-  * 🎁 Looking for parts?Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
+Kit purchase
+------------------------
 
-  .. list-table::
-    :widths: 20 20 20
-    :header-rows: 1
+Looking for parts? Check out our all-in-one kits below — packed with components, beginner-friendly guides, and tons of fun.
 
-    *   - Name
-        - Arduino board
-        - PURCHASE LINK
-    *   - Elite Explorer Kit
-        - Arduino Uno R4 WiFi
-        - |link_elite_buy|
+.. image:: img/umsk_kit.png
+   :width: 100%
+   :align: center
+   :target: https://www.sunfounder.com/collections/raspberrypi-kits/products/sunfounder-universal-maker-sensor-kit?ref=jbzmncle
+
+.. raw:: html
+
+   <br><br>
+
+.. list-table::
+   :widths: 20 20 20
+   :header-rows: 1
+
+   * - Name
+     - Includes Arduino board
+     - PURCHASE LINK
+   * - Ultimate Sensor Kit
+     - Arduino Uno R4 Minima
+     - |link_ultimate_sensor_buy|
+   * - Universal Maker Sensor Kit
+     - ×
+     - |link_umsk_buy|
 
 Course Introduction
 ------------------------
