@@ -52,9 +52,9 @@ In this lesson, you’ll learn how to use a potentiometer with the Arduino Nano 
 
 As you turn the knob, the LED color smoothly transitions through red, yellow, green, and blue, creating a dynamic color blending effect.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/Pl0YdiJNR9s?si=zPCK-daRX-_9uIbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/h5hZPuHgJJA?si=oZV1qt4ZfQ0nQRgh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

@@ -56,9 +56,9 @@ Course Introduction
 
 This project uses an ultrasonic sensor, MFRC522 Module, a servo, and a buzzer to create an automatic gate system. 
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/ymNq-aF15WE?si=m8vsPg4sytFQgrNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/dH0Zgg6Uj0k?si=CFuYw1t-4MbNgd4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

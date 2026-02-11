@@ -56,9 +56,9 @@ Course Introduction
 
 In this lesson, we will learn how to use the Passive Buzzer Module with Arduino.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/itvyQ4JMRbU?si=e2y2_PAK3W2yfU3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/npsJT10hC04?si=7j2AN_1u4cDNQABr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

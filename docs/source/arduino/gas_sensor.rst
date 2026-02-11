@@ -51,9 +51,9 @@ Course Introduction
 
 In this lesson, we will learn how to use the Gas Sensor Module with Arduino.
 
-.. .. raw:: html
- 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/wDVh-0BptOI?si=F7Yddwn72Qfo1eqi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+.. raw:: html
+
+ <iframe width="700" height="394" src="https://www.youtube.com/embed/mnMepCgOGmQ?si=YcvgkVQTeFQWD6uX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

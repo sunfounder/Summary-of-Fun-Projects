@@ -56,9 +56,9 @@ Course Introduction
 
 This project creates a servo-based ultrasonic scanner with LEDs and a buzzer. The ultrasonic sensor sweeps left and right to detect objects. When something gets too close, the red LED and buzzer turn on as an alarm, and when the area is safe, the green LED lights up.
 
-.. .. raw:: html
- 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/u0FCjszUpQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+.. raw:: html
+
+   <iframe width="700" height="394" src="https://www.youtube.com/embed/GvmddEXRVKg?si=ukv_8M09It9rxy3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
