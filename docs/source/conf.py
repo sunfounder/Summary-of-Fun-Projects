@@ -1148,6 +1148,5 @@ rst_epilog += """
 .. |link_inventorkit_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/arduino-kits-bundles/products/sunfounder-beginners-lab-starter-kit-with-original-arduino-uno-r3?ref=jbzmncle" target="_blank">BUY</a>
-
 """
 

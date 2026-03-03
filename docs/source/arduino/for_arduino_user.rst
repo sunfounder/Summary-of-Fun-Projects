@@ -205,6 +205,9 @@ We recommend that you read the chapters in order.
     photoresistor
     raindrop
     vibration
+    pump
+    relay
+    tt_motor
 
 
 
