@@ -101,6 +101,7 @@ We recommend that you read the chapters in order.
     speed_detection
     speed_detection2.0
     speed_detection3.0
+    speed_detection4.0
     servo_control
     servo_control2.0
     servo_control3.0
@@ -116,8 +117,10 @@ We recommend that you read the chapters in order.
     tetris1.0
     tetris2.0
     tetris3.0
+    tetris4.0
     parking_lot
     parking_lot2.0
+    parking_lot3.0
     night_light
     servo_tuner
     bird_dash
@@ -208,6 +211,7 @@ We recommend that you read the chapters in order.
     pump
     relay
     tt_motor
+
 
 
 
