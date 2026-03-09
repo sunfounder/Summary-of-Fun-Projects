@@ -56,9 +56,9 @@ Course Introduction
 
 This Arduino project uses a VL53L0X Time of Flight distance sensor and an OLED display to measure and visualize distance. The sensor continuously measures the distance in millimeters, and the measured value is shown on the OLED screen and printed to the serial monitor. This setup demonstrates how to use a micro LiDAR sensor for precise short-range distance measurement.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/qlKY4ye4YUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/V7NFCvB9KJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

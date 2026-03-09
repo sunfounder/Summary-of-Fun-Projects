@@ -43,9 +43,9 @@ In this lesson, you’ll build a simple raindrop alarm system using a raindrop s
 
 When rain is detected, the sensor triggers the buzzer to beep and the LEDs to blink as a warning. When the surface is dry, all indicators turn off automatically.
 
-.. .. raw:: html
+.. raw:: html
 
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/frHJHmXgnK4?si=iCaX_KMK4dy8d3KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/hJpEoj4I8a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

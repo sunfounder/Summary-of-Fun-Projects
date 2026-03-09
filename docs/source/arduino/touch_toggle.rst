@@ -56,9 +56,9 @@ Course Introduction
 
 This Arduino project uses a touch sensor and a traffic light LED module to simulate a simple traffic light system. Each time the touch sensor is pressed, the LEDs switch in sequence from red to yellow to green. This example demonstrates how to use a touch sensor as an input trigger to control multiple LEDs in a sequence.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/URUrUUSfsKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/XhOCOqaR0Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

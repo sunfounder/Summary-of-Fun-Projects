@@ -56,9 +56,9 @@ Course Introduction
 
 This Arduino project builds a heartbeat-synchronized LED lighting system using a MAX30102 heart rate sensor and 11 LEDs. The code detects heartbeats and calculates the time interval between beats to determine the heart rate. Based on the detected heartbeat, the LEDs perform a smooth breathing-style light animation, gradually brightening and dimming to match the pulse rhythm. If no finger is detected on the sensor, the LEDs slowly fade out automatically.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/sO1tf1UgKJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/ZC2UqTDhLr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

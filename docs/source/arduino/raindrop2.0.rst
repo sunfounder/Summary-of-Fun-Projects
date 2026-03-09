@@ -43,9 +43,9 @@ In this lesson, you’ll build a simple automatic rain cover using a raindrop se
 
 When rain is detected, the sensor triggers the servo to rotate and open the cover. When the rain stops, the servo automatically returns to its original position, closing the cover.
 
-.. .. raw:: html
+.. raw:: html
 
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/frHJHmXgnK4?si=iCaX_KMK4dy8d3KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/o5rBhTuul1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

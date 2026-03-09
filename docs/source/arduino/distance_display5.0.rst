@@ -62,7 +62,7 @@ The system updates smoothly by completing each LED–buzzer cycle before changin
 
 .. raw:: html
  
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/dH0Zgg6Uj0k?si=8TByiZLG_vI5uRXq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/AEaznfTFRtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
