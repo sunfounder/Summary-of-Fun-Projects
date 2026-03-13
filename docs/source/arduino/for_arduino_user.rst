@@ -71,6 +71,7 @@ We recommend that you read the chapters in order.
     rfid_access8.0
     rfid_access9.0
     rfid_access10.0
+    rfid_access11.0
     rfid_Jukebox
     water_level
     water_level2.0
@@ -110,6 +111,7 @@ We recommend that you read the chapters in order.
     object_detection2.0
     tempmumid_monitor
     tempmumid_monitor2.0
+    tempmumid_monitor3.0
     lidar_guard
     heart_rate_monitor
     heart_rate_monitor2.0
@@ -170,6 +172,7 @@ We recommend that you read the chapters in order.
     motor_controll
     flame_monitor1.0
     flame_monitor2.0
+    flame_monitor3.0
     led_control1.0
     led_control2.0
     led_control3.0
