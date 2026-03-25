@@ -48,7 +48,7 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this lesson, you’ll learn how to use an L9110 Motor Driver Module, an Ultrasonic Sensor Module, a 1602 LCD, and a TT motor with the Arduino UNO R3 to create a Smart Stop 2.0 system.
+In this lesson, you’ll learn how to use an L9110 Motor Driver Module, an Ultrasonic Sensor Module, a buzzer module, a traffic light module and a TT motor with the Arduino UNO R4 to create a Smart Stop 3.0 system.
 
 As the obstacle gets closer to the Ultrasonic Sensor Module, the LCD screen displays the distance to obstacles and the servo speed. When the distance exceeds the predefined safety threshold, the green light switches to a flashing red light as a warning, the TT motor gradually slows down until it comes to a stop.
 

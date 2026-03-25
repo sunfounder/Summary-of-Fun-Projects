@@ -1,6 +1,6 @@
-.. _smart_stop4:
+.. _smart_stop5:
 
-Smart Stop 4.0
+Smart Stop 5.0
 ==============================================================
 
 .. note::
@@ -48,13 +48,13 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this lesson, you’ll learn how to use an L9110 Motor Driver Module, an Ultrasonic Sensor Module, an I2C LCD Module, a traffic light module, and a TT motor with the Arduino UNO R3 to create a Smart Stop 4.0 system.
+In this lesson, you’ll learn how to use an L9110 Motor Driver Module, an Ultrasonic Sensor Module, an I2C LCD Module, an Buzzer module and a TT motor with the Arduino UNO R4 to create a Smart Stop 5.0 system.
 
-As the obstacle gets closer to the Ultrasonic Sensor Module, the LCD screen displays the distance to obstacles and the servo speed. When the distance exceeds the predefined safety threshold, the green light switches to a flashing red light as a warning, the TT motor gradually slows down until it comes to a stop.
+As the obstacle gets closer to the Ultrasonic Sensor Module, the LCD screen displays the distance to obstacles and the servo speed.
 
-.. raw:: html
+.. .. raw:: html
 
- <iframe width="700" height="394" src="https://www.youtube.com/embed/_WoZojtIqF8?si=eiE2Klw8YBnm7pzr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+.. <iframe width="700" height="394" src="https://www.youtube.com/embed/_WoZojtIqF8?si=eiE2Klw8YBnm7pzr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -109,17 +109,13 @@ In this project, we need the following components:
         - 1
         - |link_buzzer_module_buy|
     *   - 9
-        - Traffic Light LED
-        - 1
-        - |link_trafficlinght_buy|
-    *   - 10
         - I2C LCD 1602
         - 1
         - |link_i2clcd1602_buy|
 
 **Wiring**
 
-.. image:: img/Smart_Stop4.0_bb.png
+.. image:: img/Smart_Stop5.0_bb.png
 
 **Common Connections:**
 
@@ -147,13 +143,6 @@ In this project, we need the following components:
   - **＋:** Connect to breadboard’s red power bus. 
   - **－:** Connect to breadboard’s negative power bus.
 
-* **Traffic light LED**
-
-  - **R:** Connect to **5** on the Arduino.
-  - **Y:** Connect to **6** on the Arduino.
-  - **G:** Connect to **7** on the Arduino.
-  - **GND:** Connect to breadboard’s negative power bus.
-
 * **I2C LCD 1602**
 
   - **SDA:** Connect to **A4** on the Arduino.
@@ -174,208 +163,173 @@ In this project, we need the following components:
       #include <Wire.h>
       #include <LiquidCrystal_I2C.h>
 
-      // I2C 16x2 LCD, most common address is 0x27
+      // I2C LCD (16x2)
       LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-      // Motor driver pins (L9110, motor connected to B channel)
-      // motorPinA provides PWM signal for speed control
-      // motorPinB is kept LOW to fix the motor direction
+      // Motor driver pins (L9110)
       const int motorPinA = 3;
       const int motorPinB = 2;
 
-      // Ultrasonic sensor pins (HC-SR04)
-      const int trigPin = 10;    // Sends ultrasonic pulse
-      const int echoPin = 11;    // Receives echo pulse
+      // Ultrasonic sensor pins
+      const int trigPin = 10;
+      const int echoPin = 11;
 
-      // Passive buzzer pin (requires tone() function)
+      // Passive buzzer pin
       const int buzzerPin = 4;
 
-      // Traffic light LED pins
-      const int redPin    = 5;
-      const int yellowPin = 6;
-      const int greenPin  = 7;
-
-      // Distance thresholds in centimeters
-      // Below STOP_DISTANCE: motor stops immediately
-      // Below SLOW_DISTANCE: motor slows down
+      // Distance thresholds (cm)
       const int STOP_DISTANCE = 5;
       const int SLOW_DISTANCE = 20;
 
-      // Motor speed limits
-      // Motor may not rotate reliably below MIN_MOTOR_PWM
+      // Motor speed range (PWM)
       const int MIN_MOTOR_PWM = 75;
       const int MAX_MOTOR_PWM = 255;
 
-      // Variables used to control buzzer timing without delay()
+      // Variables for non-blocking buzzer
       unsigned long previousBeepTime = 0;
       bool beepState = false;
 
       void setup() {
 
-        // Motor driver pins
+        // Set motor pins
         pinMode(motorPinA, OUTPUT);
         pinMode(motorPinB, OUTPUT);
 
-        // Ultrasonic sensor pins
+        // Set ultrasonic pins
         pinMode(trigPin, OUTPUT);
         pinMode(echoPin, INPUT);
 
-        // Buzzer and LED pins
+        // Set buzzer pin
         pinMode(buzzerPin, OUTPUT);
-        pinMode(redPin, OUTPUT);
-        pinMode(yellowPin, OUTPUT);
-        pinMode(greenPin, OUTPUT);
 
-        // Fix motor direction by keeping motorPinB LOW
+        // Fix motor direction
         digitalWrite(motorPinB, LOW);
 
         // Initialize LCD
         lcd.init();
         lcd.backlight();
 
-        // Display startup message
+        // Startup message
         lcd.setCursor(0, 0);
-        lcd.print("Smart Stop 3.0");
+        lcd.print("Smart Stop");
         lcd.setCursor(0, 1);
-        lcd.print("System Ready");
+        lcd.print("Ready...");
         delay(1000);
         lcd.clear();
       }
 
       void loop() {
 
-        // Measure distance from ultrasonic sensor (cm)
+        // Read distance (cm)
         int distance = readDistance();
 
-        // Convert distance into motor speed (PWM value)
+        // Calculate motor speed
         int speed = calculateSpeed(distance);
 
-        // Drive motor using calculated speed
+        // Control motor
         controlMotor(speed);
 
-        // Update LEDs, buzzer and LCD display
-        updateTrafficLight(distance);
+        // Update buzzer and display
         updateBuzzer(distance);
         updateLCD(distance);
 
-        // Small delay for stable sensor readings
         delay(50);
       }
 
+      // Measure distance using ultrasonic sensor
       int readDistance() {
         long duration;
 
-        // Send a 10 microsecond trigger pulse
+        // Send trigger pulse
         digitalWrite(trigPin, LOW);
         delayMicroseconds(2);
         digitalWrite(trigPin, HIGH);
         delayMicroseconds(10);
         digitalWrite(trigPin, LOW);
 
-        // Measure echo pulse duration
-        // Timeout prevents the program from blocking
+        // Read echo time (with timeout)
         duration = pulseIn(echoPin, HIGH, 25000);
 
-        // If no echo is detected, assume the object is far away
-        if (duration == 0) {
-          return 100;
-        }
+        // If no signal, return far distance
+        if (duration == 0) return 100;
 
-        // Convert time (microseconds) to distance (centimeters)
+        // Convert to cm
         return duration / 58;
       }
 
+      // Convert distance to motor speed
       int calculateSpeed(int distance) {
 
-        // Stop motor immediately if object is too close
-        if (distance < STOP_DISTANCE) {
+        // Stop if too close
+        if (distance <= STOP_DISTANCE) {
           return 0;
         }
 
-        // Gradually increase speed as distance increases
-        // map() converts distance range into PWM range
-        if (distance < SLOW_DISTANCE) {
+        // Slow down in warning range
+        if (distance <= SLOW_DISTANCE) {
           return map(distance,
                     STOP_DISTANCE,
-                    SLOW_DISTANCE - 1,
+                    SLOW_DISTANCE,
                     MIN_MOTOR_PWM,
                     MAX_MOTOR_PWM);
         }
 
-        // Safe distance: run motor at full speed
+        // Full speed when safe
         return MAX_MOTOR_PWM;
       }
 
+      // Control motor speed (PWM)
       void controlMotor(int speed) {
-
-        // Output PWM signal to motorPinA
-        // motorPinB stays LOW to keep direction unchanged
         analogWrite(motorPinA, speed);
         digitalWrite(motorPinB, LOW);
       }
 
-      void updateTrafficLight(int distance) {
-
-        // Turn off all LEDs before updating state
-        digitalWrite(redPin, LOW);
-        digitalWrite(yellowPin, LOW);
-        digitalWrite(greenPin, LOW);
-
-        if (distance < STOP_DISTANCE) {
-          digitalWrite(redPin, HIGH);        // Stop
-        }
-        else if (distance < SLOW_DISTANCE) {
-          digitalWrite(yellowPin, HIGH);     // Slow down
-        }
-        else {
-          digitalWrite(greenPin, HIGH);      // Go
-        }
-      }
-
+      // Control buzzer without delay()
       void updateBuzzer(int distance) {
         unsigned long currentTime = millis();
 
-        // Fast beeping when object is very close
-        if (distance < STOP_DISTANCE) {
+        // Fast beep when very close
+        if (distance <= STOP_DISTANCE) {
           if (currentTime - previousBeepTime >= 100) {
             previousBeepTime = currentTime;
             beepState = !beepState;
             beepState ? tone(buzzerPin, 2000) : noTone(buzzerPin);
           }
         }
-        // Slow beeping as a warning
-        else if (distance < SLOW_DISTANCE) {
+        // Slow beep in warning range
+        else if (distance <= SLOW_DISTANCE) {
           if (currentTime - previousBeepTime >= 500) {
             previousBeepTime = currentTime;
             beepState = !beepState;
             beepState ? tone(buzzerPin, 800) : noTone(buzzerPin);
           }
         }
-        // No sound when it is safe
+        // No sound when safe
         else {
           noTone(buzzerPin);
           beepState = false;
         }
       }
 
+      // Update LCD display
       void updateLCD(int distance) {
 
-        // Display distance on the first line
+        // Line 1: system state
         lcd.setCursor(0, 0);
-        lcd.print("Dist: ");
-        lcd.print(distance);
-        lcd.print(" cm   ");   // Extra spaces clear leftover characters
 
-        // Display system state on the second line
-        lcd.setCursor(0, 1);
-
-        if (distance < STOP_DISTANCE) {
-          lcd.print("State: STOP ");
+        if (distance <= STOP_DISTANCE) {
+          lcd.print("STOP            ");
         }
-        else if (distance < SLOW_DISTANCE) {
-          lcd.print("State: SLOW ");
+        else if (distance <= SLOW_DISTANCE) {
+          lcd.print("SLOW            ");
         }
         else {
-          lcd.print("State: GO   ");
+          lcd.print("SAFE            ");
         }
+
+        // Line 2: distance value
+        lcd.setCursor(0, 1);
+        lcd.print("Dist:");
+        lcd.print(distance);
+        lcd.print("cm   ");
       }

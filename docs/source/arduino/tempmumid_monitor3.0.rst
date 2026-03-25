@@ -51,9 +51,9 @@ Course Introduction
 This Arduino project uses a DHT11 sensor, a 16×2 I2C LCD, LEDs, and a buzzer to monitor temperature and humidity in real time. 
 It indicates comfort levels with different buzzer patterns, while continuously updating readings on the display.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/Uh_S9jFbujk?si=7OBC96l48jnO2fxZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/MPQDoaRvqI4?si=WrmnM7RKSTqRaJo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

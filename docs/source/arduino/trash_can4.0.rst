@@ -1,6 +1,6 @@
-.. _trash_can 2.0:
+.. _trash_can 4.0:
 
-Trash Can 2.0 
+Trash Can 4.0 
 ==============================================================
 
 .. note::
@@ -54,13 +54,13 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this lesson, you'll learn how to use an ultrasonic sensor module, a digital servo motor, led, an active buzzer and an Arduino board to build a smart trash can.
+In this lesson, you'll learn how to use an ultrasonic sensor module, a digital servo motor, an I2C LCD, led, an active buzzer and an Arduino board to build a smart trash can.
 
 When the ultrasonic sensor module detects trash being thrown in, the digital servo motor opens the lid of the trash can.
 
-.. raw:: html
+.. .. raw:: html
 
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/ENaC1r4fLpw?si=XWeABpzy2SMEBBxL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+..  <iframe width="700" height="394" src="https://www.youtube.com/embed/ENaC1r4fLpw?si=XWeABpzy2SMEBBxL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
@@ -118,11 +118,15 @@ In this project, we need the following components:
         - Active Buzzer
         - 1
         - 
+    *   - 10
+        - I2C LCD 1602
+        - 1
+        - |link_i2clcd1602_buy|
 
 
 **Wiring**
 
-.. image:: img/trash_can2.0_bb.png
+.. image:: img/Trash_Can4.0_bb.png
 
 **Common Connections:**
 
@@ -149,90 +153,122 @@ In this project, we need the following components:
   - **＋:** Connect to **2** on the Arduino.
   - **－:** Connect to breadboard’s negative power bus.
 
+* **I2C LCD 1602**
+
+  - **SDA:** Connect to **A4** on the Arduino.
+  - **SCL:** Connect to **A5** on the Arduino.
+  - **GND:** Connect to breadboard’s negative power bus.
+  - **VCC:** Connect to breadboard’s red power bus.
+
 **Writing the Code**
 
 .. note::
 
     * You can copy this code into **Arduino IDE**. 
+    * To install the library, use the Arduino Library Manager and search for **LiquidCrystal_I2C** and install it.
     * Don't forget to select the board(Arduino UNO R4 Minima/WIFI) and the correct port before clicking the **Upload** button.
 
 .. code-block:: arduino
 
       #include <Servo.h>
+      #include <Wire.h>
+      #include <LiquidCrystal_I2C.h>
 
-      // ---- Servo motor setup ----
+      // LCD object: address, columns, rows
+      LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+      // Servo setup
       Servo servo;
-      const int servoPin = 9;       // Servo control pin
-      const int openAngle = 0;      // Angle when the lid is open
-      const int closeAngle = 90;    // Angle when the lid is closed
+      const int servoPin = 9;
+      const int openAngle = 0;
+      const int closeAngle = 90;
 
-      // ---- Ultrasonic sensor setup ----
-      const int trigPin = 5;        // Trigger pin of ultrasonic sensor
-      const int echoPin = 6;        // Echo pin of ultrasonic sensor
-      float distance, averageDistance;
+      // Ultrasonic sensor pins
+      const int trigPin = 5;
+      const int echoPin = 6;
+      float currentDistance;
 
-      // ---- Buzzer and LEDs ----
-      const int buzzerPin = 2;      // Buzzer pin
-      const int redLedPin = 3;      // Red LED pin
-      const int greenLedPin = 4;    // Green LED pin
+      // Buzzer and LED pins
+      const int buzzerPin = 2;
+      const int redLedPin = 3;
+      const int greenLedPin = 4;
 
-      // ---- Distance threshold ----
-      const int distanceThreshold = 20;  // Distance (cm) to open the lid
+      // Distance threshold to trigger the lid
+      const int distanceThreshold = 20;
 
-      // ---- Lid open time ----
+      // Lid timing
       unsigned long lidOpenTime = 0;
-      const unsigned long holdOpenMs = 2000;  // Lid stays open for 2 seconds
+      const unsigned long holdOpenMs = 2000;
       bool isLidOpen = false;
 
-      // ---- Beep/flash timing ----
-      const unsigned long beepInterval = 200; // Interval for buzzer and red LED (200 ms = fast beep/blink)
+      // Buzzer and red LED blinking timing
+      const unsigned long beepInterval = 200;
       unsigned long lastBeepTime = 0;
       bool beepState = false;
+
+      // Trash count
+      int trashCount = 0;
 
       void setup() {
         Serial.begin(9600);
 
-        // Set up ultrasonic sensor pins
+        // Set ultrasonic sensor pins
         pinMode(trigPin, OUTPUT);
         pinMode(echoPin, INPUT);
 
-        // Set up buzzer and LEDs
+        // Set buzzer and LED pins
         pinMode(buzzerPin, OUTPUT);
         pinMode(redLedPin, OUTPUT);
         pinMode(greenLedPin, OUTPUT);
 
-        // Initialize servo to closed position
+        // Move the servo to the closed position
         servo.attach(servoPin);
         servo.write(closeAngle);
         delay(100);
         servo.detach();
 
-        // Initial LED state: green ON means closed
+        // Default status: lid closed
         digitalWrite(buzzerPin, LOW);
         digitalWrite(redLedPin, LOW);
         digitalWrite(greenLedPin, HIGH);
+
+        // Start the LCD
+        lcd.init();
+        lcd.backlight();
+
+        // Show the first count on the LCD
+        updateLCD();
       }
 
       void loop() {
-        // Measure distance from ultrasonic sensor
-        averageDistance = readDistance();
+        // Read the current distance
+        currentDistance = readDistance();
 
-        // If lid is closed and someone is close, open it
-        if (!isLidOpen && averageDistance > 0 && averageDistance <= distanceThreshold) {
+        // Open the lid when an object is close enough
+        if (!isLidOpen && currentDistance > 0 && currentDistance <= distanceThreshold) {
           servo.attach(servoPin);
           delay(1);
-          servo.write(openAngle);   // Move servo to open position
+          servo.write(openAngle);
+
           isLidOpen = true;
           lidOpenTime = millis();
 
-          digitalWrite(greenLedPin, LOW);  // Turn off green LED when open
+          // Count one trash drop
+          trashCount++;
+          updateLCD();
+
+          // Reset blink timing
+          lastBeepTime = millis();
+          beepState = false;
+
+          digitalWrite(greenLedPin, LOW);
         }
 
-        // If lid is open, keep it open for a while
+        // Run the open-lid effects
         if (isLidOpen) {
           unsigned long now = millis();
 
-          // Make buzzer and red LED blink/beep quickly
+          // Blink the red LED and buzzer
           if (now - lastBeepTime >= beepInterval) {
             lastBeepTime = now;
             beepState = !beepState;
@@ -240,32 +276,49 @@ In this project, we need the following components:
             digitalWrite(redLedPin, beepState ? HIGH : LOW);
           }
 
-          // After holdOpenMs, close the lid
+          // Close the lid after a short time
           if (millis() - lidOpenTime >= holdOpenMs) {
-            servo.write(closeAngle);   // Move servo to closed position
+            servo.write(closeAngle);
             delay(200);
             servo.detach();
+
             isLidOpen = false;
 
-            // Reset buzzer and LEDs
+            // Back to the default status
             digitalWrite(buzzerPin, LOW);
             digitalWrite(redLedPin, LOW);
-            digitalWrite(greenLedPin, HIGH); // Green LED ON means closed
+            digitalWrite(greenLedPin, HIGH);
           }
         }
 
-        delay(50); // Small delay to avoid too many sensor reads
+        // Small delay for stable reading
+        delay(50);
       }
 
-      // ---- Function to measure distance with ultrasonic sensor ----
+      // Update the number on the LCD
+      void updateLCD() {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Trash Count:");
+        lcd.setCursor(0, 1);
+        lcd.print(trashCount);
+      }
+
+      // Measure distance in centimeters
       float readDistance() {
-        // Send a short pulse to trigger pin
-        digitalWrite(trigPin, LOW);  delayMicroseconds(2);
-        digitalWrite(trigPin, HIGH); delayMicroseconds(10);
+        // Send a short pulse
+        digitalWrite(trigPin, LOW);
+        delayMicroseconds(2);
+        digitalWrite(trigPin, HIGH);
+        delayMicroseconds(10);
         digitalWrite(trigPin, LOW);
 
-        // Measure how long echo pin stays HIGH
-        unsigned long duration = pulseIn(echoPin, HIGH, 25000UL); // Timeout after ~4 meters
-        if (duration == 0) return -1.0; // If no signal, return invalid
-        return duration / 58.0;         // Convert to centimeters
+        // Read the echo time
+        unsigned long duration = pulseIn(echoPin, HIGH, 25000UL);
+
+        // Return -1 if no signal is received
+        if (duration == 0) return -1.0;
+
+        // Convert the echo time to distance
+        return duration / 58.0;
       }

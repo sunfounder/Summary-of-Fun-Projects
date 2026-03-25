@@ -50,9 +50,9 @@ Course Introduction
 
 In this lesson, we’ll build a 11.0 access-control system using the I2C LCD, MFRC522 module, MQ-2 gas sensor, a digital servo motor, buzzer module, traffic light module. 
 
-.. .. raw:: html
+.. raw:: html
 
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/Plk5srVCMn0?si=2lDA-LTwgq1-XX2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/7w71sX6TuF0?si=6o3hQ6xL69N3OazE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

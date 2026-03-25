@@ -120,8 +120,8 @@ In this project, we need the following components:
 
 * **I2C LCD 1602**
 
-  - **SDA:** Connect to **A5** on the Arduino.
-  - **SCL:** Connect to **A4** on the Arduino.
+  - **SDA:** Connect to **A4** on the Arduino.
+  - **SCL:** Connect to **A5** on the Arduino.
   - **GND:** Connect to breadboard’s negative power bus.
   - **VCC:** Connect to breadboard’s red power bus.
 

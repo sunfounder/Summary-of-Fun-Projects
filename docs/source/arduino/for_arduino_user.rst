@@ -29,6 +29,7 @@ We recommend that you read the chapters in order.
     smart_stop2.0
     smart_stop3.0
     smart_stop4.0
+    smart_stop5.0
     velocity_view
     dino_run
     dino_run2.0
@@ -36,6 +37,7 @@ We recommend that you read the chapters in order.
     brick_breaker2.0
     stacker_blocks
     stacker_blocks2.0
+    stacker_blocks3.0
     light_play
     mini_piano
     timer
@@ -61,6 +63,7 @@ We recommend that you read the chapters in order.
     trash_can
     trash_can2.0
     trash_can3.0
+    trash_can4.0
     rfid_access1.0
     rfid_access2.0
     rfid_access3.0
