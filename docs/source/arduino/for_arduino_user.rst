@@ -118,6 +118,7 @@ We recommend that you read the chapters in order.
     lidar_guard
     heart_rate_monitor
     heart_rate_monitor2.0
+    heart_rate_monitor3.0
     angle_controller
     tetris1.0
     tetris2.0
@@ -159,6 +160,7 @@ We recommend that you read the chapters in order.
     whac_a_mole
     breath_led
     slot_machine
+    slot_machine2.0
     auto_pump1.0
     gas_leak_monitor_iot
     servo_control_iot
@@ -176,6 +178,7 @@ We recommend that you read the chapters in order.
     flame_monitor1.0
     flame_monitor2.0
     flame_monitor3.0
+    flame_monitor4.0
     led_control1.0
     led_control2.0
     led_control3.0

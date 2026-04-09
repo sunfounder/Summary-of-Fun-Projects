@@ -94,8 +94,8 @@ In this project, we need the following components:
         - 3
         - |link_button_buy|
     *   - 7
-        - Button
-        - 3
+        - Power Module
+        - 1
         - |link_power_buy|
 
 
