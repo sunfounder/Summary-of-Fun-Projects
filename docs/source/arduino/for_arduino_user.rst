@@ -191,6 +191,9 @@ We recommend that you read the chapters in order.
     tof_distance
     heart_rate_light1.0
     touch_toggle
+    basketball_game1.0
+    raindrop3.0
+    smart_coaster
 
 
 3. Basic Projects
