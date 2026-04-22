@@ -192,8 +192,11 @@ We recommend that you read the chapters in order.
     heart_rate_light1.0
     touch_toggle
     basketball_game1.0
+    basketball_game2.0
     raindrop3.0
     smart_coaster
+    3d_simulator
+    object_shooter1.0
 
 
 3. Basic Projects
