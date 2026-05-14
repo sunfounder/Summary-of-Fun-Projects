@@ -124,9 +124,11 @@ We recommend that you read the chapters in order.
     tetris2.0
     tetris3.0
     tetris4.0
+    tetris5.0
     parking_lot
     parking_lot2.0
     parking_lot3.0
+    parking_lot4.0
     night_light
     servo_tuner
     bird_dash
@@ -197,6 +199,10 @@ We recommend that you read the chapters in order.
     smart_coaster
     3d_simulator
     object_shooter1.0
+    fire_extinguisher
+    piggy_bank
+    pet_feeder
+    PRS_machine1.0
 
 
 3. Basic Projects
