@@ -106,6 +106,7 @@ We recommend that you read the chapters in order.
     speed_detection2.0
     speed_detection3.0
     speed_detection4.0
+    speed_detection5.0
     servo_control
     servo_control2.0
     servo_control3.0
@@ -203,6 +204,11 @@ We recommend that you read the chapters in order.
     piggy_bank
     pet_feeder
     PRS_machine1.0
+    PRS_machine2.0
+    PRS_machine3.0
+    happy_birthday
+    light_off
+    running_light
 
 
 3. Basic Projects

@@ -139,9 +139,9 @@ In this project, we need the following components:
 * **Buttons**
 
   - **Blue Button:** Connect to the negative power bus on the breadboard, and the other end to **6** on the Arduino board.
-  - **Green Butto:** Connect to the negative power bus on the breadboard, and the other end to **8** on the Arduino board.
-  - **Yellow Butto:** Connect to the negative power bus on the breadboard, and the other end to **4** on the Arduino board.
-  - **Red Butto:** Connect to the negative power bus on the breadboard, and the other end to **10** on the Arduino board.
+  - **Green Button:** Connect to the negative power bus on the breadboard, and the other end to **8** on the Arduino board.
+  - **Yellow Button:** Connect to the negative power bus on the breadboard, and the other end to **4** on the Arduino board.
+  - **Red Button:** Connect to the negative power bus on the breadboard, and the other end to **10** on the Arduino board.
 
 **Writing the Code**
 
