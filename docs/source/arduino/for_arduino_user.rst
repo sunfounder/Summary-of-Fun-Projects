@@ -209,6 +209,9 @@ We recommend that you read the chapters in order.
     happy_birthday
     light_off
     running_light
+    reversing_radar
+    touch_pet
+    train_ramp
 
 
 3. Basic Projects
