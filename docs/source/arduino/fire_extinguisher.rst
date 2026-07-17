@@ -53,9 +53,9 @@ In this lesson, you'll use two servo motors, a Flame Sensor Module, a water pump
 
 The servos continuously scan the area with the flame sensor and water pump. When a flame is detected, the pump automatically activates to spray water toward the detected direction, creating a simple fire tracking and extinguishing effect.
 
-.. .. raw:: html
+.. raw:: html
  
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/7-EbRnddho4?si=DjwbCAGSaGKplZwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/YXSaHYLfrIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

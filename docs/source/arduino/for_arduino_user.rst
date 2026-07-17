@@ -212,6 +212,9 @@ We recommend that you read the chapters in order.
     reversing_radar
     touch_pet
     train_ramp
+    matrix_flame
+    mpu6050_maze
+    rain_irrigation
 
 
 3. Basic Projects

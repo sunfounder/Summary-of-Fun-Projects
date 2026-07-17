@@ -58,9 +58,9 @@ In this lesson, you'll use an IR Sensor Module, a servo motor, an I2C LCD, and A
 
 When a bill is detected by the IR sensor, the servo automatically opens the bank entrance to let the money drop inside. The LCD then updates the bill count, and the servo returns to the closed position, creating a simple automatic counting effect.
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/ca2vRwRQJkk?si=Nzmhr1BEuKKSN9NK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/wL9Tldrh8hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
