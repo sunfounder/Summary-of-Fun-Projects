@@ -46,9 +46,9 @@ In this lesson, you’ll learn how to use a MAX7219 Dot Matrix Module with the A
 
 The MAX7219 Dot Matrix Module simulates a realistic flickering fire effect with smooth movement and random flame variations.
 
-.. .. raw:: html
+.. raw:: html
 
-..    <iframe width="700" height="394" src="https://www.youtube.com/embed/zlKPKK3Qink" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/_f9b4vVQb4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

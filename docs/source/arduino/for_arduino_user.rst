@@ -33,6 +33,7 @@ We recommend that you read the chapters in order.
     velocity_view
     dino_run
     dino_run2.0
+    dino_run3.0
     brick_breaker
     brick_breaker2.0
     stacker_blocks
@@ -55,6 +56,7 @@ We recommend that you read the chapters in order.
     radar_guard9.0
     radar_guard10.0
     radar_guard11.0
+    radar_guard12.0
     barrier_gate1.0
     barrier_gate2.0
     barrier_gate3.0
@@ -85,6 +87,7 @@ We recommend that you read the chapters in order.
     Joystick_led
     color_memory
     color_memory2.0
+    color_memory3.0
     tilt_led1.0
     tilt_led2.0
     tilt_led3.0
