@@ -136,9 +136,9 @@ In this project, we need the following components:
 * **Buttons**
 
   - **Blue Button:** Connect to the **Blue LED's cathode** on the breadboard, and the other end to **9** on the Arduino board.
-  - **Green Butto:** Connect to the **Green LED's cathode** on the breadboard, and the other end to **7** on the Arduino board.
-  - **Yellow Butto:** Connect to the **Yellow LED's cathode** on the breadboard, and the other end to **5** on the Arduino board.
-  - **Red Butto:** Connect to the **Red LED's cathode** on the breadboard, and the other end to **3** on the Arduino board.
+  - **Green Button:** Connect to the **Green LED's cathode** on the breadboard, and the other end to **7** on the Arduino board.
+  - **Yellow Button:** Connect to the **Yellow LED's cathode** on the breadboard, and the other end to **5** on the Arduino board.
+  - **Red Button:** Connect to the **Red LED's cathode** on the breadboard, and the other end to **3** on the Arduino board.
 
 **Writing the Code**
 

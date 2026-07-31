@@ -218,6 +218,9 @@ We recommend that you read the chapters in order.
     matrix_flame
     mpu6050_maze
     rain_irrigation
+    color_palette
+    cat_feeding
+    shooting_game
 
 
 3. Basic Projects
