@@ -143,180 +143,253 @@ In this project, we need the following components:
 
 .. code-block:: arduino
 
-    #include <Wire.h>
-    #include <Adafruit_GFX.h>
-    #include <Adafruit_SSD1306.h>
-    #include <Adafruit_NeoPixel.h>
+      #include <Wire.h>
+      #include <Adafruit_GFX.h>
+      #include <Adafruit_SSD1306.h>
 
-    // OLED
-    #define SCREEN_WIDTH 128
-    #define SCREEN_HEIGHT 64
-    #define OLED_RESET -1
-    #define OLED_ADDR 0x3C
+      // OLED settings
+      #define SCREEN_WIDTH 128
+      #define SCREEN_HEIGHT 64
+      #define OLED_RESET -1
+      #define OLED_ADDR 0x3C
 
-    Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+      Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-    // Pins
-    const int TRIG_PIN = 9;
-    const int ECHO_PIN = 10;
-    const int BUZZER_PIN = 5;
-    const int LED_PIN = 6;
+      // Pins
+      const int TOUCH_PIN = 2;
+      const int BUZZER_PIN = 3;
 
-    // LED strip
-    const int LED_COUNT = 8;
-    Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+      // Touch logic
+      // Most touch modules output HIGH when touched.
+      // If your module works the opposite way, change HIGH to LOW.
+      const int TOUCH_ACTIVE_STATE = HIGH;
 
-    // Distance settings
-    const int SAFE_DISTANCE_CM = 20;
-    const int LED_START_CM = 15;
-    const int DANGER_DISTANCE_CM = 3;
+      // Timing
+      unsigned long lastBlinkTime = 0;
+      unsigned long lastTouchTime = 0;
+      unsigned long emotionStartTime = 0;
 
-    // Buzzer timing
-    unsigned long lastBeepTime = 0;
-    bool buzzerState = false;
+      const unsigned long blinkInterval = 3000;
+      const unsigned long emotionDuration = 2500;
+      const unsigned long debounceDelay = 300;
 
-    // Passive buzzer frequency
-    const int BUZZER_FREQ = 2000;
+      bool isTouched = false;
+      bool showingEmotion = false;
+      bool eyeClosed = false;
 
-    void setup() {
-      pinMode(TRIG_PIN, OUTPUT);
-      pinMode(ECHO_PIN, INPUT);
-      pinMode(BUZZER_PIN, OUTPUT);
+      int currentEmotion = 0;
 
-      noTone(BUZZER_PIN);
+      // Emotion types
+      // 0 = normal
+      // 1 = love
+      // 2 = happy
+      // 3 = enjoy
+      // 4 = excited
 
-      strip.begin();
-      strip.show();
+      void setup() {
+        pinMode(TOUCH_PIN, INPUT);
+        pinMode(BUZZER_PIN, OUTPUT);
 
-      if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
-        while (true);
+        randomSeed(analogRead(A0));
+
+        if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
+          while (true);
+        }
+
+        display.clearDisplay();
+        display.display();
+
+        drawNormalFace(false);
       }
 
-      display.clearDisplay();
-      display.display();
-    }
+      void loop() {
+        handleTouch();
 
-    void loop() {
-      float distanceCM = readDistanceCM();
-      int distanceMM = distanceCM * 10;
-
-      updateOLED(distanceMM, distanceCM);
-      updateLEDStrip(distanceCM);
-      updateBuzzer(distanceCM);
-
-      delay(50);
-    }
-
-    float readDistanceCM() {
-      digitalWrite(TRIG_PIN, LOW);
-      delayMicroseconds(2);
-
-      digitalWrite(TRIG_PIN, HIGH);
-      delayMicroseconds(10);
-      digitalWrite(TRIG_PIN, LOW);
-
-      long duration = pulseIn(ECHO_PIN, HIGH, 30000);
-
-      if (duration == 0) {
-        return 999;
-      }
-
-      return duration * 0.0343 / 2.0;
-    }
-
-    void updateOLED(int distanceMM, float distanceCM) {
-      display.clearDisplay();
-
-      display.setTextColor(SSD1306_WHITE);
-
-      display.setTextSize(1);
-      display.setCursor(0, 0);
-      display.print("Reverse Radar");
-
-      display.setTextSize(2);
-      display.setCursor(0, 22);
-
-      if (distanceCM > SAFE_DISTANCE_CM) {
-        display.print("SAFE");
-      } else {
-        display.print(distanceMM);
-        display.print("mm");
-      }
-
-      display.display();
-    }
-
-    void updateLEDStrip(float distanceCM) {
-      if (distanceCM > SAFE_DISTANCE_CM) {
-        clearLEDs();
-        return;
-      }
-
-      if (distanceCM > LED_START_CM) {
-        clearLEDs();
-        return;
-      }
-
-      int ledsOn = 0;
-
-      if (distanceCM <= 0) {
-        ledsOn = 1;
-      } else {
-        ledsOn = ceil(distanceCM / 2.0);
-      }
-
-      ledsOn = constrain(ledsOn, 1, LED_COUNT);
-
-      uint32_t color;
-
-      if (distanceCM >= 9 && distanceCM <= 15) {
-        color = strip.Color(0, 255, 0);       // Green
-      } else if (distanceCM > 5 && distanceCM < 9) {
-        color = strip.Color(255, 180, 0);     // Yellow
-      } else {
-        color = strip.Color(255, 0, 0);       // Red
-      }
-
-      clearLEDs();
-
-      for (int i = 0; i < ledsOn; i++) {
-        strip.setPixelColor(i, color);
-      }
-
-      strip.show();
-    }
-
-    void updateBuzzer(float distanceCM) {
-      if (distanceCM > SAFE_DISTANCE_CM) {
-        noTone(BUZZER_PIN);
-        buzzerState = false;
-        return;
-      }
-
-      if (distanceCM < DANGER_DISTANCE_CM) {
-        tone(BUZZER_PIN, BUZZER_FREQ);  // Long beep
-        return;
-      }
-
-      int beepInterval = map(distanceCM, 3, 20, 100, 800);
-      beepInterval = constrain(beepInterval, 100, 800);
-
-      if (millis() - lastBeepTime >= beepInterval) {
-        lastBeepTime = millis();
-
-        buzzerState = !buzzerState;
-
-        if (buzzerState) {
-          tone(BUZZER_PIN, BUZZER_FREQ);
+        if (showingEmotion) {
+          if (millis() - emotionStartTime >= emotionDuration) {
+            showingEmotion = false;
+            currentEmotion = 0;
+            drawNormalFace(false);
+          }
         } else {
-          noTone(BUZZER_PIN);
+          handleBlink();
         }
       }
-    }
 
-    void clearLEDs() {
-      for (int i = 0; i < LED_COUNT; i++) {
-        strip.setPixelColor(i, 0, 0, 0);
+      void handleTouch() {
+        bool touchState = digitalRead(TOUCH_PIN);
+
+        if (touchState == TOUCH_ACTIVE_STATE && !isTouched) {
+          if (millis() - lastTouchTime > debounceDelay) {
+            isTouched = true;
+            lastTouchTime = millis();
+
+            currentEmotion = random(1, 5);
+            showingEmotion = true;
+            emotionStartTime = millis();
+
+            playHappySound();
+            drawEmotion(currentEmotion);
+          }
+        }
+
+        if (touchState != TOUCH_ACTIVE_STATE) {
+          isTouched = false;
+        }
       }
-      strip.show();
-    }
+
+      void handleBlink() {
+        if (millis() - lastBlinkTime >= blinkInterval) {
+          lastBlinkTime = millis();
+
+          drawNormalFace(true);
+          delay(90);
+          drawNormalFace(false);
+        }
+      }
+
+      void playHappySound() {
+        tone(BUZZER_PIN, 523, 100);
+        delay(120);
+        tone(BUZZER_PIN, 659, 100);
+        delay(120);
+        tone(BUZZER_PIN, 784, 150);
+        delay(180);
+        noTone(BUZZER_PIN);
+      }
+
+      void drawEmotion(int emotion) {
+        display.clearDisplay();
+
+        if (emotion == 1) {
+          drawLoveFace();
+        } else if (emotion == 2) {
+          drawHappyFace();
+        } else if (emotion == 3) {
+          drawEnjoyFace();
+        } else if (emotion == 4) {
+          drawExcitedFace();
+        }
+
+        display.display();
+      }
+
+      void drawNormalFace(bool closedEyes) {
+        display.clearDisplay();
+
+        drawPetBody();
+
+        if (closedEyes) {
+          display.drawLine(40, 26, 54, 26, SSD1306_WHITE);
+          display.drawLine(74, 26, 88, 26, SSD1306_WHITE);
+        } else {
+          display.fillCircle(47, 26, 6, SSD1306_WHITE);
+          display.fillCircle(81, 26, 6, SSD1306_WHITE);
+          display.fillCircle(49, 24, 2, SSD1306_BLACK);
+          display.fillCircle(83, 24, 2, SSD1306_BLACK);
+        }
+
+        // Mouth
+        display.drawLine(58, 42, 64, 46, SSD1306_WHITE);
+        display.drawLine(64, 46, 70, 42, SSD1306_WHITE);
+
+        display.setTextSize(1);
+        display.setTextColor(SSD1306_WHITE);
+        display.setCursor(44, 55);
+        display.print("Touch me");
+
+        display.display();
+      }
+
+      void drawPetBody() {
+        // Head outline
+        display.drawRoundRect(24, 8, 80, 46, 12, SSD1306_WHITE);
+
+        // Ears
+        display.drawTriangle(32, 10, 42, 0, 50, 10, SSD1306_WHITE);
+        display.drawTriangle(78, 10, 88, 0, 96, 10, SSD1306_WHITE);
+
+        // Cheeks
+        display.drawCircle(35, 38, 3, SSD1306_WHITE);
+        display.drawCircle(93, 38, 3, SSD1306_WHITE);
+      }
+
+      void drawLoveFace() {
+        drawPetBody();
+
+        // Heart eyes
+        drawHeart(43, 25);
+        drawHeart(79, 25);
+
+        // Smile
+        display.drawLine(55, 42, 60, 47, SSD1306_WHITE);
+        display.drawLine(60, 47, 68, 47, SSD1306_WHITE);
+        display.drawLine(68, 47, 73, 42, SSD1306_WHITE);
+
+        display.setTextSize(1);
+        display.setCursor(42, 55);
+        display.print("Love you!");
+      }
+
+      void drawHappyFace() {
+        drawPetBody();
+
+        // Happy eyes
+        display.drawLine(38, 27, 45, 21, SSD1306_WHITE);
+        display.drawLine(45, 21, 52, 27, SSD1306_WHITE);
+
+        display.drawLine(76, 27, 83, 21, SSD1306_WHITE);
+        display.drawLine(83, 21, 90, 27, SSD1306_WHITE);
+
+        // Big smile
+        display.drawLine(52, 41, 58, 48, SSD1306_WHITE);
+        display.drawLine(58, 48, 70, 48, SSD1306_WHITE);
+        display.drawLine(70, 48, 76, 41, SSD1306_WHITE);
+
+        display.setTextSize(1);
+        display.setCursor(48, 55);
+        display.print("Happy!");
+      }
+
+      void drawEnjoyFace() {
+        drawPetBody();
+
+        // Closed relaxed eyes
+        display.drawLine(38, 25, 52, 25, SSD1306_WHITE);
+        display.drawLine(76, 25, 90, 25, SSD1306_WHITE);
+
+        // Small mouth
+        display.drawCircle(64, 42, 4, SSD1306_WHITE);
+
+        display.setTextSize(1);
+        display.setCursor(48, 55);
+        display.print("So nice");
+      }
+
+      void drawExcitedFace() {
+        drawPetBody();
+
+        // Star-like eyes
+        drawStar(47, 26);
+        drawStar(81, 26);
+
+        // Excited mouth
+        display.drawRoundRect(56, 39, 16, 10, 4, SSD1306_WHITE);
+
+        display.setTextSize(1);
+        display.setCursor(45, 55);
+        display.print("Again!");
+      }
+
+      void drawHeart(int x, int y) {
+        display.fillCircle(x - 3, y - 2, 3, SSD1306_WHITE);
+        display.fillCircle(x + 3, y - 2, 3, SSD1306_WHITE);
+        display.fillTriangle(x - 7, y, x + 7, y, x, y + 8, SSD1306_WHITE);
+      }
+
+      void drawStar(int x, int y) {
+        display.drawLine(x, y - 7, x, y + 7, SSD1306_WHITE);
+        display.drawLine(x - 7, y, x + 7, y, SSD1306_WHITE);
+        display.drawLine(x - 5, y - 5, x + 5, y + 5, SSD1306_WHITE);
+        display.drawLine(x + 5, y - 5, x - 5, y + 5, SSD1306_WHITE);
+      }
