@@ -983,7 +983,7 @@ rst_epilog += """
 
 .. |link_oled_buy| raw:: html
 
-    <a href="https://www.sunfounder.com/products/1-3-iic-i2c-serial-128x64-ssh1106-oled-display-module?ref=jbzmncle" target="_blank">BUY</a>
+    <a href="https://www.sunfounder.com/products/0-96-iic-i2c-serial-128x64-ssd1315-oled-display-module?_pos=5&_sid=230807457&_ss=r&ref=jbzmncle" target="_blank">BUY</a>
 
 .. |link_martix_buy| raw:: html
 
