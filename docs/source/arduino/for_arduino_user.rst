@@ -206,9 +206,9 @@ We recommend that you read the chapters in order.
     fire_extinguisher
     piggy_bank
     pet_feeder
-    PRS_machine1.0
-    PRS_machine2.0
-    PRS_machine3.0
+    RPS_machine1.0
+    RPS_machine2.0
+    RPS_machine3.0
     happy_birthday
     light_off
     running_light

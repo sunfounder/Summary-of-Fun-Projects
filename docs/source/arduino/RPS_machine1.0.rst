@@ -1,6 +1,6 @@
-.. _prs1.0:
+.. _rps1.0:
 
-PRS Machine 1.0
+RPS Machine 1.0
 ==============================================================
 
 .. note::
@@ -49,7 +49,7 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this project, you will use an Arduino board, a servo motor, and an Ultrasonic Sensor Module to build a PRS machine.
+In this project, you will use an Arduino board, a servo motor, and an Ultrasonic Sensor Module to build a RPS machine.
 
 .. raw:: html
 

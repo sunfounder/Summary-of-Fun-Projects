@@ -1,4 +1,4 @@
-.. _prs2.0:
+.. _rps2.0:
 
 PRS Machine 2.0
 ==============================================================
@@ -49,7 +49,7 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this project, you will use an Arduino board, OLED screen, Active Buzzer, and an Ultrasonic Sensor Module to build a PRS machine2.0.
+In this project, you will use an Arduino board, OLED screen, Active Buzzer, and an Ultrasonic Sensor Module to build a RPS machine2.0.
 
 .. raw:: html
 

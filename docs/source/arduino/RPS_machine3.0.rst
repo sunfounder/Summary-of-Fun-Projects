@@ -1,6 +1,6 @@
-.. _prs3.0:
+.. _rps3.0:
 
-PRS Machine 3.0
+RPS Machine 3.0
 ==============================================================
 
 .. note::
@@ -49,7 +49,7 @@ Looking for parts? Check out our all-in-one kits below — packed with component
 Course Introduction
 ------------------------
 
-In this project, you will use an Arduino board, a servo motor, OLED screen, Active Buzzer, and an Ultrasonic Sensor Module to build a PRS machine3.0.
+In this project, you will use an Arduino board, a servo motor, OLED screen, Active Buzzer, and an Ultrasonic Sensor Module to build a RPS machine3.0.
 
 .. raw:: html
 
