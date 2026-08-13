@@ -1,6 +1,6 @@
-.. _clothes_rack:
+.. _drying_rack:
 
-Clothes Rack 1.0
+Drying Rack1.0
 ==============================================================
 
 .. note::
