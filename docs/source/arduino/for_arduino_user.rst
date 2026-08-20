@@ -129,6 +129,7 @@ We recommend that you read the chapters in order.
     tetris3.0
     tetris4.0
     tetris5.0
+    tetris6.0
     parking_lot
     parking_lot2.0
     parking_lot3.0
@@ -212,6 +213,7 @@ We recommend that you read the chapters in order.
     happy_birthday
     light_off
     running_light
+    running_light2.0
     reversing_radar
     touch_pet
     train_ramp
@@ -221,6 +223,7 @@ We recommend that you read the chapters in order.
     color_palette
     cat_feeding
     shooting_game
+    emergency_response
 
 
 3. Basic Projects

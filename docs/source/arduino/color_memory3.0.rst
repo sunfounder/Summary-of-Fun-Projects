@@ -59,9 +59,9 @@ In this lesson, you'll use an I2C LCD, four LEDs, four buttons, and a passive bu
 The game displays an increasingly longer sequence of colored LEDs. Watch carefully and repeat the sequence by pressing the matching buttons. Each correct round advances to the next level, while a wrong input ends the game.
 
 
-.. .. raw:: html
+.. raw:: html
 
-..  <iframe width="700" height="394" src="https://www.youtube.com/embed/qddrlRVFplk?si=VNuLq8nkpG0O1Ze4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/ZKX9R_uaI0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 

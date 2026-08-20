@@ -58,9 +58,9 @@ In this lesson, you'll use an RGB LED and four buttons with the Arduino UNO R4 W
 
 Press the red, green, or blue button to display a color. Short-press the function button to mix in another color, or long-press it to clear the current color.
 
-.. .. raw:: html
+.. raw:: html
 
-.. <iframe width="700" height="394" src="https://www.youtube.com/embed/frHJHmXgnK4?si=iCaX_KMK4dy8d3KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/qBhl0QNCz-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 .. note::
 
