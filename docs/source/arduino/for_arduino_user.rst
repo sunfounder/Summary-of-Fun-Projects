@@ -45,6 +45,8 @@ We recommend that you read the chapters in order.
     parking_sensor
     parking_sensor1.0
     parking_sensor2.0
+    parking_sensor3.0
+    parking_sensor4.0
     radar_guard1.0
     radar_guard2.0
     radar_guard3.0
@@ -224,6 +226,7 @@ We recommend that you read the chapters in order.
     cat_feeding
     shooting_game
     emergency_response
+    roboeyes1.0
 
 
 3. Basic Projects
