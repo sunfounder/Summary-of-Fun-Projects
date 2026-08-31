@@ -227,6 +227,9 @@ We recommend that you read the chapters in order.
     shooting_game
     emergency_response
     roboeyes1.0
+    love_me_not
+    best_friend
+    robot_face
 
 
 3. Basic Projects
