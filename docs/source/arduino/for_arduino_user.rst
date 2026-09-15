@@ -82,6 +82,7 @@ We recommend that you read the chapters in order.
     rfid_Jukebox
     water_level
     water_level2.0
+    water_level3.0
     pong_game
     lamb_run
     light_show
@@ -125,6 +126,7 @@ We recommend that you read the chapters in order.
     heart_rate_monitor
     heart_rate_monitor2.0
     heart_rate_monitor3.0
+    heart_rate_monitor4.0
     angle_controller
     tetris1.0
     tetris2.0
@@ -148,6 +150,7 @@ We recommend that you read the chapters in order.
     digital_dice2.0
     traffic_light1.0
     traffic_light2.0
+    traffic_light3.0
     rgb_controll
     calculator
     dodge_game
@@ -170,6 +173,7 @@ We recommend that you read the chapters in order.
     breath_led
     slot_machine
     slot_machine2.0
+    slot_machine3.0
     auto_pump1.0
     gas_leak_monitor_iot
     servo_control_iot
@@ -227,9 +231,14 @@ We recommend that you read the chapters in order.
     shooting_game
     emergency_response
     roboeyes1.0
+    roboeyes2.0
+    roboeyes3.0
+    roboeyes4.0
     love_me_not
     best_friend
     robot_face
+    smart_streetlight
+    width_scan_1.0
 
 
 3. Basic Projects

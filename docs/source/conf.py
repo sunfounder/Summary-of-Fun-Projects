@@ -1001,10 +1001,6 @@ rst_epilog += """
 
     <a href="https://www.sunfounder.com/collections/for-arduino/products/sunfounder-breadvolt-breadboard-power-supply-module?ref=jbzmncle" target="_blank">BUY</a>
 
-.. |link_pico2w_buy| raw:: html
-
-    </a>
-
 .. |link_unor4_wifi_buy| raw:: html
 
     <a href="https://www.sunfounder.com/collections/official-arduino-boards/products/arduino-uno-r4-wifi-2?ref=jbzmncle" target="_blank">BUY</a>
