@@ -239,6 +239,12 @@ We recommend that you read the chapters in order.
     robot_face
     smart_streetlight
     width_scan_1.0
+    led_matrix1.0
+    led_matrix2.0
+    led_matrix3.0
+    light_shooting1.0
+    motion_servo
+    butterfly
 
 
 3. Basic Projects
@@ -268,7 +274,3 @@ We recommend that you read the chapters in order.
     pump
     relay
     tt_motor
-
-
-
-
