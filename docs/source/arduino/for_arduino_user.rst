@@ -34,6 +34,7 @@ We recommend that you read the chapters in order.
     dino_run
     dino_run2.0
     dino_run3.0
+    dino_run4.0
     brick_breaker
     brick_breaker2.0
     stacker_blocks
@@ -105,6 +106,7 @@ We recommend that you read the chapters in order.
     distance_display3.0
     distance_display4.0
     distance_display5.0
+    distance_display6.0
     controll_eyes
     light_tracing
     light_tracker2.0
@@ -245,6 +247,7 @@ We recommend that you read the chapters in order.
     light_shooting1.0
     motion_servo
     butterfly
+    soil_watering
 
 
 3. Basic Projects

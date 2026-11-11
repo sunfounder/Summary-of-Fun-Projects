@@ -1149,5 +1149,9 @@ rst_epilog += """
 
     <a href="https://ledmatrix-editor.arduino.cc/" target="_blank">Click Here</a>
 
+.. |link_soil_buy| raw:: html
+
+    <a href="https://www.sunfounder.com/products/capacitive-soil-moisture-sensor-module?_pos=1&_sid=3a9fbe52f&_ss=r&ref=jbzmncle" target="_blank">Click Here</a>
+
 """
 
